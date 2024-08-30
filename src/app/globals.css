@@ -35,3 +35,8 @@
 .contactCustomBg {
   background: linear-gradient(to right, #ffffff 70%, #fb923c 30%);
 }
+
+.gallery {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+}

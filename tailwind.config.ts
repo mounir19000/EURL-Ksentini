@@ -8,11 +8,46 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      colors: {
+        'ksantini-blue': {
+            DEFAULT: "#4285F4",
+            button: "#1976D2",
+            dark: "3069FE",
+            container: "F2F6FF",
+        },
+        'ksantini-black': {
+            DEFAULT: "#000103",
+            light: "#252C32",
+        },
+        'ksantini-green': "#0D9D58",
+        'ksantini-white': "#FFFFFF",
+        "ksantini-gray": {
+            DEFAULT: "#676C72",
+            dark: "#696969",
+            darker: "#5F6368",
+            darkest: "#21243D",
+            light: "#787878",
+            lighter: "#231F1FBF",
+            lightest: "#989B9E",
+            // colors for specific elements:
+            filter: "#646567",
+            line: "#B0BABF",
+            button: "#4A4A4A",
+            "checkbox": "#F6F8F9",
+        },
+        'ksantini-red': {
+            DEFAULT: "#EA4334",
+        },
+        'ksantini-yellow': {
+            DEFAULT: "#FCBC05",
+            button: "#F1B201",
+        }
+    },
+      height: {
+        "ksantini-navbar": "105px",
+        "ksantini-footer": "451px",
+        "ksantini-footer-mobile": "430px",
+    },
     },
   },
   plugins: [],

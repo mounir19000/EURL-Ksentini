@@ -21,3 +21,17 @@
     padding-right: 0;
   }
 }
+
+.CoverImage {
+  width: 100%;
+  height: 50vh;
+  background-image: url('/Electric_pillar.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+}
+
+.contactCustomBg {
+  background: linear-gradient(to right, #ffffff 70%, #fb923c 30%);
+}

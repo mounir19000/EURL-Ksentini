@@ -47,7 +47,7 @@ const config: Config = {
         "ksantini-navbar": "105px",
         "ksantini-footer": "451px",
         "ksantini-footer-mobile": "430px",
-    },
+    }
     },
   },
   plugins: [],

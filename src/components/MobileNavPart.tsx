@@ -19,7 +19,7 @@ const MobileNavPart = () => {
       </button>
       {isOpen && (
         <div className="fixed top-0 left-0 right-0 h-auto z-20 bg-white">
-          <div className="h-ksantini-navbar bg-white drop-shadow relative flex justify-between items-center px-8">
+          <div className="containers h-ksantini-navbar bg-white drop-shadow relative flex justify-between items-center">
             {/* <div className="h-full flex items-center">
               <Image
                 src="/GimpLogo.svg"

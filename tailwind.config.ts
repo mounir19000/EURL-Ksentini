@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,6 +9,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+
+        'zoom': 'zoom 10s',
+      },
+      keyframes: {
+        zoom: {
+          from : {
+            transform: 'scale(1 , 1)',
+          }, to : {
+            transform: 'scale(1.2 , 1.2)',
+          },
+        },
+      },
       colors: {
         'ksantini-blue': {
             DEFAULT: "#4285F4",

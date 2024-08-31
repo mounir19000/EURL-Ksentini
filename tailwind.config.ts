@@ -23,6 +23,15 @@ const config: Config = {
         },
       },
       colors: {
+        'ksentini-orange': {
+            DEFAULT: "#E06C01",
+        },
+        'ksentini-yellow': {  
+            DEFAULT: "#FEB106",
+        },
+        'ksentini-red': {
+            DEFAULT: "#F80201",
+        },
         'ksantini-blue': {
             DEFAULT: "#4285F4",
             button: "#1976D2",

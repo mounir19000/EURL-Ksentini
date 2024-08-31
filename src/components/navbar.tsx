@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Image from "next/image";
+import Logo from "../../public/logo.png";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -9,95 +9,79 @@ import { usePathname } from "next/navigation";
 import MobileNavPart from "./MobileNavPart";
 
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const offset = window.scrollY;
-      if (offset > 5) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <div
-      className={`fixed h-ksantini-navbar top-0 left-0 right-0 z-50 transition-colors ease-in-out duration-75 ${
-        scrolled ? "bg-gray-900" : "bg-transparent"
-      }`}
+      className={`fixed h-ksantini-navbar top-0 left-0 right-0 z-50 bg-white border-b-2 border-gray-400`}
     >
       <div className={`containers h-ksantini-navbar`}>
-        <div className="h-full w-full py-4 flex justify-between items-center">
-          <div className="text-white font-bold text-xl">Logo</div>
+        <div className="h-full w-full flex justify-between items-center">
+          <div className="flex justify-center items-start ">
+            <Image
+              src={Logo}
+              alt="Logo"
+              style={{ height: "40px", width: "auto" }}
+            />
+          </div>
 
-          <div>
-            <div className="block xl:hidden">
-              <MobileNavPart />
+          <div className="h-full flex items-center">
+            <div className="block h-full xl:hidden">
+              <div className="flex justify-center items-center h-full">
+                <MobileNavPart />
+              </div>
             </div>
-            <div className="hidden xl:block">
-              <div className="flex flex-row items-center gap-16">
-                <Link href="/">
-                  <p
-                    className={`font-normal text-lg py-4  hover:text-ksantini-blue hover:underline link ${
-                      pathname === "/"
-                        ? "text-ksantini-blue"
-                        : "text-ksantini-white"
-                    }`}
-                  >
-                    Acceuil
-                  </p>
+            <div className="hidden h-full xl:block">
+              <div className="h-full flex flex-row items-center gap-16">
+                <Link
+                  href="/"
+                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                    pathname === "/"
+                      ? "text-ksentini-orange border-ksentini-orange"
+                      : "text-black border-transparent"
+                  }`}
+                >
+                  <p>Acceuil</p>
                 </Link>
-                <Link href="/activities">
-                  <p
-                    className={`font-normal text-lg py-4  hover:text-ksantini-blue hover:underline link ${
-                      pathname === "/activities"
-                        ? "text-ksantini-blue"
-                        : "text-ksantini-white"
-                    }`}
-                  >
-                    Nos Activités
-                  </p>
+                <Link
+                  href="/activities"
+                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                    pathname === "/activities"
+                      ? "border-ksentini-orange text-ksentini-orange"
+                      : "text-black border-transparent"
+                  }`}
+                >
+                  <p>Nos Activités</p>
                 </Link>
-                <Link href="/references">
-                  <p
-                    className={`font-normal text-lg py-4  hover:text-ksantini-blue hover:underline link ${
-                      pathname === "/references"
-                        ? "text-ksantini-blue"
-                        : "text-ksantini-white"
-                    }`}
-                  >
-                    Nos references
-                  </p>
+                <Link
+                  href="/references"
+                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                    pathname === "/references"
+                      ? "text-ksentini-orange border-ksentini-orange"
+                      : "text-black border-transparent"
+                  }`}
+                >
+                  <p>Nos références</p>
                 </Link>
-                <Link href="/galerie">
-                  <p
-                    className={`font-normal text-lg py-4  hover:text-ksantini-blue hover:underline link ${
-                      pathname === "/galerie"
-                        ? "text-ksantini-blue"
-                        : "text-ksantini-white"
-                    }`}
-                  >
-                    Galerie
-                  </p>
+                <Link
+                  href="/galerie"
+                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                    pathname === "/galerie"
+                      ? "text-ksentini-orange border-ksentini-orange"
+                      : "text-black border-transparent"
+                  }`}
+                >
+                  <p>Galerie</p>
                 </Link>
-                <Link href="/contact">
-                  <p
-                    className={`font-normal text-lg py-4  hover:text-ksantini-blue hover:underline link ${
-                      pathname === "/contact"
-                        ? "text-ksantini-blue"
-                        : "text-ksantini-white"
-                    }`}
-                  >
-                    Contact
-                  </p>
+                <Link
+                  href="/contact"
+                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                    pathname === "/contact"
+                      ? "text-ksentini-orange border-ksentini-orange"
+                      : "text-black border-transparent"
+                  }`}
+                >
+                  <p>Contact</p>
                 </Link>
               </div>
             </div>

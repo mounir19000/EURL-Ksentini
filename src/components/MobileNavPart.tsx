@@ -2,9 +2,12 @@
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import Logo from "../../public/logo.png";
 
 const MobileNavPart = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <>
@@ -20,16 +23,13 @@ const MobileNavPart = () => {
       {isOpen && (
         <div className="fixed top-0 left-0 right-0 h-auto z-20 bg-white">
           <div className="containers h-ksantini-navbar bg-white drop-shadow relative flex justify-between items-center">
-            {/* <div className="h-full flex items-center">
+            <div className="flex justify-center items-start ">
               <Image
-                src="/GimpLogo.svg"
+                src={Logo}
                 alt="Logo"
-                width={0}
-                height={0}
-                style={{ width: "100%", height: "auto" }}
+                style={{ height: "40px", width: "auto" }}
               />
-            </div> */}
-            <div className="text-black font-bold text-xl">Logo</div>
+            </div>
             <button
               className="h-full flex items-center"
               onClick={() => setIsOpen(false)}
@@ -51,7 +51,11 @@ const MobileNavPart = () => {
                 setIsOpen(false);
               }}
             >
-              <p className="font-medium text-2xl py-8 text-ksantini-black">
+              <p
+                className={`font-medium text-2xl py-8 ${
+                  pathname === "/" ? "text-ksentini-orange" : "text-black"
+                }`}
+              >
                 Acceuil
               </p>
             </Link>
@@ -61,7 +65,13 @@ const MobileNavPart = () => {
                 setIsOpen(false);
               }}
             >
-              <p className="font-medium text-2xl py-8 text-ksantini-black">
+              <p
+                className={`font-medium text-2xl py-8 ${
+                  pathname === "/activities"
+                    ? "text-ksentini-orange"
+                    : "text-black"
+                }`}
+              >
                 Nos Activités
               </p>
             </Link>
@@ -71,7 +81,13 @@ const MobileNavPart = () => {
                 setIsOpen(false);
               }}
             >
-              <p className="font-medium text-2xl py-8 text-ksantini-black">
+              <p
+                className={`font-medium text-2xl py-8 ${
+                  pathname === "/galerie"
+                    ? "text-ksentini-orange"
+                    : "text-black"
+                }`}
+              >
                 Galerie
               </p>
             </Link>
@@ -81,7 +97,13 @@ const MobileNavPart = () => {
                 setIsOpen(false);
               }}
             >
-              <p className="font-medium text-2xl py-8 text-ksantini-black">
+              <p
+                className={`font-medium text-2xl py-8 ${
+                  pathname === "/references"
+                    ? "text-ksentini-orange"
+                    : "text-black"
+                }`}
+              >
                 Nos references
               </p>
             </Link>
@@ -91,7 +113,13 @@ const MobileNavPart = () => {
                 setIsOpen(false);
               }}
             >
-              <p className="font-medium text-2xl py-8 text-ksantini-black">
+              <p
+                className={`font-medium text-2xl py-8 ${
+                  pathname === "/contact"
+                    ? "text-ksentini-orange"
+                    : "text-black"
+                }`}
+              >
                 Contact
               </p>
             </Link>

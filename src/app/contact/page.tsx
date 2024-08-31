@@ -35,8 +35,7 @@ const contact = () => {
           <div className="flex flex-col justify-center items-center">
             <h1 className="font-bold text-2xl mb-1">Adresse</h1>
             <p className="text-center w-2/3">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
-              rem.
+              Lotissement N° : 130/131 EL-KSEUR (W) BEJAIA
             </p>
           </div>
         </div>
@@ -82,7 +81,7 @@ const contact = () => {
 
           <iframe
             className="flex-1 border-4 border-orange-400 w-auto"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103040.19424607935!2d5.337425996008989!3d36.190734209264484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f3159c5fcafc4b%3A0xb063cfbbd3cadcd5!2zU8OpdGlm!5e0!3m2!1sfr!2sdz!4v1725046999118!5m2!1sfr!2sdz"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d267.95145167154203!2d4.855133851916838!3d36.68796537771731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sdz!4v1725139710872!5m2!1sfr!2sdz"
             width="600"
             height="600"
             loading="lazy"

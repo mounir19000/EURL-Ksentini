@@ -48,66 +48,66 @@ const footer = () => {
           <ul className="list-none pl-1">
             <li className="pb-2">
               <a
-                href="tel:"
+                href="tel:+21334133172"
                 className="flex flex-nowrap gap-2 justify-start items-center"
               >
                 <span>
                   <Image
-                    src="/PhoneIcon.png"
+                    src="/footerIcons/FaxIcon.png"
                     alt="Phone Icon"
                     width={20}
                     height={20}
                   />
                 </span>
-                <span>+213 55 66 88 77</span>
+                <span>+(213) 34 13 31 72 </span>
               </a>
             </li>
             <li className="pb-2">
               <a
-                href="tel:"
+                href="tel:+213557203073"
                 className="flex flex-nowrap gap-2 justify-start items-center"
               >
                 <span>
                   <Image
-                    src="/PhoneIcon.png"
+                    src="/footerIcons/PhoneIcon.png"
                     alt="Phone Icon"
                     width={20}
                     height={20}
                   />
                 </span>
-                <span>+213 55 66 88 77</span>
+                <span>+(213) 5 57 20 30 73</span>
               </a>
             </li>
             <li className="pb-2">
               <a
-                href="mailto:"
+                href="mailto:eurlksentini_ete@yahoo.fr "
                 className="flex flex-nowrap gap-2 justify-start items-center"
               >
                 <span>
                   <Image
-                    src="/MailIcon.png"
+                    src="/footerIcons/MailIcon.png"
                     alt="Mail Icon"
                     width={20}
                     height={20}
                   />
                 </span>
-                <span>blabla@gmail.com</span>
+                <span>eurlksentini_ete@yahoo.fr </span>
               </a>
             </li>
             <li className="pb-2">
               <a
-                href="mailto:"
+                href="mailto:eurlksentini2018@gmail.com"
                 className="flex flex-nowrap gap-2 justify-start items-center"
               >
                 <span>
                   <Image
-                    src="/MailIcon.png"
+                    src="/footerIcons/MailIcon.png"
                     alt="Phone Icon"
                     width={20}
                     height={20}
                   />
                 </span>
-                <span>blabla@gmail.com</span>
+                <span>eurlksentini2018@gmail.com</span>
               </a>
             </li>
           </ul>
@@ -115,7 +115,7 @@ const footer = () => {
 
         <div className="w-[100%] md:w-[50%] lg:w-[25%] p-1 text-white">
           <h1 className="font-bold text-xl pb-2 text-black">Address</h1>
-          <p className="pl-1">123 rue de la rue, Ville, Pays Code postal</p>
+          <p className="pl-1">Lotissement N° : 130/131 EL-KSEUR (W) BEJAIA</p>
         </div>
       </div>
     </div>

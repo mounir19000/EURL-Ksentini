@@ -15,7 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
-      if (offset > 15) {
+      if (offset > 5) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed h-ksantini-navbar top-0 left-0 right-0 z-50 transition-colors duration-200 ${
+      className={`fixed h-ksantini-navbar top-0 left-0 right-0 z-50 transition-colors ease-in-out duration-75 ${
         scrolled ? "bg-gray-900" : "bg-transparent"
       }`}
     >
@@ -49,7 +49,7 @@ const Navbar = () => {
                     className={`font-normal text-lg py-4  hover:text-ksantini-blue hover:underline link ${
                       pathname === "/"
                         ? "text-ksantini-blue"
-                        : "text-ksantini-gray-dark"
+                        : "text-ksantini-white"
                     }`}
                   >
                     Acceuil
@@ -60,21 +60,10 @@ const Navbar = () => {
                     className={`font-normal text-lg py-4  hover:text-ksantini-blue hover:underline link ${
                       pathname === "/activities"
                         ? "text-ksantini-blue"
-                        : "text-ksantini-gray-dark"
+                        : "text-ksantini-white"
                     }`}
                   >
                     Nos Activités
-                  </p>
-                </Link>
-                <Link href="/galerie">
-                  <p
-                    className={`font-normal text-lg py-4  hover:text-ksantini-blue hover:underline link ${
-                      pathname === "/galerie"
-                        ? "text-ksantini-blue"
-                        : "text-ksantini-gray-dark"
-                    }`}
-                  >
-                    Galerie
                   </p>
                 </Link>
                 <Link href="/references">
@@ -82,10 +71,21 @@ const Navbar = () => {
                     className={`font-normal text-lg py-4  hover:text-ksantini-blue hover:underline link ${
                       pathname === "/references"
                         ? "text-ksantini-blue"
-                        : "text-ksantini-gray-dark"
+                        : "text-ksantini-white"
                     }`}
                   >
                     Nos references
+                  </p>
+                </Link>
+                <Link href="/galerie">
+                  <p
+                    className={`font-normal text-lg py-4  hover:text-ksantini-blue hover:underline link ${
+                      pathname === "/galerie"
+                        ? "text-ksantini-blue"
+                        : "text-ksantini-white"
+                    }`}
+                  >
+                    Galerie
                   </p>
                 </Link>
                 <Link href="/contact">
@@ -93,7 +93,7 @@ const Navbar = () => {
                     className={`font-normal text-lg py-4  hover:text-ksantini-blue hover:underline link ${
                       pathname === "/contact"
                         ? "text-ksantini-blue"
-                        : "text-ksantini-gray-dark"
+                        : "text-ksantini-white"
                     }`}
                   >
                     Contact

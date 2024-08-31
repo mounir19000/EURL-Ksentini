@@ -19,13 +19,13 @@ const footer = () => {
               </Link>
             </li>
             <li className="pb-2">
-              <Link href="/gallery">
-                <p>Galerie</p>
+              <Link href="/references">
+                <p>Nos references</p>
               </Link>
             </li>
             <li className="pb-2">
-              <Link href="/references">
-                <p>Nos references</p>
+              <Link href="/galerie">
+                <p>Galerie</p>
               </Link>
             </li>
             <li className="pb-2">

@@ -32,7 +32,7 @@ const config: Config = {
         'ksentini-red': {
             DEFAULT: "#F80201",
         },
-    },
+      },
       height: {
         "ksentini-navbar": "105px",
         "ksentini-footer": "451px",

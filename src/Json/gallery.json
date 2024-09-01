@@ -1,0 +1,126 @@
+{
+    "galleryID": "gallery1",
+    "images": [
+      {
+        "largeURL": "/galery/1.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/1.JPG"
+      },
+      {
+        "largeURL": "/galery/2.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/2.JPG"
+      },
+      {
+        "largeURL": "/galery/3.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/3.JPG"
+      },
+      {
+        "largeURL": "/galery/4.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/4.JPG"
+      },
+      {
+        "largeURL": "/galery/5.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/5.JPG"
+      },
+      {
+        "largeURL": "/galery/6.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/6.JPG"
+      },
+      {
+        "largeURL": "/galery/7.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/7.JPG"
+      },
+      {
+        "largeURL": "/galery/8.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/8.JPG"
+      },
+      {
+        "largeURL": "/galery/9.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/9.JPG"
+      },
+      {
+        "largeURL": "/galery/10.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/10.JPG"
+      },
+      {
+        "largeURL": "/galery/11.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/11.JPG"
+      },
+      {
+        "largeURL": "/galery/12.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/12.JPG"
+      },
+      {
+        "largeURL": "/galery/13.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/13.JPG"
+      },
+      {
+        "largeURL": "/galery/14.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/14.JPG"
+      },
+      {
+        "largeURL": "/galery/15.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/15.JPG"
+      },
+      {
+        "largeURL": "/galery/16.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/16.JPG"
+      },
+      {
+        "largeURL": "/galery/17.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/17.JPG"
+      },
+      {
+        "largeURL": "/galery/18.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/18.JPG"
+      },
+      {
+        "largeURL": "/galery/19.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/19.JPG"
+      },
+      {
+        "largeURL": "/galery/20.JPG",
+        "width": 500,
+        "height": 500,
+        "thumbnailURL": "/galery/20.JPG"
+      }
+    ]
+  }
+  

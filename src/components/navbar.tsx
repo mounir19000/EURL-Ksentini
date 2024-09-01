@@ -18,11 +18,9 @@ const Navbar = () => {
       <div className={`containers h-ksantini-navbar`}>
         <div className="h-full w-full flex justify-between items-center">
           <div className="flex justify-center items-start ">
-            <Image
-              src={Logo}
-              alt="Logo"
-              style={{ height: "40px", width: "auto" }}
-            />
+            <Link href="/">
+              <Image src={Logo} alt="Logo" className="responsive-logo" />
+            </Link>
           </div>
 
           <div className="h-full flex items-center">

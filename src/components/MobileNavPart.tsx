@@ -24,11 +24,9 @@ const MobileNavPart = () => {
         <div className="fixed top-0 left-0 right-0 h-auto z-20 bg-white">
           <div className="containers h-ksantini-navbar bg-white drop-shadow relative flex justify-between items-center">
             <div className="flex justify-center items-start ">
-              <Image
-                src={Logo}
-                alt="Logo"
-                style={{ height: "40px", width: "auto" }}
-              />
+              <Link href="/">
+                <Image src={Logo} alt="Logo" className="responsive-logo" />
+              </Link>
             </div>
             <button
               className="h-full flex items-center"
@@ -52,7 +50,7 @@ const MobileNavPart = () => {
               }}
             >
               <p
-                className={`font-medium text-2xl py-8 ${
+                className={`font-normal sm:font-medium text-lg sm:text-2xl py-4 sm:py-8 ${
                   pathname === "/" ? "text-ksentini-orange" : "text-black"
                 }`}
               >
@@ -66,7 +64,7 @@ const MobileNavPart = () => {
               }}
             >
               <p
-                className={`font-medium text-2xl py-8 ${
+                className={`font-normal sm:font-medium text-lg sm:text-2xl py-4 sm:py-8 ${
                   pathname === "/activities"
                     ? "text-ksentini-orange"
                     : "text-black"
@@ -76,29 +74,13 @@ const MobileNavPart = () => {
               </p>
             </Link>
             <Link
-              href="/galerie"
-              onClick={() => {
-                setIsOpen(false);
-              }}
-            >
-              <p
-                className={`font-medium text-2xl py-8 ${
-                  pathname === "/galerie"
-                    ? "text-ksentini-orange"
-                    : "text-black"
-                }`}
-              >
-                Galerie
-              </p>
-            </Link>
-            <Link
               href="/references"
               onClick={() => {
                 setIsOpen(false);
               }}
             >
               <p
-                className={`font-medium text-2xl py-8 ${
+                className={`font-normal sm:font-medium text-lg sm:text-2xl py-4 sm:py-8 ${
                   pathname === "/references"
                     ? "text-ksentini-orange"
                     : "text-black"
@@ -108,13 +90,29 @@ const MobileNavPart = () => {
               </p>
             </Link>
             <Link
+              href="/galerie"
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
+              <p
+                className={`font-normal sm:font-medium text-lg sm:text-2xl py-4 sm:py-8 ${
+                  pathname === "/galerie"
+                    ? "text-ksentini-orange"
+                    : "text-black"
+                }`}
+              >
+                Galerie
+              </p>
+            </Link>
+            <Link
               href="/contact"
               onClick={() => {
                 setIsOpen(false);
               }}
             >
               <p
-                className={`font-medium text-2xl py-8 ${
+                className={`font-normal sm:font-medium text-lg sm:text-2xl py-4 sm:py-8 ${
                   pathname === "/contact"
                     ? "text-ksentini-orange"
                     : "text-black"
@@ -125,7 +123,7 @@ const MobileNavPart = () => {
             </Link>
           </div>
 
-          <p className="bg-white text-ksantini-gray text-center font-bold pt-6 pb-3">
+          <p className="bg-white text-ksantini-gray drop-shadow border-gray-400 text-center font-semibold sm:font-bold pt-3 sm:pt-6 pb-3">
             © 2024 Eurl Ksantini. All Rights Reserved.
           </p>
         </div>

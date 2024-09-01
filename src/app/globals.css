@@ -7,6 +7,23 @@
   margin: 0;
 }
 
+h1 , h2 , h3 , h4 , h5 , h6 , p {
+  overflow-wrap: normal;
+  overflow-wrap: break-word;
+  
+}
+
+.responsive-logo {
+  height: 40px;
+  width: auto;
+}
+
+@media (max-width: 350px) {
+  .responsive-logo {
+    height: 25px;
+  }
+}
+
 .containers {
   width: 100%;
   max-width: 1200px;
@@ -22,21 +39,39 @@
   }
 }
 
-.CoverImage {
+.CoverImage , .referencesCoverImage {
   width: 100%;
-  height: 40vh;
-  margin-top: 105px;
-  background-image: url('/Electric_pillar.jpg');
+  min-height: 30vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
+
+.CoverImage {
+  margin-top: 105px;
+  background-image: url('/Electric_pillar.jpg');
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+  }
+
+/* References Page for the cover images for each field */
+.referencesCoverImage {
+  background-image: url('/Electric_pillar.jpg');
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+}
+
+/* Contact Page for the map area */
 .contactCustomBg {
   background: linear-gradient(to right, #ffffff 70%, #fb923c 30%);
 }
 
+/* Gallery Page */
 .gallery {
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-gap: 30px;
@@ -48,6 +83,7 @@
   }
 }
 
+/* Home Page */
 .sliderHomePage {
   width: 100%;
   height: 70vh;

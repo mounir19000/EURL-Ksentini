@@ -1,0 +1,316 @@
+{
+  "1": [
+    {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "GRTE ALGER",
+      "width": 600,
+      "height": 600,
+      "client": "GRTE ALGER",
+      "date": "2011",
+      "description": "Génie Civil Pour Ligne 220 Kv Arba/Ale2, Ligne 60 Kv Arba/Rob Et Ale/Meftah"
+    },
+    {
+      "img": "/Logos/SARL_SOUMMAM.png",
+      "alt": "SARL SOUMMAM",
+      "width": 134,
+      "height": 168,
+      "client": "SARL SOUMMAM",
+      "date": "2011",
+      "description": "Travaux GC Travées Lignes du Poste Sidi Ali Boussidi 400KV"
+    },
+    {
+      "img": "/Logos/SARL_SOUMMAM.png",
+      "alt": "SARL SOUMMAM",
+      "width": 83,
+      "height": 112,
+      "client": "SARL SOUMMAM",
+      "date": "2011",
+      "description": "Travaux de génie civil de trois travées 220 KV, dans Ie poste Sidi Ali Boussidi 400 KV."
+    },
+    {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "GRTE ALGER",
+      "width": 852,
+      "height": 1200,
+      "client": "GRTE ALGER",
+      "date": "2019",
+      "description": "Travaux GC et Montage équipements Ligne 60 KV ARBAA-ALGER EST-MEFTAH/CM KHEMIS EL KHECHNA"
+    },
+    {
+      "img": "/Logos/GRTE_SETIF.png",
+      "alt": "GRTE SETIF",
+      "width": 112,
+      "height": 161,
+      "client": "GRTE SETIF",
+      "date": "2018",
+      "description": "Travaux de GC et de montage de la ligne 60 KV El-Eulma Chelghoum"
+    },
+    {
+      "img": "/Logos/ENERGO_INVEST.png",
+      "alt": "ENERGO-INVEST",
+      "width": 600,
+      "height": 600,
+      "client": "ENERGO-INVEST",
+      "date": "2009",
+      "description": "Travaux de génie civil sur la ligne 400 kV Hadjret Ennous ElAfroun"
+    },
+    {
+      "img": "/Logos/ENERGO_INVEST.png",
+      "alt": "ENERGO-INVEST",
+      "width": 2389,
+      "height": 488,
+      "client": "ENERGO-INVEST",
+      "date": "2009",
+      "description": "Travaux de GC et de Montage de la Ligne 220 KV Poste Ghazouet – Station de dessalement Souk Atlata"
+    }
+  ],
+  "2": [
+    {
+      "img": "/Logos/KAHRAKIB.png",
+      "alt": "KAHRAKIB",
+      "width": 600,
+      "height": 600,
+      "client": "KAHRAKIB",
+      "date": "2018",
+      "description": "Travaux de montage la ligne 400KV SIDI ALIBOUSSIDI - NAAMA"
+    },
+    {
+      "img": "/Logos/KAHRAKIB.png",
+      "alt": "KAHRAKIB",
+      "width": 134,
+      "height": 168,
+      "client": "KAHRAKIB",
+      "date": "2018",
+      "description": "Travaux de montage de la ligne 220KV SAIDA-TIARET"
+    },
+    {
+      "img": "/Logos/KAHRAKIB.png",
+      "alt": "KAHRAKIB",
+      "width": 83,
+      "height": 112,
+      "client": "KAHRAKIB",
+      "date": "2018",
+      "description": "Travaux de montage la ligne 220 KV LABREG - EL AMIRIA"
+    },
+    {
+      "img": "/Logos/KAHRAKIB.png",
+      "alt": "KAHRAKIB",
+      "width": 852,
+      "height": 1200,
+      "client": "KAHRAKIB",
+      "date": "2018",
+      "description": "Ligne 22O KV LABREG - EL AMIRIA"
+    },
+    {
+      "img": "/Logos/KAHRAKIB.png",
+      "alt": "KAHRAKIB",
+      "width": 112,
+      "height": 161,
+      "client": "KAHRAKIB",
+      "date": "2018",
+      "description": "Ligne 220 KV BEYADHAO2- LABREG"
+    },
+    {
+      "img": "/Logos/GRTE_ORAN.png",
+      "alt": "GRTE ORAN",
+      "width": 600,
+      "height": 600,
+      "client": "G.R.T.E - D.T.E / ORAN",
+      "date": "2013",
+      "description": "Travaux de Construction et de Montage des équipements de la ligne 220 KV Marsat Oued SLY"
+    },
+    {
+      "img": "/Logos/ENERGO-INVEST.png",
+      "alt": "ENERGO-INVEST",
+      "width": 2389,
+      "height": 488,
+      "client": "ENERGO-INVEST",
+      "date": "2011",
+      "description": "Ligne 400 kV Hadjerat Ennous - El Affroun 1"
+    },
+    {
+      "img": "/Logos/ENERGO-INVEST.png",
+      "alt": "ENERGO-INVEST",
+      "width": 2389,
+      "height": 488,
+      "client": "ENERGO-INVEST",
+      "date": "2011",
+      "description": "Ligne 60kV Oued Athmania-Oued Seguin"
+    },
+    {
+      "img": "/Logos/ENERGO-INVEST.png",
+      "alt": "ENERGO-INVEST",
+      "width": 2389,
+      "height": 488,
+      "client": "ENERGO-INVEST",
+      "date": "2011",
+      "description": "Ligne 60KV : Ain Smara - Constantine"
+    }
+  ],
+  "3": [
+    {
+      "img": "/Logos/EFACEC_ALGERIE.png",
+      "alt": "EFACEC ALGERIE",
+      "width": 600,
+      "height": 600,
+      "client": "EFACEC ALGERIE",
+      "date": "2021",
+      "description": "TRAVAUX DE MONTAGE, ESSAIS ET MISE EN SERVICE DES EQUIPEMENTS ELECTRIQUES ET DE CONTROLE COMMANDE DU POSTE 30/10 kV PST4, TINDOUF"
+    },
+    {
+      "img": "/Logos/CD-RL-DAM_RELIZANE.png",
+      "alt": "CD-RL/DAM RELIZANE",
+      "width": 134,
+      "height": 168,
+      "client": "CD-RL/DAM RELIZANE",
+      "date": "2020",
+      "description": "Fourniture des équipements électriques et des systèmes de protection et de contrôle commande; Démontage, Installation, montage, câblage, essais et mise en service de l’ensemble des équipements fournis"
+    },
+    {
+      "img": "/Logos/EURL_KHOUTIR_NACER_ELECTRICITE.png",
+      "alt": "EURL KHOUTIR NACER ELECTRICITE",
+      "width": 83,
+      "height": 112,
+      "client": "EURL KHOUTIR NACER ELECTRICITE",
+      "date": "2019",
+      "description": "Montage de portique et support métallique galvanisé pour L’extension d'un 3ème TR 60/30 KV au poste KHEMIS."
+    },
+    {
+      "img": "/Logos/EURL_KHOUTIR_NACER_ELECTRICITE.png",
+      "alt": "EURL KHOUTIR NACER ELECTRICITE",
+      "width": 852,
+      "height": 1200,
+      "client": "EURL KHOUTIR NACER ELECTRICITE",
+      "date": "2019",
+      "description": "Montage de portique et support métallique galvanisé pour L’extension d'un 3ème TR 60/30 KV au poste MEFTAH."
+    },
+    {
+      "img": "/Logos/Direction_de_la_Production_et_du_Transport_de_l_electricite_Region_Transport_de_Setif.png",
+      "alt": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "width": 112,
+      "height": 161,
+      "client": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "date": "2004",
+      "description": "Travaux d’aménagement du Poste 220 KV ElKseur"
+    },
+    {
+      "img": "/Logos/Direction_de_la_Production_et_du_Transport_de_l_electricite_Region_Transport_de_Setif.png",
+      "alt": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "width": 112,
+      "height": 161,
+      "client": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "date": "2004",
+      "description": "Installation Cabine Mobile de 220 KV à Sidi Aich"
+    },
+    {
+      "img": "/Logos/Direction_de_la_Production_et_du_Transport_de_l_electricite_Region_Transport_de_Setif.png",
+      "alt": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "width": 112,
+      "height": 161,
+      "client": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "date": "2004",
+      "description": "Travaux d’aménagement du Poste 60/30 KV El-Eulma"
+    },
+    {
+      "img": "/Logos/Direction_de_la_Production_et_du_Transport_de_l_electricite_Region_Transport_de_Setif.png",
+      "alt": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "width": 112,
+      "height": 161,
+      "client": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "date": "2004",
+      "description": "Travaux d’aménagement du Poste 220 KV Chekfa, Jijel"
+    }
+  ],
+  "4": [
+    {
+      "img": "/Logos/SONATRACH_SONELGAZ.png",
+      "alt": "SONATRACH - SONELGAZ",
+      "width": 600,
+      "height": 600,
+      "client": "SONATRACH - SONELGAZ",
+      "date": "2024",
+      "description": "Commissioning Et Tests De Mise En Service De 21 Postes Shelters 30kv « Soumis A L’arh »"
+    },
+    {
+      "img": "/Logos/SONATRACH.png",
+      "alt": "SWGFD-EPC4 SONATRACH - GCB",
+      "width": 134,
+      "height": 168,
+      "client": "SWGFD-EPC4 SONATRACH - GCB",
+      "date": "2023",
+      "description": "Commissioning Et Tests De Mise En Service Des Equipements « Soumis A L’arh » (Base De Vie Tinerkouk)"
+    },
+    {
+      "img": "/Logos/SONATRACH.png",
+      "alt": "SWGFD-EPC4 SONATRACH - GCB",
+      "width": 134,
+      "height": 168,
+      "client": "SWGFD-EPC4 SONATRACH - GCB",
+      "date": "2023",
+      "description": "Commissioning Et Tests De Mise En Service Des Equipements « Soumis A L’arh » (Base De Vie Tidjerane)"
+    },
+    {
+      "img": "/Logos/SONATRACH.png",
+      "alt": "SWGFD-EPC4 SONATRACH - GCB",
+      "width": 134,
+      "height": 168,
+      "client": "SWGFD-EPC4 SONATRACH - GCB",
+      "date": "2023",
+      "description": "Commissioning Et Tests De Mise En Service Des Equipements « Soumis A L’arh » (Base De Vie Hassi Bahamou)"
+    },
+    {
+      "img": "/Logos/SIEMENS.png",
+      "alt": "SIEMENS",
+      "width": 134,
+      "height": 168,
+      "client": "SIEMENS",
+      "date": "2016",
+      "description": "Essais & Mise en service. Poste 60/30 KV Oum El BOUAGHI"
+    },
+    {
+      "img": "/Logos/SIEMENS.png",
+      "alt": "SIEMENS",
+      "width": 134,
+      "height": 168,
+      "client": "SIEMENS",
+      "date": "2016",
+      "description": "Essais & Mise en service. Poste 60/30 KV BEN MHIDI"
+    },
+    {
+      "img": "/Logos/SIEMENS.png",
+      "alt": "SIEMENS",
+      "width": 134,
+      "height": 168,
+      "client": "SIEMENS",
+      "date": "2016",
+      "description": "Essais & Mise en service. Poste 60/30 KV CHECHAR"
+    },
+    {
+      "img": "/Logos/EIFFAGE_ENERGY.png",
+      "alt": "EIFFAGE ENERGY",
+      "width": 134,
+      "height": 168,
+      "client": "EIFFAGE ENERGY",
+      "date": "2016",
+      "description": "Essais & Mise en service. Poste 400 KV Salah Bey, SONELGAZ GRTE SETIF"
+    },
+    {
+      "img": "/Logos/EIFFAGE_ENERGY.png",
+      "alt": "EIFFAGE ENERGY",
+      "width": 134,
+      "height": 168,
+      "client": "EIFFAGE ENERGY",
+      "date": "2016",
+      "description": "Essais & Mise en service. Poste 60/30 KV Sétif Sud, SONELGAZ GRTE SETIF"
+    },
+    {
+      "img": "/Logos/EIFFAGE_ENERGY.png",
+      "alt": "EIFFAGE ENERGY",
+      "width": 134,
+      "height": 168,
+      "client": "EIFFAGE ENERGY",
+      "date": "2016",
+      "description": "Essais & Mise en service. Poste 220 KV NAAMA, SONELGAZ GRTE Oran"
+    }
+  ]   
+}

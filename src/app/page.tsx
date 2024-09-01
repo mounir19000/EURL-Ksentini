@@ -50,8 +50,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center py-24">
-        <h1 className="w-full text-center font-bold text-5xl pb-16">
+      <div className="flex flex-col justify-center items-center py-14 sm:py-24">
+        <h1 className="w-full text-center font-bold text-3xl md:text-5xl pb-12 sm:pb-16">
           Nos Activités Principales
         </h1>
         <OurActivities />

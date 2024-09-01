@@ -22,7 +22,7 @@ const MobileNavPart = () => {
       </button>
       {isOpen && (
         <div className="fixed top-0 left-0 right-0 h-auto z-20 bg-white">
-          <div className="containers h-ksantini-navbar bg-white drop-shadow relative flex justify-between items-center">
+          <div className="containers h-ksentini-navbar bg-white drop-shadow relative flex justify-between items-center">
             <div className="flex justify-center items-start ">
               <Link href="/">
                 <Image src={Logo} alt="Logo" className="responsive-logo" />
@@ -123,8 +123,8 @@ const MobileNavPart = () => {
             </Link>
           </div>
 
-          <p className="bg-white text-ksantini-gray drop-shadow border-gray-400 text-center font-semibold sm:font-bold pt-3 sm:pt-6 pb-3">
-            © 2024 Eurl Ksantini. All Rights Reserved.
+          <p className="bg-white text-gray-400 drop-shadow border-gray-400 text-center font-semibold sm:font-bold pt-3 sm:pt-6 pb-3">
+            © 2024 Eurl Ksentini. All Rights Reserved.
           </p>
         </div>
       )}

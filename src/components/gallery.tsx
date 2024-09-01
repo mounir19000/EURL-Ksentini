@@ -67,7 +67,7 @@ const Gallery = (props: GalleryProps) => {
                   loading="lazy"
                   width={500}
                   height={500}
-                  className="rounded transition-transform duration-300 ease-in-out transform hover:scale-110 w-full w-auto"
+                  className="bg-gray-200 rounded transition-transform duration-300 ease-in-out transform hover:scale-110"
                 />
               </div>
             </a>
@@ -77,7 +77,7 @@ const Gallery = (props: GalleryProps) => {
       {showLoadMore && (
         <button
           onClick={handleLoadMore}
-          className="font-semibold mt-4 px-8 py-3 bg-orange-400 hover:bg-orange-600 text-white text-lg rounded-lg"
+          className="font-semibold mt-4 md:mt-6 px-8 py-3 bg-orange-400 hover:bg-orange-600 text-white text-lg rounded-lg"
         >
           Afficher Plus
         </button>

@@ -33,7 +33,7 @@ const ReferencesCards: React.FC<ReferencesCardsProps> = ({ projects }) => {
               key={index}
               className="flex h-full items-start justify-start p-4"
             >
-              <div className="h-full flex items-start justify-center w-28 pt-2 min-w-24">
+              <div className="h-full flex items-start justify-center w-28 min-w-24">
                 <Image
                   src={project.img}
                   alt={project.alt}
@@ -42,7 +42,7 @@ const ReferencesCards: React.FC<ReferencesCardsProps> = ({ projects }) => {
                   style={{ height: "auto", width: "auto" }}
                 />
               </div>
-              <div className="h-full flex flex-col items-start justify-start pl-2">
+              <div className="h-full w-[80%] flex flex-col items-start justify-start pl-2">
                 <h1 className="w-full font-bold text-base mb-1">
                   {project.description}
                 </h1>

@@ -67,7 +67,7 @@ const Gallery = (props: GalleryProps) => {
                   loading="lazy"
                   width={500}
                   height={500}
-                  className="rounded transition-transform duration-300 ease-in-out transform hover:scale-110 w-full w-auto"
+                  className="bg-gray-200 rounded transition-transform duration-300 ease-in-out transform hover:scale-110"
                 />
               </div>
             </a>

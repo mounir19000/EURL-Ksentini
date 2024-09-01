@@ -9,12 +9,13 @@ const ContactForm = () => {
   const [message, setMessage] = useState("");
   const [isSent, setIsSent] = useState(false);
 
-  const sendMessage = (event) => {
+  const sendMessage = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // Prevent the default form submission
     setIsSent(true); // Set the isSent state to true
     setTimeout(() => {
       setIsSent(false); // Set the isSent state to false after 3 seconds
-      event.target.reset(); // Reset the form
+      const form = event.target as HTMLFormElement;
+      form.reset(); // Reset the form
       setEmail(""); // Reset the email state
       setName(""); // Reset the name state
       setPhone(""); // Reset the phone state
@@ -45,7 +46,8 @@ const ContactForm = () => {
         setIsSent(true); // Set the isSent state to true after successful submission
         setTimeout(() => {
           setIsSent(false); // Set the isSent state to false after 3 seconds
-          event.target.reset(); // Reset the form
+          const form = event.target as HTMLFormElement;
+          form.reset(); // Reset the form
           setEmail(""); // Reset the email state
           setName(""); // Reset the name state
           setPhone(""); // Reset the phone state

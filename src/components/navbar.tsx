@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Logo from "../../public/logo.png";
+import Logo from "/public/logo.png";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -13,9 +13,9 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed h-ksantini-navbar top-0 left-0 right-0 z-50 bg-white border-b-2 border-gray-400`}
+      className={`fixed h-ksentini-navbar top-0 left-0 right-0 z-50 bg-white border-b-2 border-gray-400`}
     >
-      <div className={`containers h-ksantini-navbar`}>
+      <div className={`containers h-ksentini-navbar`}>
         <div className="h-full w-full flex justify-between items-center">
           <div className="flex justify-center items-start ">
             <Link href="/">

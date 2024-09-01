@@ -121,7 +121,7 @@ const footer = () => {
         </div>
       </div>
       <p className="bg-white text-gray-400 text-center font-light py-1">
-        © 2024 Eurl Ksantini. All Rights Reserved.{" "}
+        © 2024 Eurl Ksentini. All Rights Reserved.{" "}
         <span>
           <Link
             href={
@@ -129,7 +129,7 @@ const footer = () => {
             }
             target="_blank"
           >
-            Developed by Mounir
+            Developed by Mounir Mostefai
           </Link>
         </span>
       </p>

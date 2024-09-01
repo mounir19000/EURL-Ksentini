@@ -55,12 +55,6 @@ const ContactForm = () => {
       .catch((error) => {
         console.error(error);
       });
-
-    // Access the input values from the variables
-    console.log("Name:", name);
-    console.log("Phone:", phone);
-    console.log("Email:", email);
-    console.log("Message:", message);
   };
 
   return (
@@ -107,7 +101,7 @@ const ContactForm = () => {
         {!isSent && (
           <button
             type="submit"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-md w-full"
+            className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 px-4 rounded-md w-full"
           >
             Envoyer
           </button>

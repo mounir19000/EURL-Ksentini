@@ -6,7 +6,7 @@ import Data from "@/Json/refrences.json";
 
 const References = () => {
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white mb-3">
       {/* First part of the references page */}
       <div className="CoverImage">
         <div className="h-full containers">

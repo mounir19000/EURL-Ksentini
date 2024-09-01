@@ -77,7 +77,7 @@ const Gallery = (props: GalleryProps) => {
       {showLoadMore && (
         <button
           onClick={handleLoadMore}
-          className="font-semibold mt-4 px-8 py-3 bg-orange-400 hover:bg-orange-600 text-white text-lg rounded-lg"
+          className="font-semibold mt-4 md:mt-6 px-8 py-3 bg-orange-400 hover:bg-orange-600 text-white text-lg rounded-lg"
         >
           Afficher Plus
         </button>

@@ -48,25 +48,30 @@ const Gallery = (props: GalleryProps) => {
     <>
       <div className="pswp-gallery w-full grid gallery" id={props.galleryID}>
         {props.images.slice(0, visibleImages).map((image, index) => (
-          <a
-            href={image.largeURL}
-            data-pswp-width={image.width}
-            data-pswp-height={image.height}
+          <div
             key={props.galleryID + "-" + index}
-            target="_blank"
-            rel="noreferrer"
-            className="hover:opacity-70"
+            className="overflow-hidden flex justify-center items-center"
           >
-            <div className="overflow-hidden flex justify-center items-center w-auto">
-              <Image
-                src={image.thumbnailURL}
-                alt=""
-                width={500}
-                height={500}
-                className="rounded transition-transform duration-300 ease-in-out transform hover:scale-110 w-full h-auto"
-              />
-            </div>
-          </a>
+            <a
+              href={image.largeURL}
+              data-pswp-width={image.width}
+              data-pswp-height={image.height}
+              target="_blank"
+              rel="noreferrer"
+              className="hover:opacity-70 h-full w-full"
+            >
+              <div className="overflow-hidden flex justify-center items-center w-auto">
+                <Image
+                  src={image.thumbnailURL}
+                  alt=""
+                  loading="lazy"
+                  width={500}
+                  height={500}
+                  className="rounded transition-transform duration-300 ease-in-out transform hover:scale-110 w-full w-auto"
+                />
+              </div>
+            </a>
+          </div>
         ))}
       </div>
       {showLoadMore && (

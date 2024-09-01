@@ -57,13 +57,13 @@ h1 , h2 , h3 , h4 , h5 , h6 , p {
 .CoverImage {
   margin-top: 105px;
   background-image: url('/Electric_pillar.jpg');
-  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
   }
 
 /* References Page for the cover images for each field */
 .referencesCoverImage {
   background-image: url('/Electric_pillar.jpg');
-  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+  clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);
 }
 
 /* Contact Page for the map area */
@@ -92,4 +92,57 @@ h1 , h2 , h3 , h4 , h5 , h6 , p {
 .sliderHomePageBg { 
   background-size: cover;
   background-position: center;
+}
+
+/* Loader style */
+/* components/FourDotsLoader.css */
+
+.loading-logo {
+  width: 70vw;
+  max-width: 700px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* Spacing between dots */
+}
+
+.dot {
+  width: 20px; /* Size of each dot */
+  height: 20px; /* Size of each dot */
+  background-color: #E06C01; /* Color of the dots */
+  border-radius: 50%;
+  animation: bounce 1.2s infinite ease-in-out;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.dot:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
 }

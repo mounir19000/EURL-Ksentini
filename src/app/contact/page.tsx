@@ -1,4 +1,7 @@
 import Image from "next/image";
+import Loction from "/public/footerIcons/LocationIcon.png";
+import Phone from "/public/footerIcons/PhoneIcon.png";
+import Mail from "/public/footerIcons/MailIcon.png";
 
 // Component imports
 import ContactForm from "@/components/contactForm";
@@ -11,7 +14,7 @@ const contact = () => {
         <div className="h-full containers">
           <div className="h-full flex items-center justify-center">
             <h1 className="font-extrabold text-3xl md:text-5xl text-white bg-gray-600 bg-opacity-50 p-6 w-auto  md:max-w-[50vw]">
-              Contactez Nous Plus D'informations
+              Contactez Nous Plus D&apos;informations
             </h1>
           </div>
         </div>
@@ -25,12 +28,7 @@ const contact = () => {
             href=""
             className="bg-orange-400 hover:bg-orange-800 rounded-[50%] p-2 mb-8"
           >
-            <Image
-              src="/LocationIcon.png"
-              alt="Location Icon"
-              width={35}
-              height={35}
-            />
+            <Image src={Loction} alt="Location Icon" width={35} height={35} />
           </a>
           <div className="flex flex-col justify-center items-center">
             <h1 className="font-bold text-2xl mb-1">Adresse</h1>
@@ -45,12 +43,7 @@ const contact = () => {
             href=""
             className="bg-orange-400 hover:bg-orange-800 rounded-[50%] p-2 mb-8"
           >
-            <Image
-              src="/PhoneIcon.png"
-              alt="Phone Icon"
-              width={35}
-              height={35}
-            />
+            <Image src={Phone} alt="Phone Icon" width={35} height={35} />
           </a>
           <div className="flex flex-col justify-center items-center">
             <h1 className="font-bold text-2xl mb-1">téléphone</h1>
@@ -63,7 +56,7 @@ const contact = () => {
             href=""
             className="bg-orange-400 hover:bg-orange-800 rounded-[50%] p-2 mb-8"
           >
-            <Image src="/MailIcon.png" alt="Mail Icon" width={35} height={35} />
+            <Image src={Mail} alt="Mail Icon" width={35} height={35} />
           </a>
           <div className="flex flex-col justify-center items-center">
             <h1 className="font-bold text-2xl mb-1">Email</h1>

@@ -15,7 +15,7 @@ const galery = () => {
               EURL-Ksantini en images
             </h1>
             <h1 className="font-semibold text-2xl md:text-3xl text-white md:max-w-[50vw]">
-              Notre galerie d'image de nos projet réalisés
+              Notre galerie d&apos;image de nos projet réalisés
             </h1>
           </div>
         </div>

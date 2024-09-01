@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Logo from "/public/logo.png";
 
 const MobileNavPart = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +24,13 @@ const MobileNavPart = () => {
           <div className="containers h-ksentini-navbar bg-white drop-shadow relative flex justify-between items-center">
             <div className="flex justify-center items-start ">
               <Link href="/">
-                <Image src={Logo} alt="Logo" className="responsive-logo" />
+                <Image
+                  src="/logo.png"
+                  alt="Logo"
+                  width={835}
+                  height={192}
+                  className="responsive-logo"
+                />
               </Link>
             </div>
             <button

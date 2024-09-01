@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../public/logoWhite.png";
 
 const footer = () => {
   return (
@@ -11,8 +10,10 @@ const footer = () => {
           <div className="w-[100%] pb-3 md:pb-0 md:pr-6 md:w-[50%] lg:w-[30%] flex items-start lg:items-center justify-center md:justify-start">
             <div className="flex justify-center items-start">
               <Image
-                src={Logo}
+                src="/logoWhite.png"
                 alt="Logo"
+                width={835}
+                height={192}
                 style={{ height: "auto", width: "full" }}
               />
             </div>

@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Logo from "/public/logo.png";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -19,7 +18,13 @@ const Navbar = () => {
         <div className="h-full w-full flex justify-between items-center">
           <div className="flex justify-center items-start ">
             <Link href="/">
-              <Image src={Logo} alt="Logo" className="responsive-logo" />
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                width={835}
+                height={192}
+                className="responsive-logo"
+              />
             </Link>
           </div>
 

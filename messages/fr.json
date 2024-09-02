@@ -1,0 +1,88 @@
+{
+  "Activities1": {
+    "activity1": {
+      "title": "Génie civil des postes électriques",
+      "bg": "/homePageSlider/1.JPG"
+    },
+    "activity2": {
+      "title": "Montage et Installation des lignes électriques",
+      "bg": "/homePageSlider/2.JPG"
+    },
+    "activity3": {
+      "title": "Montage et Installation des postes électriques",
+      "bg": "/homePageSlider/3.JPG"
+    },
+    "activity4": {
+      "title": "Commissioning et Mise en service des postes électriques",
+      "bg": "/homePageSlider/4.JPG"
+    }
+  },
+  "Home": {
+    "text1": "Génie civil des postes électriques",
+    "text2": "Montage et Installation des lignes électriques",
+    "text3": "Montage et Installation des postes électriques",
+    "text4": "Commissioning et Mise en service des postes électriques",
+    "title1Part1": "Qui somme ",
+    "title1Part2": "Nous",
+    "text": " est une entreprise unipersonnelle à responsabilité limitée. Elle active, en général, dans le domaine de l’énergie et notamment dans les secteurs suivants:",
+    "li1": "Génie civil des postes électriques HTB/HTA/BT.",
+    "li2": "Montage et Installation des lignes électriques aériennes et souterraines HTB/HTA/BT.",
+    "li3": "Montage et Installation des postes électriques HTB/HTA/BT.",
+    "li4": "Tests de commissioning et Mise en service des postes électriques HTB/HTA/BT.",
+    "button": "En savoir plus",
+    "title2": "Nos Activités Principales",
+    "activity1": "Etudes d’Ingénierie",
+    "activity2": "Conseil, Expertise et Formation",
+    "activity3": "Réalisation des lignes aériennes et souterraines HTB/HTA/BT",
+    "activity4": "L’éclairage public et déroulage des câbles OPGW",
+    "activity5": "Montage et Installation des postes électriques HTB/HTA/BT",
+    "activity6": "Fabrication des tableaux, armoires et coffrets électriques",
+    "activity7": "Electrification ferroviaire",
+    "activity8": "Contrôle, essais et mise en service des ouvrages électriques"
+  },
+  "Activities2": {
+    "activity1": {
+      "text": "Etudes d’Ingénierie",
+      "icon": "/activitiesIcons/1.png" 
+    },
+    "activity2": {
+      "text": "Conseil, Expertise et Formation",
+      "icon": "/activitiesIcons/2.png"
+    },
+    "activity3": {
+      "text": "Réalisation des lignes aériennes et souterraines HTB/HTA/BT",
+      "icon": "/activitiesIcons/3.png"
+    },
+    "activity4": {
+      "text": "L’éclairage public et déroulage des câbles OPGW",
+      "icon": "/activitiesIcons/4.png"
+    },
+    "activity5": {
+      "text": "Montage et Installation des postes électriques HTB/HTA/BT",
+      "icon": "/activitiesIcons/5.png"
+    },
+    "activity6": {
+      "text": "Fabrication des tableaux, armoires et coffrets électriques",
+      "icon": "/activitiesIcons/6.png"
+    },
+    "activity7": {
+      "text": "Electrification ferroviaire",
+      "icon": "/activitiesIcons/7.png"
+    },
+    "activity8": {
+      "text": "Contrôle, essais et mise en service des ouvrages électriques",
+      "icon": "/activitiesIcons/8.png"
+    }
+  },
+  "PagesTitles": {
+    "activities": "Nos Activités Principales",
+    "refrences1": "EURL-Ksentini sur papier",
+    "refrences2": "Génie civil des postes électriques des postes électriques",
+    "refrences3": "Montage et Installation des lignes électriques aériennes et souterraines",
+    "refrences4": "Montage et Installation des postes électriques",
+    "refrences5": "Tests de commissioning et Mise en service des postes électriques",
+    "contact": "Contactez Nous Plus D'informations",
+    "gallery1": "EURL-Ksentini en images",
+    "gallery2": "Notre galerie d'image de nos projet réalisés"
+  }
+}

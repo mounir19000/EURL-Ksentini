@@ -1,18 +1,19 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link } from "@/i18n/routing";
+import {usePathname} from '@/i18n/routing';
 
 // component imports
 import MobileNavPart from "./MobileNavPart";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const pathname = usePathname();
 
   return (
     <div
-      className={`fixed h-ksentini-navbar top-0 left-0 right-0 z-50 bg-white border-b-2 border-gray-400`}
+      className={`fixed h-ksentini-navbar top-0 left-0 right-0 z-30 bg-white border-b-2 border-gray-400`}
     >
       <div className={`containers h-ksentini-navbar`}>
         <div className="h-full w-full flex justify-between items-center">
@@ -35,10 +36,10 @@ const Navbar = () => {
               </div>
             </div>
             <div className="hidden h-full xl:block">
-              <div className="h-full flex flex-row items-center gap-16">
+              <div className="h-full flex flex-row items-center gap-14">
                 <Link
                   href="/"
-                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                  className={`h-full flex items-center font-bold text-base border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
                     pathname === "/"
                       ? "text-ksentini-orange border-ksentini-orange"
                       : "text-black border-transparent"
@@ -48,7 +49,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   href="/activities"
-                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                  className={`h-full flex items-center font-bold text-base border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
                     pathname === "/activities"
                       ? "border-ksentini-orange text-ksentini-orange"
                       : "text-black border-transparent"
@@ -58,7 +59,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   href="/references"
-                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                  className={`h-full flex items-center font-bold text-base border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
                     pathname === "/references"
                       ? "text-ksentini-orange border-ksentini-orange"
                       : "text-black border-transparent"
@@ -68,7 +69,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   href="/galerie"
-                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                  className={`h-full flex items-center font-bold text-base border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
                     pathname === "/galerie"
                       ? "text-ksentini-orange border-ksentini-orange"
                       : "text-black border-transparent"
@@ -78,7 +79,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   href="/contact"
-                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                  className={`h-full flex items-center font-bold text-base border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
                     pathname === "/contact"
                       ? "text-ksentini-orange border-ksentini-orange"
                       : "text-black border-transparent"
@@ -86,6 +87,7 @@ const Navbar = () => {
                 >
                   <p>Contact</p>
                 </Link>
+                <LanguageSwitcher />
               </div>
             </div>
           </div>

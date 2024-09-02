@@ -12,7 +12,16 @@ import "swiper/css/pagination";
 // import data
 import slides from "@/Json/slides.json";
 
-const homePageSlider = () => {
+interface Activity {
+  title: string;
+  bg: string;
+}
+
+interface HomePageSliderProps {
+  activities: Activity[];
+}
+
+const HomePageSlider: React.FC<HomePageSliderProps> = ({ activities }) => {
   return (
     <div className="pt-[105px]">
       <Swiper
@@ -20,6 +29,7 @@ const homePageSlider = () => {
         pagination={{
           clickable: true,
         }}
+        allowTouchMove={false}
         modules={[Pagination, Autoplay]}
         className="mySwiper"
         autoplay={{
@@ -27,26 +37,23 @@ const homePageSlider = () => {
           disableOnInteraction: false,
         }}
       >
-        {slides["activities"].map((slide, index) => {
-          return (
-            <SwiperSlide className="overflow-hidden" key={index}>
-              <div className="relative sliderHomePage">
-                <div
-                  className="absolute inset-0 animate-zoom sliderHomePageBg"
-                  style={{ backgroundImage: `url("${slide.bg}")` }}
-                ></div>
-                <div className="containers relative z-10 h-full flex items-center  ">
-                  <h1
-                    className={`text-3xl sm:text-5xl md:text-7xl font-bold text-white bg-gray-600 bg-opacity-60 p-6 w-auto`}
-                  >
-                    {slide.title}
-                  </h1>
-                </div>
+        {activities.map((slide, index) => (
+          <SwiperSlide className="overflow-hidden" key={index}>
+            <div className="relative sliderHomePage">
+              <div
+                className="absolute inset-0 animate-zoom sliderHomePageBg"
+                style={{ backgroundImage: `url(${slide.bg})` }}
+              ></div>
+              <div className="containers relative z-10 h-full flex items-center">
+                <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-white bg-gray-600 bg-opacity-60 p-6 w-auto">
+                  {slide.title}
+                </h1>
               </div>
-            </SwiperSlide>
-          );
-        })}
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
+
       <div className="py-6">
         <Swiper
           loop={true}
@@ -55,6 +62,7 @@ const homePageSlider = () => {
             delay: 2000,
             disableOnInteraction: false,
           }}
+          allowTouchMove={false}
           className="mySwiper"
           slidesPerView={6}
           centeredSlides={false}
@@ -93,4 +101,4 @@ const homePageSlider = () => {
   );
 };
 
-export default homePageSlider;
+export default HomePageSlider;

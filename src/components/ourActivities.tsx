@@ -1,13 +1,19 @@
 import Image from "next/image";
 
-// Data import
-import Data from "@/Json/activities.json";
+interface Activity {
+  text: string;
+  icon: string;
+}
 
-const ourActivities = () => {
-  return (  
+interface HomePageSliderProps {
+  activities: Activity[];
+}
+
+const ourActivities: React.FC<HomePageSliderProps> = ({ activities }) => {
+  return (
     <div className="containers flex flex-col justify-center items-center">
       <div className="flex flex-wrap justify-evenly">
-        {Data.map((activity, index) => (
+        {activities.map((activity, index) => (
           <div
             key={index}
             className="w-full md:w-[45%] lg:w-[25%] pr-0 md:pr-7 py-3 md:py-6 flex flex-col justify-start items-center gap-4"

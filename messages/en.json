@@ -1,0 +1,88 @@
+{
+  "Activities1": {
+    "activity1": {
+      "title": "Civil Engineering of Electrical Substations",
+      "bg": "/homePageSlider/1.JPG"
+    },
+    "activity2": {
+      "title": "Assembly and Installation of Electrical Lines",
+      "bg": "/homePageSlider/2.JPG"
+    },
+    "activity3": {
+      "title": "Assembly and Installation of Electrical Substations",
+      "bg": "/homePageSlider/3.JPG"
+    },
+    "activity4": {
+      "title": "Commissioning and Start-up of Electrical Substations",
+      "bg": "/homePageSlider/4.JPG"
+    }
+  },
+  "Home": {
+    "text1": "Civil Engineering of Electrical Substations",
+    "text2": "Assembly and Installation of Electrical Lines",
+    "text3": "Assembly and Installation of Electrical Substations",
+    "text4": "Commissioning and Start-up of Electrical Substations",
+    "title1Part1": "Who ",
+    "title1Part2": "We Are",
+    "text": " is a sole proprietorship limited liability company. It primarily operates in the energy sector, particularly in the following areas:",
+    "li1": "Civil Engineering of HTB/HTA/BT electrical substations.",
+    "li2": "Assembly and Installation of HTB/HTA/BT overhead and underground electrical lines.",
+    "li3": "Assembly and Installation of HTB/HTA/BT electrical substations.",
+    "li4": "Commissioning tests and Start-up of HTB/HTA/BT electrical substations.",
+    "button": "Learn More",
+    "title2": "Our Main Activities",
+    "activity1": "Engineering Studies",
+    "activity2": "Consulting, Expertise, and Training",
+    "activity3": "Realization of HTB/HTA/BT Overhead and Underground Lines",
+    "activity4": "Public Lighting and OPGW Cable Laying",
+    "activity5": "Assembly and Installation of HTB/HTA/BT Electrical Substations",
+    "activity6": "Manufacture of Panels, Cabinets, and Electrical Boxes",
+    "activity7": "Railway Electrification",
+    "activity8": "Control, Testing, and Commissioning of Electrical Works"
+  },
+  "Activities2": {
+    "activity1": {
+      "text": "Engineering Studies",
+      "icon": "/activitiesIcons/1.png"
+    },
+    "activity2": {
+      "text": "Consulting, Expertise, and Training",
+      "icon": "/activitiesIcons/2.png"
+    },
+    "activity3": {
+      "text": "Realization of HTB/HTA/BT Overhead and Underground Lines",
+      "icon": "/activitiesIcons/3.png"
+    },
+    "activity4": {
+      "text": "Public Lighting and OPGW Cable Laying",
+      "icon": "/activitiesIcons/4.png"
+    },
+    "activity5": {
+      "text": "Assembly and Installation of HTB/HTA/BT Electrical Substations",
+      "icon": "/activitiesIcons/5.png"
+    },
+    "activity6": {
+      "text": "Manufacture of Panels, Cabinets, and Electrical Boxes",
+      "icon": "/activitiesIcons/6.png"
+    },
+    "activity7": {
+      "text": "Railway Electrification",
+      "icon": "/activitiesIcons/7.png"
+    },
+    "activity8": {
+      "text": "Control, Testing, and Commissioning of Electrical Works",
+      "icon": "/activitiesIcons/8.png"
+    }
+  },
+  "PagesTitles": {
+    "activities": "Our Main Activities",
+    "refrences1": "EURL-Ksentini on Paper",
+    "refrences2": "Civil Engineering of Electrical Substations",
+    "refrences3": "Assembly and Installation of Overhead and Underground Electrical Lines",
+    "refrences4": "Assembly and Installation of Electrical Substations",
+    "refrences5": "Commissioning Tests and Start-up of Electrical Substations",
+    "contact": "Contact Us for More Information",
+    "gallery1": "EURL-Ksentini in Pictures",
+    "gallery2": "Our Project Gallery"
+  }
+}

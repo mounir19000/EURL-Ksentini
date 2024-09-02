@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link } from "@/i18n/routing";
+import { usePathname } from "@/i18n/routing";
 
 const MobileNavPart = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import axios from "axios";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -9,18 +8,8 @@ const ContactForm = () => {
   const [message, setMessage] = useState("");
   const [isSent, setIsSent] = useState(false);
 
-  const sendMessage = (event: React.FormEvent<HTMLFormElement>) => {
+  const sendMessage = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // Prevent the default form submission
-    setIsSent(true); // Set the isSent state to true
-    setTimeout(() => {
-      setIsSent(false); // Set the isSent state to false after 3 seconds
-      const form = event.target as HTMLFormElement;
-      form.reset(); // Reset the form
-      setEmail(""); // Reset the email state
-      setName(""); // Reset the name state
-      setPhone(""); // Reset the phone state
-      setMessage(""); // Reset the message state
-    }, 3000);
 
     // Save the form data in a JSON object
     const formData = JSON.stringify({
@@ -29,34 +18,35 @@ const ContactForm = () => {
       mail: email.toString(),
       message: message.toString(),
     });
-    console.log(formData);
 
-    axios
-      .post(
-        "https://eol3ha9egi44c6b.m.pipedream.net",
-        JSON.stringify(formData),
+    try {
+      // Dynamically import Axios only when needed
+      const axios = await import("axios");
+
+      const response = await axios.default.post(
+        "https://eol3ha9egi44c6b.m.pipedream.net", // Your API endpoint
+        formData,
         {
           headers: {
-            "Content-Type": "application/json", // Make sure the content type is set to JSON
+            "Content-Type": "application/json", // Default to JSON
           },
         }
-      )
-      .then((response) => {
-        console.log(response.data);
-        setIsSent(true); // Set the isSent state to true after successful submission
-        setTimeout(() => {
-          setIsSent(false); // Set the isSent state to false after 3 seconds
-          const form = event.target as HTMLFormElement;
-          form.reset(); // Reset the form
-          setEmail(""); // Reset the email state
-          setName(""); // Reset the name state
-          setPhone(""); // Reset the phone state
-          setMessage(""); // Reset the message state
-        }, 3000);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+      );
+      console.log(response.data);
+      setIsSent(true); // Set the isSent state to true after successful submission
+
+      setTimeout(() => {
+        setIsSent(false); // Set the isSent state to false after 3 seconds
+        const form = event.target as HTMLFormElement;
+        form.reset(); // Reset the form
+        setName(""); // Reset the name state
+        setPhone(""); // Reset the phone state
+        setEmail(""); // Reset the email state
+        setMessage(""); // Reset the message state
+      }, 3000);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (

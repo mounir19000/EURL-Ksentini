@@ -56,7 +56,9 @@ const homePageSlider = () => {
             disableOnInteraction: false,
           }}
           className="mySwiper"
-          slidesPerView={1}
+          slidesPerView={6}
+          centeredSlides={false}
+          spaceBetween={30}
           breakpoints={{
             "@0.00": {
               slidesPerView: 1,
@@ -68,16 +70,13 @@ const homePageSlider = () => {
               slidesPerView: 5,
             },
             "@1.00": {
-              slidesPerView: 7,
-            },
-            "@1.50": {
               slidesPerView: 6,
             },
           }}
         >
           {slides["logos"].map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="flex justify-center items-center h-auto w-full">
+              <div className="flex justify-center items-center h-auto">
                 <Image
                   src={slide.img}
                   alt={slide.alt}

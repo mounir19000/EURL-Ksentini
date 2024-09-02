@@ -38,10 +38,8 @@ const Gallery = (props: GalleryProps) => {
   }, [props.galleryID]);
 
   const handleLoadMore = () => {
-    setVisibleImages((prevVisibleImages) => prevVisibleImages + 6);
-    if (visibleImages >= props.images.length - 6) {
-      setShowLoadMore(false);
-    }
+    setVisibleImages(props.images.length); // Show all images
+    setShowLoadMore(false); // Hide the "Show More" button
   };
 
   return (

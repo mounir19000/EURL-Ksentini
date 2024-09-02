@@ -14,6 +14,7 @@ interface GalleryProps {
     height: number;
     thumbnailURL: string;
   }[];
+  button: string;
 }
 
 const Gallery = (props: GalleryProps) => {
@@ -77,7 +78,7 @@ const Gallery = (props: GalleryProps) => {
           onClick={handleLoadMore}
           className="font-semibold mt-4 md:mt-6 px-8 py-3 bg-orange-400 hover:bg-orange-600 text-white text-lg rounded-lg"
         >
-          Afficher Plus
+          {props.button}
         </button>
       )}
     </>

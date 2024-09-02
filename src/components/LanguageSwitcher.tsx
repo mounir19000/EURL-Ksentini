@@ -1,7 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { usePathname } from "@/i18n/routing";
+import { Link } from "@/i18n/routing";
 
 const LanguageSwitcher = () => {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null); // Reference for the dropdown menu
 
@@ -53,19 +56,17 @@ const LanguageSwitcher = () => {
             onClick={() => handleLanguageChange("English")}
             className="px-4 py-2 cursor-pointer hover:bg-gray-100"
           >
-            English
-          </div>
-          <div
-            onClick={() => handleLanguageChange("Arabic")}
-            className="px-4 py-2 cursor-pointer hover:bg-gray-100"
-          >
-            Arabic
+            <Link href={pathname} locale="en">
+              English
+            </Link>
           </div>
           <div
             onClick={() => handleLanguageChange("French")}
             className="px-4 py-2 cursor-pointer hover:bg-gray-100"
           >
-            French
+            <Link href={pathname} locale="fr">
+              French
+            </Link>
           </div>
         </div>
       )}

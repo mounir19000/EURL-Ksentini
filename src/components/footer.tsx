@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-const footer = () => {
+const Footer = () => {
+  const t = useTranslations("NavBarAndFooter");
   return (
     <>
       <div className="bg-ksentini-orange">
@@ -20,33 +22,33 @@ const footer = () => {
           </div>
 
           <div className="w-[100%] md:w-[50%] lg:w-[20%] p-1 text-white">
-            <h1 className="font-bold text-xl pb-2 text-black">Lien rapide</h1>
+            <h1 className="font-bold text-xl pb-2 text-black">{t("title1")}</h1>
             <ul className="list-none pl-1">
               <li className="pb-2">
                 <Link href="/activities">
-                  <p>Nos Activités</p>
+                  <p>{t("activities")}</p>
                 </Link>
               </li>
               <li className="pb-2">
                 <Link href="/references">
-                  <p>Nos references</p>
+                  <p>{t("references")}</p>
                 </Link>
               </li>
               <li className="pb-2">
                 <Link href="/galerie">
-                  <p>Galerie</p>
+                  <p>{t("gallery")}</p>
                 </Link>
               </li>
               <li className="pb-2">
                 <Link href="/contact">
-                  <p>Contact</p>
+                  <p>{t("contact")}</p>
                 </Link>
               </li>
             </ul>
           </div>
 
           <div className="w-[100%] md:w-[50%] lg:w-[25%] p-1 text-white">
-            <h1 className="font-bold text-xl pb-2 text-black">Contact</h1>
+            <h1 className="font-bold text-xl pb-2 text-black">{t("title2")}</h1>
             <ul className="list-none pl-1">
               <li className="pb-2">
                 <a
@@ -116,7 +118,7 @@ const footer = () => {
           </div>
 
           <div className="w-[100%] md:w-[50%] lg:w-[25%] p-1 text-white">
-            <h1 className="font-bold text-xl pb-2 text-black">Address</h1>
+            <h1 className="font-bold text-xl pb-2 text-black">{t("title3")}</h1>
             <p className="pl-1">Lotissement N° : 130/131 EL-KSEUR (W) BEJAIA</p>
           </div>
         </div>
@@ -138,4 +140,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;

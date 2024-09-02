@@ -81,8 +81,31 @@
     "refrences3": "Montage et Installation des lignes électriques aériennes et souterraines",
     "refrences4": "Montage et Installation des postes électriques",
     "refrences5": "Tests de commissioning et Mise en service des postes électriques",
-    "contact": "Contactez Nous Plus D'informations",
     "gallery1": "EURL-Ksentini en images",
-    "gallery2": "Notre galerie d'image de nos projet réalisés"
+    "gallery2": "Notre galerie d'image de nos projet réalisés",
+    "button": "Afficher plus"
+  },
+    "Contact": {
+      "contact": "Contactez Nous Plus D'informations",
+      "title1": "Addresse",
+      "title2": "Téléphone",
+      "title3": "Email",
+      "title4": "Envoyer nous un Message",
+      "placeholder1": "Votre Nom",
+      "placeholder2": "Votre Téléphone",
+      "placeholder3": "Votre Email",
+      "placeholder4": "Votre Message",
+      "button": "Envoyer",
+      "button2": "Message Envoyé"
+    },
+  "NavBarAndFooter": {
+    "home": "Accueil",
+    "activities": "Activités",
+    "references": "Références",
+    "gallery": "Galerie",
+    "contact": "Contact",
+    "title1": "Liens rapides",
+    "title2": "Contact",
+    "title3": "Adresse"
   }
 }

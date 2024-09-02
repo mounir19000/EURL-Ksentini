@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+
+// images
 import Loction from "/public/footerIcons/LocationIcon.png";
 import Phone from "/public/footerIcons/PhoneIcon.png";
 import Mail from "/public/footerIcons/MailIcon.png";
@@ -6,7 +9,9 @@ import Mail from "/public/footerIcons/MailIcon.png";
 // Component imports
 import ContactForm from "@/components/contactForm";
 
-const contact = () => {
+const Contact = () => {
+  const t = useTranslations("Contact");
+
   return (
     <div className="w-full bg-slate-200">
       {/* First part of the contact page */}
@@ -14,7 +19,7 @@ const contact = () => {
         <div className="h-full containers">
           <div className="h-full flex items-center justify-center">
             <h1 className="font-extrabold text-3xl md:text-5xl text-white bg-gray-600 bg-opacity-50 p-6 w-auto  md:max-w-[50vw]">
-              Contactez Nous Plus D&apos;informations
+              {t("contact")}
             </h1>
           </div>
         </div>
@@ -31,7 +36,7 @@ const contact = () => {
             <Image src={Loction} alt="Location Icon" width={35} height={35} />
           </a>
           <div className="flex flex-col justify-center items-center">
-            <h1 className="font-bold text-2xl mb-1">Adresse</h1>
+            <h1 className="font-bold text-2xl mb-1">{t("title1")}</h1>
             <p className="text-center w-2/3">
               Lotissement N° : 130/131 EL-KSEUR (W) BEJAIA
             </p>
@@ -46,7 +51,7 @@ const contact = () => {
             <Image src={Phone} alt="Phone Icon" width={35} height={35} />
           </a>
           <div className="flex flex-col justify-center items-center">
-            <h1 className="font-bold text-2xl mb-1">téléphone</h1>
+            <h1 className="font-bold text-2xl mb-1">{t("title2")}</h1>
             <p className="text-center">+213 55 66 88 77</p>
           </div>
         </div>
@@ -59,7 +64,7 @@ const contact = () => {
             <Image src={Mail} alt="Mail Icon" width={35} height={35} />
           </a>
           <div className="flex flex-col justify-center items-center">
-            <h1 className="font-bold text-2xl mb-1">Email</h1>
+            <h1 className="font-bold text-2xl mb-1">{t("title3")}</h1>
             <p className="text-center">blabla@gmail.com</p>
           </div>
         </div>
@@ -69,7 +74,15 @@ const contact = () => {
       <div className="contactCustomBg py-14">
         <div className="containers flex flex-col md:flex-row justify-between gap-10">
           <div className="flex-1">
-            <ContactForm />
+            <ContactForm
+              title={t("title4")}
+              placeholder1={t("placeholder1")}
+              placeholder2={t("placeholder2")}
+              placeholder3={t("placeholder3")}
+              placeholder4={t("placeholder4")}
+              button={t("button")}
+              button2={t("button2")}
+            />
           </div>
 
           <iframe
@@ -86,4 +99,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;

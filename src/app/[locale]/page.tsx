@@ -2,7 +2,6 @@ import { useTranslations, useMessages } from "next-intl";
 import { Link } from "@/i18n/routing";
 import OurActivities from "@/components/ourActivities";
 import HomePageSlider from "@/components/homePageSlider";
-import { act } from "react";
 
 export default function Home() {
   const t = useTranslations("Home");

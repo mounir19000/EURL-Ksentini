@@ -1,7 +1,17 @@
 "use client";
 import { useState } from "react";
 
-const ContactForm = () => {
+interface ContactProps {
+  title: string;
+  placeholder1: string;
+  placeholder2: string;
+  placeholder3: string;
+  placeholder4: string;
+  button: string;
+  button2: string;
+}
+
+const ContactForm = (props: ContactProps) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
@@ -57,11 +67,11 @@ const ContactForm = () => {
         className="h-full flex flex-col justify-center items-start"
       >
         <h1 className="w-full font-bold text-4xl text-center mb-14">
-          Envoyer nous un Message
+          {props.title}
         </h1>
         <input
           type="text"
-          placeholder="Votre Nom"
+          placeholder={props.placeholder1}
           className="border border-gray-300 rounded-md px-4 py-3 mb-4 w-full"
           required
           value={name}
@@ -69,7 +79,7 @@ const ContactForm = () => {
         />
         <input
           type="tel"
-          placeholder="Votre Téléphone"
+          placeholder={props.placeholder2}
           className="border border-gray-300 rounded-md px-4 py-3 mb-4 w-full"
           required
           value={phone}
@@ -77,14 +87,14 @@ const ContactForm = () => {
         />
         <input
           type="email"
-          placeholder="Votre Email"
+          placeholder={props.placeholder3}
           className="border border-gray-300 rounded-md px-4 py-3 mb-4 w-full"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <textarea
-          placeholder="Votre Message"
+          placeholder={props.placeholder4}
           className="border border-gray-300 rounded-md px-4 py-3 mb-4 w-full"
           required
           value={message}
@@ -95,12 +105,12 @@ const ContactForm = () => {
             type="submit"
             className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 px-4 rounded-md w-full"
           >
-            Envoyer
+            {props.button}
           </button>
         )}
         {isSent && (
           <p className="bg-green-500 text-center text-white font-bold py-3 px-4 rounded-md w-full">
-            Message envoyé avec succès
+            {props.button2}
           </p>
         )}
       </form>

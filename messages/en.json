@@ -74,6 +74,19 @@
       "icon": "/activitiesIcons/8.png"
     }
   },
+  "Contact": {
+    "contact": "Contact Us for More Information",
+    "title1": "Address",
+    "title2": "Phone",
+    "title3": "Email",
+    "title4": "Send Us a Message",
+    "placeholder1": "Your Name",
+    "placeholder2": "Your Phone",
+    "placeholder3": "Your Email",
+    "placeholder4": "Your Message",
+    "button": "Send",
+    "button2": "Message Sent"
+  },
   "PagesTitles": {
     "activities": "Our Main Activities",
     "refrences1": "EURL-Ksentini on Paper",
@@ -83,6 +96,17 @@
     "refrences5": "Commissioning Tests and Start-up of Electrical Substations",
     "contact": "Contact Us for More Information",
     "gallery1": "EURL-Ksentini in Pictures",
-    "gallery2": "Our Project Gallery"
+    "gallery2": "Our Project Gallery",
+    "button": "Show More"
+  },
+  "NavBarAndFooter": {
+    "home": "Home",
+    "activities": "Activities",
+    "references": "References",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "title1": "fast links",
+    "title2": "Contact",
+    "title3": "Address"
   }
 }

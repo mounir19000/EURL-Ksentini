@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
-import {usePathname} from '@/i18n/routing';
+import { usePathname } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 // component imports
 import MobileNavPart from "./MobileNavPart";
@@ -10,6 +11,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const t = useTranslations("NavBarAndFooter");
 
   return (
     <div
@@ -45,7 +47,7 @@ const Navbar = () => {
                       : "text-black border-transparent"
                   }`}
                 >
-                  <p>Acceuil</p>
+                  <p>{t("home")}</p>
                 </Link>
                 <Link
                   href="/activities"
@@ -55,7 +57,7 @@ const Navbar = () => {
                       : "text-black border-transparent"
                   }`}
                 >
-                  <p>Nos Activités</p>
+                  <p>{t("activities")}</p>
                 </Link>
                 <Link
                   href="/references"
@@ -65,7 +67,7 @@ const Navbar = () => {
                       : "text-black border-transparent"
                   }`}
                 >
-                  <p>Nos références</p>
+                  <p>{t("references")}</p>
                 </Link>
                 <Link
                   href="/galerie"
@@ -75,7 +77,7 @@ const Navbar = () => {
                       : "text-black border-transparent"
                   }`}
                 >
-                  <p>Galerie</p>
+                  <p>{t("gallery")}</p>
                 </Link>
                 <Link
                   href="/contact"
@@ -85,7 +87,7 @@ const Navbar = () => {
                       : "text-black border-transparent"
                   }`}
                 >
-                  <p>Contact</p>
+                  <p>{t("contact")}</p>
                 </Link>
                 <LanguageSwitcher />
               </div>

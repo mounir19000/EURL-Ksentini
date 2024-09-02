@@ -3,10 +3,12 @@ import Image from "next/image";
 import { useState } from "react";
 import { Link } from "@/i18n/routing";
 import { usePathname } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 const MobileNavPart = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const t = useTranslations("NavBarAndFooter");
 
   return (
     <>
@@ -59,7 +61,7 @@ const MobileNavPart = () => {
                   pathname === "/" ? "text-ksentini-orange" : "text-black"
                 }`}
               >
-                Acceuil
+                {t("home")}
               </p>
             </Link>
             <Link
@@ -75,7 +77,7 @@ const MobileNavPart = () => {
                     : "text-black"
                 }`}
               >
-                Nos Activités
+                {t("activities")}
               </p>
             </Link>
             <Link
@@ -91,7 +93,7 @@ const MobileNavPart = () => {
                     : "text-black"
                 }`}
               >
-                Nos references
+                {t("references")}
               </p>
             </Link>
             <Link
@@ -107,7 +109,7 @@ const MobileNavPart = () => {
                     : "text-black"
                 }`}
               >
-                Galerie
+                {t("gallery")}
               </p>
             </Link>
             <Link
@@ -123,7 +125,7 @@ const MobileNavPart = () => {
                     : "text-black"
                 }`}
               >
-                Contact
+                {t("contact")}
               </p>
             </Link>
           </div>

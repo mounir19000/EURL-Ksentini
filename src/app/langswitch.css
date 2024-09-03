@@ -3,7 +3,7 @@
     position: relative;
     display: inline-block;
   }
-  
+
   .custom-select {
     appearance: none; /* Remove default arrow */
     background: white;
@@ -11,16 +11,25 @@
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
   }
   
-  .custom-select::after {
-    content: '▼'; /* Custom arrow */
-    font-size: 0.8rem;
-    position: absolute;
-    top: 50%;
-    right: 0.75rem;
-    transform: translateY(-50%);
-    pointer-events: none; /* Ensures that the arrow doesn't interfere with clicks */
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    outline: none;
+    /* border: 1px solid #ddd;
+    border-radius: 20px; */
+    padding: 3px 5px;
+  }
+  
+  select::-ms-expand {
+    display: none;
   }
   
   .custom-select:focus {

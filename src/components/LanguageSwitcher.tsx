@@ -1,5 +1,5 @@
 "use client";
-import { Inter, Noto_Color_Emoji } from "next/font/google";
+import { Noto_Color_Emoji } from "next/font/google";
 import { useState } from "react";
 import { usePathname, useRouter } from "@/i18n/routing";
 import { useLocale } from "next-intl";
@@ -32,7 +32,7 @@ const LanguageSwitcher = () => {
       <select
         value={selectedLanguage}
         onChange={handleLanguageChange}
-        className={`customSelect md:pt-1 text-center text-lg ${notoColorEmoji.className}`}
+        className={`customSelect md:mt-1 text-center text-xl md:text-lg ${notoColorEmoji.className}`}
       >
         <option value="en" className={`${notoColorEmoji.className}`}>
           🇺🇸

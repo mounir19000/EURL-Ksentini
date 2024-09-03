@@ -25,7 +25,7 @@ const Activities = () => {
       </div>
 
       {/* Second part of the activities page */}
-      <div className="pb-14 pt-8">
+      <div className="pb-6 pt-6">
         <OurActivities activities={activities2} />
       </div>
     </div>

@@ -1,0 +1,30 @@
+/* styles/LanguageSwitcher.module.css */
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .custom-select {
+    appearance: none; /* Remove default arrow */
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .custom-select::after {
+    content: '▼'; /* Custom arrow */
+    font-size: 0.8rem;
+    position: absolute;
+    top: 50%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensures that the arrow doesn't interfere with clicks */
+  }
+  
+  .custom-select:focus {
+    outline: none;
+    border-color: #f59e0b; /* Highlight border color on focus */
+  }
+  

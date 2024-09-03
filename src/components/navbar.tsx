@@ -33,62 +33,65 @@ const Navbar = () => {
 
           <div className="h-full flex items-center">
             <div className="block h-full xl:hidden">
-              <div className="flex justify-center items-center h-full">
+              <div className="flex justify-center gap-x-1 items-center h-full">
+                <LanguageSwitcher />
                 <MobileNavPart />
               </div>
             </div>
             <div className="hidden h-full xl:block">
-              <div className="h-full flex flex-row items-center gap-12">
-                <Link
-                  href="/"
-                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
-                    pathname === "/"
-                      ? "text-ksentini-orange border-ksentini-orange"
-                      : "text-black border-transparent"
-                  }`}
-                >
-                  <p>{t("home")}</p>
-                </Link>
-                <Link
-                  href="/activities"
-                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
-                    pathname === "/activities"
-                      ? "border-ksentini-orange text-ksentini-orange"
-                      : "text-black border-transparent"
-                  }`}
-                >
-                  <p>{t("activities")}</p>
-                </Link>
-                <Link
-                  href="/references"
-                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
-                    pathname === "/references"
-                      ? "text-ksentini-orange border-ksentini-orange"
-                      : "text-black border-transparent"
-                  }`}
-                >
-                  <p>{t("references")}</p>
-                </Link>
-                <Link
-                  href="/galerie"
-                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
-                    pathname === "/galerie"
-                      ? "text-ksentini-orange border-ksentini-orange"
-                      : "text-black border-transparent"
-                  }`}
-                >
-                  <p>{t("gallery")}</p>
-                </Link>
-                <Link
-                  href="/contact"
-                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
-                    pathname === "/contact"
-                      ? "text-ksentini-orange border-ksentini-orange"
-                      : "text-black border-transparent"
-                  }`}
-                >
-                  <p>{t("contact")}</p>
-                </Link>
+              <div className="h-full flex flex-row items-center gap-6">
+                <div className="h-full flex flex-row items-center gap-12">
+                  <Link
+                    href="/"
+                    className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                      pathname === "/"
+                        ? "text-ksentini-orange border-ksentini-orange"
+                        : "text-black border-transparent"
+                    }`}
+                  >
+                    <p>{t("home")}</p>
+                  </Link>
+                  <Link
+                    href="/activities"
+                    className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                      pathname === "/activities"
+                        ? "border-ksentini-orange text-ksentini-orange"
+                        : "text-black border-transparent"
+                    }`}
+                  >
+                    <p>{t("activities")}</p>
+                  </Link>
+                  <Link
+                    href="/references"
+                    className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                      pathname === "/references"
+                        ? "text-ksentini-orange border-ksentini-orange"
+                        : "text-black border-transparent"
+                    }`}
+                  >
+                    <p>{t("references")}</p>
+                  </Link>
+                  <Link
+                    href="/galerie"
+                    className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                      pathname === "/galerie"
+                        ? "text-ksentini-orange border-ksentini-orange"
+                        : "text-black border-transparent"
+                    }`}
+                  >
+                    <p>{t("gallery")}</p>
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                      pathname === "/contact"
+                        ? "text-ksentini-orange border-ksentini-orange"
+                        : "text-black border-transparent"
+                    }`}
+                  >
+                    <p>{t("contact")}</p>
+                  </Link>
+                </div>
                 <LanguageSwitcher />
               </div>
             </div>

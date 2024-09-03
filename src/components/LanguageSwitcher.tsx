@@ -3,7 +3,7 @@ import { Inter, Noto_Color_Emoji } from "next/font/google";
 import { useState } from "react";
 import { usePathname, useRouter } from "@/i18n/routing";
 import { useLocale } from "next-intl";
-import Image from "next/image";
+import "@/app/langswitch.css"; // Adjust the path to your CSS module
 
 const notoColorEmoji = Noto_Color_Emoji({
   subsets: ["emoji"],
@@ -28,22 +28,16 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="relative inline-block text-left">
+    <div className="selectWrapper">
       <select
         value={selectedLanguage}
         onChange={handleLanguageChange}
-        className={`bg-white border border-gray-300 rounded p-1 ${notoColorEmoji.className}`}
+        className={`customSelect md:pt-1 text-center text-lg ${notoColorEmoji.className}`}
       >
-        <option
-          value="en"
-          className="flex items-center justify-center p-2 cursor-pointer"
-        >
+        <option value="en" className={`${notoColorEmoji.className}`}>
           🇺🇸
         </option>
-        <option
-          value="fr"
-          className="flex items-center justify-center p-2 cursor-pointer"
-        >
+        <option value="fr" className={`${notoColorEmoji.className}`}>
           🇫🇷
         </option>
       </select>

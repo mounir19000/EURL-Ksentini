@@ -16,7 +16,7 @@ const ourActivities: React.FC<HomePageSliderProps> = ({ activities }) => {
         {activities.map((activity, index) => (
           <div
             key={index}
-            className="w-full md:w-[45%] lg:w-[25%] pr-0 md:pr-7 py-3 md:py-6 flex flex-col justify-start items-center gap-4"
+            className="w-full md:w-[45%] lg:w-[25%] pr-0  py-3 md:py-6 flex flex-col justify-start items-center gap-4"
           >
             <div className="bg-orange-400 rounded-[50%] w-28 h-28 p-6">
               <Image
@@ -26,7 +26,7 @@ const ourActivities: React.FC<HomePageSliderProps> = ({ activities }) => {
                 height={100}
               />
             </div>
-            <p className="text-center font-semibold text-xl max-w-[70%]">
+            <p className="text-center font-semibold text-xl max-w-[80%]">
               {activity.text}
             </p>
           </div>

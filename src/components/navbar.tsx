@@ -38,10 +38,10 @@ const Navbar = () => {
               </div>
             </div>
             <div className="hidden h-full xl:block">
-              <div className="h-full flex flex-row items-center gap-14">
+              <div className="h-full flex flex-row items-center gap-12">
                 <Link
                   href="/"
-                  className={`h-full flex items-center font-bold text-base border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
                     pathname === "/"
                       ? "text-ksentini-orange border-ksentini-orange"
                       : "text-black border-transparent"
@@ -51,7 +51,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   href="/activities"
-                  className={`h-full flex items-center font-bold text-base border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
                     pathname === "/activities"
                       ? "border-ksentini-orange text-ksentini-orange"
                       : "text-black border-transparent"
@@ -61,7 +61,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   href="/references"
-                  className={`h-full flex items-center font-bold text-base border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
                     pathname === "/references"
                       ? "text-ksentini-orange border-ksentini-orange"
                       : "text-black border-transparent"
@@ -71,7 +71,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   href="/galerie"
-                  className={`h-full flex items-center font-bold text-base border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
                     pathname === "/galerie"
                       ? "text-ksentini-orange border-ksentini-orange"
                       : "text-black border-transparent"
@@ -81,7 +81,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   href="/contact"
-                  className={`h-full flex items-center font-bold text-base border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
+                  className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
                     pathname === "/contact"
                       ? "text-ksentini-orange border-ksentini-orange"
                       : "text-black border-transparent"

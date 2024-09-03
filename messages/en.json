@@ -2,19 +2,19 @@
   "Activities1": {
     "activity1": {
       "title": "Civil Engineering of Electrical Substations",
-      "bg": "/homePageSlider/1.JPG"
+      "bg": "/homePageSlider/1.webp"
     },
     "activity2": {
       "title": "Assembly and Installation of Electrical Lines",
-      "bg": "/homePageSlider/2.JPG"
+      "bg": "/homePageSlider/2.webp"
     },
     "activity3": {
       "title": "Assembly and Installation of Electrical Substations",
-      "bg": "/homePageSlider/3.JPG"
+      "bg": "/homePageSlider/3.webp"
     },
     "activity4": {
       "title": "Commissioning and Start-up of Electrical Substations",
-      "bg": "/homePageSlider/4.JPG"
+      "bg": "/homePageSlider/4.webp"
     }
   },
   "Home": {
@@ -74,6 +74,18 @@
       "icon": "/activitiesIcons/8.png"
     }
   },
+  "PagesTitles": {
+    "activities": "Our Main Activities",
+    "references1": "EURL-Ksentini on Paper",
+    "references2": "Civil Engineering of Electrical Substations",
+    "references3": "Assembly and Installation of Overhead and Underground Electrical Lines",
+    "references4": "Assembly and Installation of Electrical Substations",
+    "references5": "Commissioning Tests and Start-up of Electrical Substations",
+    "contact": "Contact Us for More Information",
+    "gallery1": "EURL-Ksentini in Pictures",
+    "gallery2": "Our Project Gallery",
+    "button": "Show More"
+  },
   "Contact": {
     "contact": "Contact Us for More Information",
     "title1": "Address",
@@ -87,18 +99,6 @@
     "button": "Send",
     "button2": "Message Sent"
   },
-  "PagesTitles": {
-    "activities": "Our Main Activities",
-    "refrences1": "EURL-Ksentini on Paper",
-    "refrences2": "Civil Engineering of Electrical Substations",
-    "refrences3": "Assembly and Installation of Overhead and Underground Electrical Lines",
-    "refrences4": "Assembly and Installation of Electrical Substations",
-    "refrences5": "Commissioning Tests and Start-up of Electrical Substations",
-    "contact": "Contact Us for More Information",
-    "gallery1": "EURL-Ksentini in Pictures",
-    "gallery2": "Our Project Gallery",
-    "button": "Show More"
-  },
   "NavBarAndFooter": {
     "home": "Home",
     "activities": "Activities",
@@ -108,5 +108,324 @@
     "title1": "fast links",
     "title2": "Contact",
     "title3": "Address"
+  },
+  "references1": {
+    "ref1": {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "GRTE ALGER",
+      "width": "287",
+      "height": "84",
+      "client": "GRTE ALGER",
+      "date": "2011",
+      "description": "Civil engineering for 220 kV Arba/Ale2 line, 60 kV Arba/Rob and Ale/Meftah lines."
+    },
+    "ref2": {
+      "img": "/Logos/SARL_SOUMMAM.png",
+      "alt": "SARL SOUMMAM",
+      "width": "755",
+      "height": "424",
+      "client": "SARL SOUMMAM",
+      "date": "2011",
+      "description": "Civil engineering works for the bays of the Sidi Ali Boussidi 400 kV substation."
+    },
+    "ref3": {
+      "img": "/Logos/SARL_SOUMMAM.png",
+      "alt": "SARL SOUMMAM",
+      "width": "755",
+      "height": "424",
+      "client": "SARL SOUMMAM",
+      "date": "2011",
+      "description": "Civil engineering works for three 220 kV bays at the Sidi Ali Boussidi 400 kV substation."
+    },
+    "ref4": {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "GRTE ALGER",
+      "width": "287",
+      "height": "84",
+      "client": "GRTE ALGER",
+      "date": "2019",
+      "description": "Civil engineering and equipment installation works for the 60 kV ARBAA-ALGER EST-MEFTAH/CM KHEMIS EL KHECHNA line."
+    },
+    "ref5": {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "GRTE SETIF",
+      "width": "287",
+      "height": "84",
+      "client": "GRTE SETIF",
+      "date": "2018",
+      "description": "Civil engineering and installation works for the 60 kV El-Eulma Chelghoum line."
+    },
+    "ref6": {
+      "img": "/Logos/ENERGO_INVEST.png",
+      "alt": "ENERGO-INVEST",
+      "width": "1001",
+      "height": "265",
+      "client": "ENERGO-INVEST",
+      "date": "2009",
+      "description": "Civil engineering works for the 400 kV Hadjret Ennous ElAfroun line."
+    },
+    "ref7": {
+      "img": "/Logos/ENERGO_INVEST.png",
+      "alt": "ENERGO-INVEST",
+      "width": "1001",
+      "height": "265",
+      "client": "ENERGO-INVEST",
+      "date": "2009",
+      "description": "Civil engineering and installation works for the 220 kV Ghazouet substation – Souk Atlata desalination station line."
+    }
+  },
+  "references2": {
+    "ref1": {
+      "img": "/Logos/KAHRAKIB.png",
+      "alt": "KAHRAKIB",
+      "width": "112",
+      "height": "161",
+      "client": "KAHRAKIB",
+      "date": "2018",
+      "description": "Installation works for the 400 kV SIDI ALIBOUSSIDI - NAAMA line."
+    },
+    "ref2": {
+      "img": "/Logos/KAHRAKIB.png",
+      "alt": "KAHRAKIB",
+      "width": "112",
+      "height": "161",
+      "client": "KAHRAKIB",
+      "date": "2018",
+      "description": "Installation works for the 220 kV SAIDA-TIARET line."
+    },
+    "ref3": {
+      "img": "/Logos/KAHRAKIB.png",
+      "alt": "KAHRAKIB",
+      "width": "112",
+      "height": "161",
+      "client": "KAHRAKIB",
+      "date": "2018",
+      "description": "Installation works for the 220 kV LABREG - EL AMIRIA line."
+    },
+    "ref4": {
+      "img": "/Logos/KAHRAKIB.png",
+      "alt": "KAHRAKIB",
+      "width": "112",
+      "height": "161",
+      "client": "KAHRAKIB",
+      "date": "2018",
+      "description": "220 kV LABREG - EL AMIRIA line."
+    },
+    "ref5": {
+      "img": "/Logos/KAHRAKIB.png",
+      "alt": "KAHRAKIB",
+      "width": "112",
+      "height": "161",
+      "client": "KAHRAKIB",
+      "date": "2018",
+      "description": "220 kV BEYADHAO2 - LABREG line."
+    },
+    "ref6": {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "GRTE ORAN",
+      "width": "287",
+      "height": "84",
+      "client": "G.R.T.E - D.T.E / ORAN",
+      "date": "2013",
+      "description": "Construction and equipment installation works for the 220 kV Marsat Oued SLY line."
+    },
+    "ref7": {
+      "img": "/Logos/ENERGO-INVEST.png",
+      "alt": "ENERGO-INVEST",
+      "width": "1001",
+      "height": "265",
+      "client": "ENERGO-INVEST",
+      "date": "2011",
+      "description": "400 kV Hadjerat Ennous - El Affroun 1 line."
+    },
+    "ref8": {
+      "img": "/Logos/ENERGO-INVEST.png",
+      "alt": "ENERGO-INVEST",
+      "width": "1001",
+      "height": "265",
+      "client": "ENERGO-INVEST",
+      "date": "2011",
+      "description": "60 kV Oued Athmania - Oued Seguin line."
+    },
+    "ref9": {
+      "img": "/Logos/ENERGO-INVEST.png",
+      "alt": "ENERGO-INVEST",
+      "width": "1001",
+      "height": "265",
+      "client": "ENERGO-INVEST",
+      "date": "2011",
+      "description": "60 kV Ain Smara - Constantine line."
+    }
+  },
+  "references3": {
+    "ref1": {
+      "img": "/Logos/EFACEC_ALGERIE.png",
+      "alt": "EFACEC ALGERIE",
+      "width": "2258",
+      "height": "835",
+      "client": "EFACEC ALGERIE",
+      "date": "2021",
+      "description": "Installation, testing, and commissioning of electrical and control equipment for the 30/10 kV PST4 substation, TINDOUF."
+    },
+    "ref2": {
+      "img": "/Logos/SONELGAZ.png",
+      "alt": "CD-RL/DAM RELIZANE",
+      "width": "852",
+      "height": "1200",
+      "client": "CD-RL/DAM RELIZANE",
+      "date": "2020",
+      "description": "Supply of electrical equipment and protection and control systems; disassembly, installation, assembly, cabling, testing, and commissioning of all supplied equipment."
+    },
+    "ref3": {
+      "img": "/Logos/EURL_KHOUTIR_NACER_ELECTRICITE.png",
+      "alt": "EURL KHOUTIR NACER",
+      "width": "360",
+      "height": "360",
+      "client": "EURL KHOUTIR NACER ELECTRICITE",
+      "date": "2019",
+      "description": "Installation of galvanized steel structures and supports for the extension of a third 60/30 kV transformer at the KHEMIS substation."
+    },
+    "ref4": {
+      "img": "/Logos/EURL_KHOUTIR_NACER_ELECTRICITE.png",
+      "alt": "EURL KHOUTIR NACER",
+      "width": "360",
+      "height": "360",
+      "client": "EURL KHOUTIR NACER ELECTRICITE",
+      "date": "2019",
+      "description": "Installation of galvanized steel structures and supports for the extension of a third 60/30 kV transformer at the MEFTAH substation."
+    },
+    "ref5": {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "width": "287",
+      "height": "84",
+      "client": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "date": "2004",
+      "description": "Renovation works at the 220 kV ElKseur substation."
+    },
+    "ref6": {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "width": "287",
+      "height": "84",
+      "client": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "date": "2004",
+      "description": "Installation of a mobile 220 kV substation at Sidi Aich."
+    },
+    "ref7": {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "width": "287",
+      "height": "84",
+      "client": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "date": "2004",
+      "description": "Renovation works at the 60/30 kV El-Eulma substation."
+    },
+    "ref8": {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "width": "287",
+      "height": "84",
+      "client": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "date": "2004",
+      "description": "Renovation works at the 220 kV Chekfa substation, Jijel."
+    }
+  },
+  "references4": {
+    "ref1": {
+      "img": "/Logos/SONATRACH_SONELGAZ.png",
+      "alt": "SONATRACH - SONELGAZ",
+      "width": "560",
+      "height": "500",
+      "client": "SONATRACH - SONELGAZ",
+      "date": "2024",
+      "description": "Commissioning and testing of 21 shelter substations at 30 kV \"Subject to ARH.\""
+    },
+    "ref2": {
+      "img": "/Logos/SONATRACH.png",
+      "alt": "SWGFD-EPC4 SONATRACH - GCB",
+      "width": "2000",
+      "height": "2499",
+      "client": "SWGFD-EPC4 SONATRACH - GCB",
+      "date": "2023",
+      "description": "Commissioning and testing of equipment \"Subject to ARH\" (Tinerkouk Living Base)."
+    },
+    "ref3": {
+      "img": "/Logos/SONATRACH.png",
+      "alt": "SWGFD-EPC4 SONATRACH - GCB",
+      "width": "2000",
+      "height": "2499",
+      "client": "SWGFD-EPC4 SONATRACH - GCB",
+      "date": "2023",
+      "description": "Commissioning and testing of equipment \"Subject to ARH\" (Tidjerane Living Base)."
+    },
+    "ref4": {
+      "img": "/Logos/SONATRACH.png",
+      "alt": "SWGFD-EPC4 SONATRACH - GCB",
+      "width": "2000",
+      "height": "2499",
+      "client": "SWGFD-EPC4 SONATRACH - GCB",
+      "date": "2023",
+      "description": "Commissioning and testing of equipment \"Subject to ARH\" (Hassi Bahamou Living Base)."
+    },
+    "ref5": {
+      "img": "/Logos/SIEMENS.png",
+      "alt": "SIEMENS",
+      "width": "360",
+      "height": "352",
+      "client": "SIEMENS",
+      "date": "2016",
+      "description": "Testing & commissioning of the 60/30 kV Oum El BOUAGHI substation."
+    },
+    "ref6": {
+      "img": "/Logos/SIEMENS.png",
+      "alt": "SIEMENS",
+      "width": "360",
+      "height": "352",
+      "client": "SIEMENS",
+      "date": "2016",
+      "description": "Testing & commissioning of the 60/30 kV BEN MHIDI substation."
+    },
+    "ref7": {
+      "img": "/Logos/SIEMENS.png",
+      "alt": "SIEMENS",
+      "width": "360",
+      "height": "352",
+      "client": "SIEMENS",
+      "date": "2016",
+      "description": "Testing & commissioning of the 60/30 kV CHECHAR substation."
+    },
+    "ref8": {
+      "img": "/Logos/EIFFAGE_ENERGY.png",
+      "alt": "EIFFAGE ENERGY",
+      "width": "304",
+      "height": "97",
+      "client": "EIFFAGE ENERGY",
+      "date": "2016",
+      "description": "Testing & commissioning of the 400 kV Salah Bey substation, SONELGAZ GRTE SETIF."
+    },
+    "ref9": {
+      "img": "/Logos/EIFFAGE_ENERGY.png",
+      "alt": "EIFFAGE ENERGY",
+      "width": "304",
+      "height": "97",
+      "client": "EIFFAGE ENERGY",
+      "date": "2016",
+      "description": "Testing & commissioning of the 60/30 kV Sétif Sud substation, SONELGAZ GRTE SETIF."
+    },
+    "ref10": {
+      "img": "/Logos/EIFFAGE_ENERGY.png",
+      "alt": "EIFFAGE ENERGY",
+      "width": "304",
+      "height": "97",
+      "client": "EIFFAGE ENERGY",
+      "date": "2016",
+      "description": "Testing & commissioning of the 220 kV NAAMA substation, SONELGAZ GRTE Oran."
+    }
+  },
+  "NotFound":
+  {
+    "text": "Page Not Found",
+    "button": "Go Home"
   }
 }

@@ -29,7 +29,6 @@ const HomePageSlider: React.FC<HomePageSliderProps> = ({ activities }) => {
         pagination={{
           clickable: true,
         }}
-        allowTouchMove={false}
         modules={[Pagination, Autoplay]}
         className="mySwiper"
         autoplay={{
@@ -62,9 +61,7 @@ const HomePageSlider: React.FC<HomePageSliderProps> = ({ activities }) => {
             delay: 2000,
             disableOnInteraction: false,
           }}
-          allowTouchMove={false}
           className="mySwiper"
-          slidesPerView={6}
           centeredSlides={false}
           spaceBetween={30}
           breakpoints={{

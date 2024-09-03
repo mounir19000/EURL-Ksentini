@@ -48,27 +48,29 @@ const LanguageSwitcher = () => {
         />
       </button>
       {isOpen && (
-        <div
-          ref={dropdownRef}
-          className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white border border-gray-300 rounded shadow-lg"
-        >
+        <>
           <div
-            onClick={() => handleLanguageChange("English")}
-            className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+            ref={dropdownRef}
+            className="absolute z-40 left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white border border-gray-300 rounded shadow-lg"
           >
-            <Link href={pathname} locale="en">
-              English
-            </Link>
+            <div
+              onClick={() => handleLanguageChange("English")}
+              className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+            >
+              <Link href={pathname} locale="en">
+                English
+              </Link>
+            </div>
+            <div
+              onClick={() => handleLanguageChange("French")}
+              className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+            >
+              <Link href={pathname} locale="fr">
+                French
+              </Link>
+            </div>
           </div>
-          <div
-            onClick={() => handleLanguageChange("French")}
-            className="px-4 py-2 cursor-pointer hover:bg-gray-100"
-          >
-            <Link href={pathname} locale="fr">
-              French
-            </Link>
-          </div>
-        </div>
+        </>
       )}
     </div>
   );

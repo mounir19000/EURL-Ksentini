@@ -56,13 +56,13 @@ h1 , h2 , h3 , h4 , h5 , h6 , p {
 
 .CoverImage {
   margin-top: 105px;
-  background-image: url('/Electric_pillar.jpg');
+  background-image: url('/Electric_pillar.webp');
   clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
   }
 
 /* References Page for the cover images for each field */
 .referencesCoverImage {
-  background-image: url('/Electric_pillar.jpg');
+  background-image: url('/Electric_pillar.webp');
   clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);
 }
 

@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/bundle-analyzer": "^14.2.7",
     "axios": "^1.7.6",
+    "lodash": "^4.17.21",
     "next": "14.2.7",
     "next-intl": "^3.19.0",
     "photoswipe": "^5.4.4",
@@ -20,6 +20,7 @@
     "swiper": "^11.1.11"
   },
   "devDependencies": {
+    "@types/lodash": "^4.17.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

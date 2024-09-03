@@ -11,8 +11,6 @@ const Activities = () => {
     icon: m(`${key}.icon`),
   }));
 
-  console.log(activities2);
-
   return (
     <div className="w-full bg-white">
       {/* First part of the activities page */}

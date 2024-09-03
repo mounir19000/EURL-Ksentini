@@ -1,77 +1,52 @@
-import { useState, useEffect, useRef } from "react";
+"use client";
+import { Inter, Noto_Color_Emoji } from "next/font/google";
+import { useState } from "react";
+import { usePathname, useRouter } from "@/i18n/routing";
+import { useLocale } from "next-intl";
 import Image from "next/image";
-import { usePathname } from "@/i18n/routing";
-import { Link } from "@/i18n/routing";
+
+const notoColorEmoji = Noto_Color_Emoji({
+  subsets: ["emoji"],
+  weight: ["400"],
+});
 
 const LanguageSwitcher = () => {
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef(null); // Reference for the dropdown menu
+  const locale = useLocale();
+  const [selectedLanguage, setSelectedLanguage] = useState(locale);
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+  const router = useRouter();
+
+  const handleLanguageChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    const language = event.target.value as "en" | "fr" | undefined;
+    setSelectedLanguage(event.target.value);
+
+    // Use the selected variable in router.replace
+    router.replace(pathname, { locale: language });
   };
-
-  const handleLanguageChange = (language: string): void => {
-    console.log(`Language selected: ${language}`);
-    // Add your language change logic here
-    setIsOpen(false); // Close the dropdown after selection
-  };
-
-  const handleClickOutside = (event: MouseEvent) => {
-    if (
-      dropdownRef.current &&
-      !(dropdownRef.current as HTMLElement).contains(event.target as Node)
-    ) {
-      setIsOpen(false); // Close the dropdown if clicking outside
-    }
-  };
-
-  // Add and remove event listener for clicks outside
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
 
   return (
     <div className="relative inline-block text-left">
-      <button
-        onClick={toggleDropdown}
-        className="text-white rounded-full h-full flex justify-center items-center shadow hover:bg-orange-200"
+      <select
+        value={selectedLanguage}
+        onChange={handleLanguageChange}
+        className={`bg-white border border-gray-300 rounded p-1 ${notoColorEmoji.className}`}
       >
-        <Image
-          src="/languageSwitch/language.png"
-          alt="Globe"
-          width={25}
-          height={25}
-          className=""
-        />
-      </button>
-      {isOpen && (
-        <>
-          <div
-            ref={dropdownRef}
-            className="absolute z-40 left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white border border-gray-300 rounded shadow-lg"
-          >
-            <div
-              onClick={() => handleLanguageChange("English")}
-              className="px-4 py-2 cursor-pointer hover:bg-gray-100"
-            >
-              <Link href={pathname} locale="en">
-                English
-              </Link>
-            </div>
-            <div
-              onClick={() => handleLanguageChange("French")}
-              className="px-4 py-2 cursor-pointer hover:bg-gray-100"
-            >
-              <Link href={pathname} locale="fr">
-                French
-              </Link>
-            </div>
-          </div>
-        </>
-      )}
+        <option
+          value="en"
+          className="flex items-center justify-center p-2 cursor-pointer"
+        >
+          🇺🇸
+        </option>
+        <option
+          value="fr"
+          className="flex items-center justify-center p-2 cursor-pointer"
+        >
+          🇫🇷
+        </option>
+      </select>
     </div>
   );
 };

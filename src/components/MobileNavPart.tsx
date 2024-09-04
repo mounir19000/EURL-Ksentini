@@ -26,7 +26,12 @@ const MobileNavPart = () => {
           <div className="h-auto overflow-scroll">
             <div className="containers h-ksentini-navbar bg-white drop-shadow relative flex justify-between items-center">
               <div className="flex justify-center items-start ">
-                <Link href="/">
+                <Link
+                  href="/"
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
+                >
                   <Image
                     src="/logo.png"
                     alt="Logo"
@@ -56,6 +61,7 @@ const MobileNavPart = () => {
                 onClick={() => {
                   setIsOpen(false);
                 }}
+                className="w-full text-center"
               >
                 <p
                   className={`font-normal sm:font-medium text-lg sm:text-2xl py-4 sm:py-8 ${
@@ -70,6 +76,7 @@ const MobileNavPart = () => {
                 onClick={() => {
                   setIsOpen(false);
                 }}
+                className="w-full text-center"
               >
                 <p
                   className={`font-normal sm:font-medium text-lg sm:text-2xl py-4 sm:py-8 ${
@@ -86,6 +93,7 @@ const MobileNavPart = () => {
                 onClick={() => {
                   setIsOpen(false);
                 }}
+                className="w-full text-center"
               >
                 <p
                   className={`font-normal sm:font-medium text-lg sm:text-2xl py-4 sm:py-8 ${
@@ -102,6 +110,7 @@ const MobileNavPart = () => {
                 onClick={() => {
                   setIsOpen(false);
                 }}
+                className="w-full text-center"
               >
                 <p
                   className={`font-normal sm:font-medium text-lg sm:text-2xl py-4 sm:py-8 ${
@@ -118,6 +127,7 @@ const MobileNavPart = () => {
                 onClick={() => {
                   setIsOpen(false);
                 }}
+                className="w-full text-center"
               >
                 <p
                   className={`font-normal sm:font-medium text-lg sm:text-2xl py-4 sm:py-8 ${
@@ -135,6 +145,12 @@ const MobileNavPart = () => {
               © 2024 Eurl Ksentini. All Rights Reserved.
             </p>
           </div>
+          <div
+            className="w-full h-full"
+            onClick={() => {
+              setIsOpen(false);
+            }}
+          ></div>
         </div>
       )}
     </>

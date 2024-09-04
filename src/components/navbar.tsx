@@ -39,7 +39,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="hidden h-full xl:block">
-              <div className="h-full flex flex-row items-center gap-6">
+              <div className="h-full flex flex-row items-center gap-8">
                 <div className="h-full flex flex-row items-center gap-12">
                   <Link
                     href="/"

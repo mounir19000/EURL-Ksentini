@@ -1,15 +1,21 @@
 import React from "react";
 import { Link } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
 
 const Footer = () => {
   const t = useTranslations("NavBarAndFooter");
+  const locale = useLocale();
+
   return (
     <>
       <div className="bg-ksentini-orange">
         <div className="containers py-10 md:py-16 lg:py-20 flex flex-wrap">
-          <div className="w-[100%] pb-3 md:pb-0 md:pr-6 md:w-[50%] lg:w-[30%] flex items-start lg:items-center justify-center md:justify-start">
+          <div
+            className={`w-[100%] pb-3 ${
+              locale === "ar" ? "md:pl-6" : "md:pr-6"
+            } md:pb-0  md:w-[50%] lg:w-[30%] flex items-start lg:items-center justify-center md:justify-start`}
+          >
             <div className="flex justify-center items-start">
               <Image
                 src="/logo.png"

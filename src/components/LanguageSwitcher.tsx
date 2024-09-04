@@ -20,7 +20,7 @@ const LanguageSwitcher = () => {
   const handleLanguageChange = (
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
-    const language = event.target.value as "en" | "fr" | undefined;
+    const language = event.target.value as "en" | "fr" | "ar" | undefined;
     setSelectedLanguage(event.target.value);
 
     // Use the selected variable in router.replace
@@ -34,11 +34,14 @@ const LanguageSwitcher = () => {
         onChange={handleLanguageChange}
         className={`customSelect md:mt-1 text-center text-xl md:text-lg ${notoColorEmoji.className}`}
       >
-        <option value="en" className={`${notoColorEmoji.className}`}>
-          🇺🇸
-        </option>
         <option value="fr" className={`${notoColorEmoji.className}`}>
           🇫🇷
+        </option>
+        <option value="ar" className={`${notoColorEmoji.className}`}>
+          🇩🇿
+        </option>
+        <option value="en" className={`${notoColorEmoji.className}`}>
+          🇺🇸
         </option>
       </select>
     </div>

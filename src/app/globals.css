@@ -71,6 +71,10 @@ h1 , h2 , h3 , h4 , h5 , h6 , p {
   background: linear-gradient(to right, #ffffff 70%, #fb923c 30%);
 }
 
+.contactCustomBgAr {
+  background: linear-gradient(to left, #ffffff 70%, #fb923c 30%);
+}
+
 /* Gallery Page */
 .gallery {
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));

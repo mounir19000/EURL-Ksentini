@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { useLocale } from "next-intl";
 
 interface Project {
   img: string;
@@ -14,14 +15,20 @@ interface Project {
 
 interface ReferencesCardsProps {
   projects: Project[];
+  button: string;
 }
 
-const ReferencesCards: React.FC<ReferencesCardsProps> = ({ projects }) => {
+const ReferencesCards: React.FC<ReferencesCardsProps> = ({
+  projects,
+  button,
+}) => {
   const [visibleCount, setVisibleCount] = useState(6); // Initial number of visible projects
 
   const loadMore = () => {
     setVisibleCount(visibleCount + 4); // Increase the number of visible projects
   };
+
+  const locale = useLocale();
 
   return (
     <div>
@@ -42,7 +49,11 @@ const ReferencesCards: React.FC<ReferencesCardsProps> = ({ projects }) => {
                   style={{ height: "auto", width: "auto" }}
                 />
               </div>
-              <div className="h-full w-[80%] flex flex-col items-start justify-start pl-2">
+              <div
+                className={` ${
+                  locale === "ar" ? "pr-2" : "pl-2"
+                } h-full w-[80%] flex flex-col items-start justify-start `}
+              >
                 <h1 className="w-full font-bold text-base mb-1">
                   {project.description}
                 </h1>
@@ -59,7 +70,7 @@ const ReferencesCards: React.FC<ReferencesCardsProps> = ({ projects }) => {
             onClick={loadMore}
             className="font-semibold mt-4 mb-4 px-8 py-3 bg-orange-400 hover:bg-orange-600 text-white text-lg rounded-lg"
           >
-            Afficher Plus
+            {button}
           </button>
         </div>
       )}

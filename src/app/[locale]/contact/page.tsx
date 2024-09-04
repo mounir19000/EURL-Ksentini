@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 // images
 import Loction from "/public/footerIcons/LocationIcon.png";
@@ -11,6 +11,7 @@ import ContactForm from "@/components/contactForm";
 
 const Contact = () => {
   const t = useTranslations("Contact");
+  const locale = useLocale();
 
   return (
     <div className="w-full bg-slate-200">
@@ -71,7 +72,11 @@ const Contact = () => {
       </div>
 
       {/* Third part of the contact page */}
-      <div className="contactCustomBg py-14">
+      <div
+        className={` ${
+          locale === "ar" ? "contactCustomBgAr" : "contactCustomBg"
+        }  py-14 `}
+      >
         <div className="containers flex flex-col md:flex-row justify-between gap-10">
           <div className="flex-1">
             <ContactForm

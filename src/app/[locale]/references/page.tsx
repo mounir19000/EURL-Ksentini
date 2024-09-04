@@ -70,7 +70,7 @@ const References = () => {
         </div>
       </div>
 
-      <ReferencesCards projects={references1} />
+      <ReferencesCards projects={references1} button={n("button")} />
 
       {/* Second part of the references page */}
       <div className="referencesCoverImage referencesCoverImage1">
@@ -83,7 +83,7 @@ const References = () => {
         </div>
       </div>
 
-      <ReferencesCards projects={references2} />
+      <ReferencesCards projects={references2} button={n("button")} />
 
       {/* Third part of the references page */}
       <div className="referencesCoverImage referencesCoverImage1">
@@ -96,7 +96,7 @@ const References = () => {
         </div>
       </div>
 
-      <ReferencesCards projects={references3} />
+      <ReferencesCards projects={references3} button={n("button")} />
 
       {/* Fourth part of the references page */}
       <div className="referencesCoverImage referencesCoverImage1">
@@ -109,7 +109,7 @@ const References = () => {
         </div>
       </div>
 
-      <ReferencesCards projects={references4} />
+      <ReferencesCards projects={references4} button={n("button")} />
     </div>
   );
 };

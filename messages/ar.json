@@ -1,0 +1,430 @@
+{
+  "Activities1": {
+    "activity1": {
+      "title": "الهندسة المدنية لمحطات الكهرباء",
+      "bg": "/homePageSlider/1.webp"
+    },
+    "activity2": {
+      "title": "تركيب وتثبيت خطوط الكهرباء",
+      "bg": "/homePageSlider/2.webp"
+    },
+    "activity3": {
+      "title": "تركيب وتثبيت محطات الكهرباء",
+      "bg": "/homePageSlider/3.webp"
+    },
+    "activity4": {
+      "title": "التكليف وتشغيل محطات الكهرباء",
+      "bg": "/homePageSlider/4.webp"
+    }
+  },
+  "Home": {
+    "text1": "الهندسة المدنية لمحطات الكهرباء",
+    "text2": "تركيب وتثبيت خطوط الكهرباء",
+    "text3": "تركيب وتثبيت محطات الكهرباء",
+    "text4": "التكليف وتشغيل محطات الكهرباء",
+    "title1Part1": "من",
+    "title1Part2": " نحن",
+    "text": " هي شركة ذات مسؤولية محدودة. تعمل بشكل عام في مجال الطاقة وخاصة في القطاعات التالية:",
+    "li1": "الهندسة المدنية لمحطات الكهرباء ذات الجهد العالي والمتوسط والمنخفض.",
+    "li2": "تركيب وتثبيت خطوط الكهرباء الهوائية والأرضية ذات الجهد العالي والمتوسط والمنخفض.",
+    "li3": "تركيب وتثبيت محطات الكهرباء ذات الجهد العالي والمتوسط والمنخفض.",
+    "li4": "اختبارات التكليف وتشغيل محطات الكهرباء ذات الجهد العالي والمتوسط والمنخفض.",
+    "button": "اعرف أكثر",
+    "title2": "أنشطتنا الرئيسية",
+    "activity1": "دراسات الهندسة",
+    "activity2": "الاستشارات والخبرة والتدريب",
+    "activity3": "تنفيذ الخطوط الهوائية والأرضية ذات الجهد العالي والمتوسط والمنخفض",
+    "activity4": "إنارة الشوارع وتركيب كابلات OPGW",
+    "activity5": "تركيب وتثبيت محطات الكهرباء ذات الجهد العالي والمتوسط والمنخفض",
+    "activity6": "تصنيع اللوحات والخزائن والكبائن الكهربائية",
+    "activity7": "كهربة السكك الحديدية",
+    "activity8": "الفحص والاختبارات وتشغيل المنشآت الكهربائية"
+  },
+  "Activities2": {
+    "activity1": {
+      "text": "دراسات الهندسة",
+      "icon": "/activitiesIcons/1.png"
+    },
+    "activity2": {
+      "text": "الاستشارات والخبرة والتدريب",
+      "icon": "/activitiesIcons/2.png"
+    },
+    "activity3": {
+      "text": "تنفيذ الخطوط الهوائية والأرضية ذات الجهد العالي والمتوسط والمنخفض",
+      "icon": "/activitiesIcons/3.png"
+    },
+    "activity4": {
+      "text": "إنارة الشوارع وتركيب كابلات OPGW",
+      "icon": "/activitiesIcons/4.png"
+    },
+    "activity5": {
+      "text": "تركيب وتثبيت محطات الكهرباء ذات الجهد العالي والمتوسط والمنخفض",
+      "icon": "/activitiesIcons/5.png"
+    },
+    "activity6": {
+      "text": "تصنيع اللوحات والخزائن والكبائن الكهربائية",
+      "icon": "/activitiesIcons/6.png"
+    },
+    "activity7": {
+      "text": "كهربة السكك الحديدية",
+      "icon": "/activitiesIcons/7.png"
+    },
+    "activity8": {
+      "text": "الفحص والاختبارات وتشغيل المنشآت الكهربائية",
+      "icon": "/activitiesIcons/8.png"
+    }
+  },
+  "PagesTitles": {
+    "activities": "أنشطتنا الرئيسية",
+    "references1": "شركة EURL-Ksentini على الورق",
+    "references2": "الهندسة المدنية لمحطات الكهرباء",
+    "references3": "تركيب وتثبيت خطوط الكهرباء الهوائية والأرضية",
+    "references4": "تركيب وتثبيت محطات الكهرباء",
+    "references5": "اختبارات التكليف وتشغيل محطات الكهرباء",
+    "gallery1": "شركة EURL-Ksentini بالصور",
+    "gallery2": "معرض صور مشاريعنا المنجزة",
+    "button": "عرض المزيد"
+  },
+  "Contact": {
+    "contact": "اتصل بنا لمزيد من المعلومات",
+    "title1": "العنوان",
+    "title2": "الهاتف",
+    "title3": "البريد الإلكتروني",
+    "title4": "أرسل لنا رسالة",
+    "placeholder1": "اسمك",
+    "placeholder2": "هاتفك",
+    "placeholder3": "بريدك الإلكتروني",
+    "placeholder4": "رسالتك",
+    "button": "إرسال",
+    "button2": "تم إرسال الرسالة"
+  },
+  "NavBarAndFooter": {
+    "home": "الصفحة الرئيسية",
+    "activities": "الأنشطة",
+    "references": "المراجع",
+    "gallery": "معرض الصور",
+    "contact": "اتصل بنا",
+    "title1": "روابط سريعة",
+    "title2": "الاتصال",
+    "title3": "العنوان"
+  },
+
+  "references1": {
+    "ref1": {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "GRTE ALGER",
+      "width": "287",
+      "height": "84",
+      "client": "GRTE ALGER",
+      "date": "2011",
+      "description": "الهندسة المدنية لخط 220 كيلو فولت أربعا/الي 2، خط 60 كيلو فولت أربعا/روب وألي/مفتاح"
+    },
+    "ref2": {
+      "img": "/Logos/SARL_SOUMMAM.png",
+      "alt": "SARL SOUMMAM",
+      "width": "755",
+      "height": "424",
+      "client": "SARL SOUMMAM",
+      "date": "2011",
+      "description": "أعمال الهندسة المدنية لخطوط محطة سيدي علي بوسيدي 400 كيلو فولت"
+    },
+    "ref3": {
+      "img": "/Logos/SARL_SOUMMAM.png",
+      "alt": "SARL SOUMMAM",
+      "width": "755",
+      "height": "424",
+      "client": "SARL SOUMMAM",
+      "date": "2011",
+      "description": "أعمال الهندسة المدنية لثلاث خطوط 220 كيلو فولت في محطة سيدي علي بوسيدي 400 كيلو فولت"
+    },
+    "ref4": {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "GRTE ALGER",
+      "width": "287",
+      "height": "84",
+      "client": "GRTE ALGER",
+      "date": "2019",
+      "description": "أعمال الهندسة المدنية وتركيب المعدات لخط 60 كيلو فولت أربعا - الجزائر شرق - مفتاح / CM خميس الخشنة"
+    },
+    "ref5": {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "GRTE SETIF",
+      "width": "287",
+      "height": "84",
+      "client": "GRTE SETIF",
+      "date": "2018",
+      "description": "أعمال الهندسة المدنية وتركيب خط 60 كيلو فولت العلمة شلغوم"
+    },
+    "ref6": {
+      "img": "/Logos/ENERGO_INVEST.png",
+      "alt": "ENERGO-INVEST",
+      "width": "1001",
+      "height": "265",
+      "client": "ENERGO-INVEST",
+      "date": "2009",
+      "description": "أعمال الهندسة المدنية على خط 400 كيلو فولت حجرت النوس - العفرون"
+    },
+    "ref7": {
+      "img": "/Logos/ENERGO_INVEST.png",
+      "alt": "ENERGO-INVEST",
+      "width": "1001",
+      "height": "265",
+      "client": "ENERGO-INVEST",
+      "date": "2009",
+      "description": "أعمال الهندسة المدنية وتركيب خط 220 كيلو فولت محطة غزوات - محطة تحلية المياه سوق علطاطا"
+    }
+  },
+  "references2": {
+    "ref1": {
+      "img": "/Logos/KAHRAKIB.png",
+      "alt": "KAHRAKIB",
+      "width": "112",
+      "height": "161",
+      "client": "KAHRAKIB",
+      "date": "2018",
+      "description": "أعمال تركيب خط 400 كيلو فولت سيدي علي بوسيدي - النعامة"
+    },
+    "ref2": {
+      "img": "/Logos/KAHRAKIB.png",
+      "alt": "KAHRAKIB",
+      "width": "112",
+      "height": "161",
+      "client": "KAHRAKIB",
+      "date": "2018",
+      "description": "أعمال تركيب خط 220 كيلو فولت سعيدة - تيارت"
+    },
+    "ref3": {
+      "img": "/Logos/KAHRAKIB.png",
+      "alt": "KAHRAKIB",
+      "width": "112",
+      "height": "161",
+      "client": "KAHRAKIB",
+      "date": "2018",
+      "description": "أعمال تركيب خط 220 كيلو فولت لابريج - الأميرية"
+    },
+    "ref4": {
+      "img": "/Logos/KAHRAKIB.png",
+      "alt": "KAHRAKIB",
+      "width": "112",
+      "height": "161",
+      "client": "KAHRAKIB",
+      "date": "2018",
+      "description": "خط 220 كيلو فولت لابريج - الأميرية"
+    },
+    "ref5": {
+      "img": "/Logos/KAHRAKIB.png",
+      "alt": "KAHRAKIB",
+      "width": "112",
+      "height": "161",
+      "client": "KAHRAKIB",
+      "date": "2018",
+      "description": "خط 220 كيلو فولت بياضة - لابريج"
+    },
+    "ref6": {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "GRTE ORAN",
+      "width": "287",
+      "height": "84",
+      "client": "G.R.T.E - D.T.E / ORAN",
+      "date": "2013",
+      "description": "أعمال البناء وتركيب المعدات لخط 220 كيلو فولت مرسات وادي سلي"
+    },
+    "ref7": {
+      "img": "/Logos/ENERGO_INVEST.png",
+      "alt": "ENERGO-INVEST",
+      "width": "1001",
+      "height": "265",
+      "client": "ENERGO-INVEST",
+      "date": "2011",
+      "description": "خط 400 كيلو فولت حجرت النوس - العفرون 1"
+    },
+    "ref8": {
+      "img": "/Logos/ENERGO_INVEST.png",
+      "alt": "ENERGO-INVEST",
+      "width": "1001",
+      "height": "265",
+      "client": "ENERGO-INVEST",
+      "date": "2011",
+      "description": "خط 60 كيلو فولت وادي عطمان - وادي سيغين"
+    },
+    "ref9": {
+      "img": "/Logos/ENERGO_INVEST.png",
+      "alt": "ENERGO-INVEST",
+      "width": "1001",
+      "height": "265",
+      "client": "ENERGO-INVEST",
+      "date": "2011",
+      "description": "خط 60 كيلو فولت: عين سمارة - قسنطينة"
+    }
+  },
+  "references3": {
+    "ref1": {
+      "img": "/Logos/EFACEC_ALGERIE.png",
+      "alt": "EFACEC ALGERIE",
+      "width": "2258",
+      "height": "835",
+      "client": "EFACEC ALGERIE",
+      "date": "2021",
+      "description": "أعمال التركيب والاختبارات ووضع الخدمة لمعدات الكهرباء والتحكم لمحطة 30/10 ك.ف PST4، تندوف"
+    },
+    "ref2": {
+      "img": "/Logos/SONELGAZ.png",
+      "alt": "CD-RL/DAM RELIZANE",
+      "width": "852",
+      "height": "1200",
+      "client": "CD-RL/DAM RELIZANE",
+      "date": "2020",
+      "description": "تزويد معدات كهربائية وأنظمة الحماية والتحكم؛ التفكيك والتركيب والكابلات والاختبارات ووضع الخدمة لجميع المعدات المقدمة"
+    },
+    "ref3": {
+      "img": "/Logos/EURL_KHOUTIR_NACER_ELECTRICITE.png",
+      "alt": "EURL KHOUTIR NACER",
+      "width": "360",
+      "height": "360",
+      "client": "EURL KHOUTIR NACER ELECTRICITE",
+      "date": "2019",
+      "description": "تركيب البوابات والدعامات المعدنية المجلفنة لتوسعة المحول الثالث 60/30 ك.ف في محطة خميس"
+    },
+    "ref4": {
+      "img": "/Logos/EURL_KHOUTIR_NACER_ELECTRICITE.png",
+      "alt": "EURL KHOUTIR NACER",
+      "width": "360",
+      "height": "360",
+      "client": "EURL KHOUTIR NACER ELECTRICITE",
+      "date": "2019",
+      "description": "تركيب البوابات والدعامات المعدنية المجلفنة لتوسعة المحول الثالث 60/30 ك.ف في محطة مفتاح"
+    },
+    "ref5": {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "width": "287",
+      "height": "84",
+      "client": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "date": "2004",
+      "description": "أعمال تهيئة محطة 220 ك.ف القصر"
+    },
+    "ref6": {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "width": "287",
+      "height": "84",
+      "client": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "date": "2004",
+      "description": "تركيب كابينة متنقلة 220 ك.ف في سيدي عيش"
+    },
+    "ref7": {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "width": "287",
+      "height": "84",
+      "client": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "date": "2004",
+      "description": "أعمال تهيئة محطة 60/30 ك.ف العلمة"
+    },
+    "ref8": {
+      "img": "/Logos/GRTE_ALGER.png",
+      "alt": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "width": "287",
+      "height": "84",
+      "client": "Direction de la Production et du Transport de l’électricité. Région Transport de Sétif",
+      "date": "2004",
+      "description": "أعمال تهيئة محطة 220 ك.ف شقف، جيجل"
+    }
+  },
+  "references4": {
+    "ref1": {
+      "img": "/Logos/SONATRACH_SONELGAZ.png",
+      "alt": "SONATRACH - SONELGAZ",
+      "width": "560",
+      "height": "500",
+      "client": "SONATRACH - SONELGAZ",
+      "date": "2024",
+      "description": "التشغيل والاختبارات لمعاينة 21 محطة بجهد 30 ك.ف \"خاضعة لهيئة ضبط الكهرباء\""
+    },
+    "ref2": {
+      "img": "/Logos/SONATRACH.png",
+      "alt": "SWGFD-EPC4 SONATRACH - GCB",
+      "width": "2000",
+      "height": "2499",
+      "client": "SWGFD-EPC4 SONATRACH - GCB",
+      "date": "2023",
+      "description": "التشغيل والاختبارات لمعاينة المعدات \"الخاضعة لهيئة ضبط الكهرباء\" (قاعدة حياة تينركوك)"
+    },
+    "ref3": {
+      "img": "/Logos/SONATRACH.png",
+      "alt": "SWGFD-EPC4 SONATRACH - GCB",
+      "width": "2000",
+      "height": "2499",
+      "client": "SWGFD-EPC4 SONATRACH - GCB",
+      "date": "2023",
+      "description": "التشغيل والاختبارات لمعاينة المعدات \"الخاضعة لهيئة ضبط الكهرباء\" (قاعدة حياة تيجران)"
+    },
+    "ref4": {
+      "img": "/Logos/SONATRACH.png",
+      "alt": "SWGFD-EPC4 SONATRACH - GCB",
+      "width": "2000",
+      "height": "2499",
+      "client": "SWGFD-EPC4 SONATRACH - GCB",
+      "date": "2023",
+      "description": "التشغيل والاختبارات لمعاينة المعدات \"الخاضعة لهيئة ضبط الكهرباء\" (قاعدة حياة حاسي بحمو)"
+    },
+    "ref5": {
+      "img": "/Logos/SIEMENS.png",
+      "alt": "SIEMENS",
+      "width": "360",
+      "height": "352",
+      "client": "SIEMENS",
+      "date": "2016",
+      "description": "اختبارات وبدء تشغيل. محطة 60/30 ك.ف أم البواقي"
+    },
+    "ref6": {
+      "img": "/Logos/SIEMENS.png",
+      "alt": "SIEMENS",
+      "width": "360",
+      "height": "352",
+      "client": "SIEMENS",
+      "date": "2016",
+      "description": "اختبارات وبدء تشغيل. محطة 60/30 ك.ف بن مهيدي"
+    },
+    "ref7": {
+      "img": "/Logos/SIEMENS.png",
+      "alt": "SIEMENS",
+      "width": "360",
+      "height": "352",
+      "client": "SIEMENS",
+      "date": "2016",
+      "description": "اختبارات وبدء تشغيل. محطة 60/30 ك.ف الششار"
+    },
+    "ref8": {
+      "img": "/Logos/EIFFAGE_ENERGY.png",
+      "alt": "EIFFAGE ENERGY",
+      "width": "304",
+      "height": "97",
+      "client": "EIFFAGE ENERGY",
+      "date": "2016",
+      "description": "اختبارات وبدء تشغيل. محطة 400 ك.ف صالح باي، سونلغاز GRTE سطيف"
+    },
+    "ref9": {
+      "img": "/Logos/EIFFAGE_ENERGY.png",
+      "alt": "EIFFAGE ENERGY",
+      "width": "304",
+      "height": "97",
+      "client": "EIFFAGE ENERGY",
+      "date": "2016",
+      "description": "اختبارات وبدء تشغيل. محطة 60/30 ك.ف سطيف جنوب، سونلغاز GRTE سطيف"
+    },
+    "ref10": {
+      "img": "/Logos/EIFFAGE_ENERGY.png",
+      "alt": "EIFFAGE ENERGY",
+      "width": "304",
+      "height": "97",
+      "client": "EIFFAGE ENERGY",
+      "date": "2016",
+      "description": "اختبارات وبدء تشغيل. محطة 220 ك.ف نعامة، سونلغاز GRTE وهران"
+    }
+  },
+  "NotFound": {
+    "text": "الصفحة غير موجودة",
+    "button": "العودة إلى الصفحة الرئيسية"
+  }
+}

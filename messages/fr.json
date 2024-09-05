@@ -43,7 +43,7 @@
   "Activities2": {
     "activity1": {
       "text": "Etudes d’Ingénierie",
-      "icon": "/activitiesIcons/1.png" 
+      "icon": "/activitiesIcons/1.png"
     },
     "activity2": {
       "text": "Conseil, Expertise et Formation",
@@ -85,19 +85,19 @@
     "gallery2": "Notre galerie d'image de nos projet réalisés",
     "button": "Afficher plus"
   },
-    "Contact": {
-      "contact": "Contactez Nous Pour Plus D'informations",
-      "title1": "Addresse",
-      "title2": "Téléphone",
-      "title3": "Email",
-      "title4": "Envoyer nous un Message",
-      "placeholder1": "Votre Nom",
-      "placeholder2": "Votre Téléphone",
-      "placeholder3": "Votre Email",
-      "placeholder4": "Votre Message",
-      "button": "Envoyer",
-      "button2": "Message Envoyé"
-    },
+  "Contact": {
+    "contact": "Contactez Nous Pour Plus D'informations",
+    "title1": "Addresse",
+    "title2": "Téléphone",
+    "title3": "Email",
+    "title4": "Envoyer nous un Message",
+    "placeholder1": "Votre Nom",
+    "placeholder2": "Votre Téléphone",
+    "placeholder3": "Votre Email",
+    "placeholder4": "Votre Message",
+    "button": "Envoyer",
+    "button2": "Message Envoyé"
+  },
   "NavBarAndFooter": {
     "home": "Accueil",
     "activities": "Activités",
@@ -423,7 +423,10 @@
     }
   },
   "NotFound": {
-  "text": "Page non trouvée",
-  "button": "Retour à l'accueil"
+    "text": "Page non trouvée",
+    "button": "Retour à l'accueil"
+  },
+  "Address": {
+    "address": "Lotissement N° : 130/131 EL-KSEUR (W) BEJAIA ALGERIE"
   }
 }

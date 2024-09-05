@@ -5,6 +5,7 @@ import Image from "next/image";
 
 const Footer = () => {
   const t = useTranslations("NavBarAndFooter");
+  const h = useTranslations("Address");
   const locale = useLocale();
 
   return (
@@ -17,13 +18,23 @@ const Footer = () => {
             } md:pb-0  md:w-[50%] lg:w-[30%] flex items-start lg:items-center justify-center md:justify-start`}
           >
             <div className="flex justify-center items-start">
-              <Image
-                src="/logo.png"
-                alt="Logo"
-                width={835}
-                height={192}
-                style={{ height: "auto", width: "full" }}
-              />
+              {locale === "ar" ? (
+                <Image
+                  src="/logoAr.png"
+                  alt="Logo"
+                  width={950}
+                  height={262}
+                  style={{ height: "auto", width: "full" }}
+                />
+              ) : (
+                <Image
+                  src="/logo.png"
+                  alt="Logo"
+                  width={835}
+                  height={192}
+                  style={{ height: "auto", width: "full" }}
+                />
+              )}
             </div>
           </div>
 
@@ -69,7 +80,7 @@ const Footer = () => {
                       height={20}
                     />
                   </span>
-                  <span>+(213) 34 13 31 72 </span>
+                  <span dir="ltr">+(213) 34 13 31 72 </span>
                 </a>
               </li>
               <li className="pb-2">
@@ -85,7 +96,7 @@ const Footer = () => {
                       height={20}
                     />
                   </span>
-                  <span>+(213) 5 57 20 30 73</span>
+                  <span dir="ltr">+(213) 5 57 20 30 73</span>
                 </a>
               </li>
               <li className="pb-2">
@@ -125,11 +136,14 @@ const Footer = () => {
 
           <div className="w-[100%] md:w-[50%] lg:w-[25%] p-1 text-white">
             <h1 className="font-bold text-xl pb-2 text-black">{t("title3")}</h1>
-            <p className="pl-1">Lotissement N° : 130/131 EL-KSEUR (W) BEJAIA</p>
+            <p className="pl-1">{h("address")}</p>
           </div>
         </div>
       </div>
-      <p className="bg-white text-gray-400 text-center font-light py-1">
+      <p
+        className="bg-white text-gray-400 text-center font-light py-1"
+        dir="ltr"
+      >
         © 2024 Eurl Ksentini. All Rights Reserved.{" "}
         <span>
           <Link

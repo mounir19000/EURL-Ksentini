@@ -11,6 +11,7 @@ import ContactForm from "@/components/contactForm";
 
 const Contact = () => {
   const t = useTranslations("Contact");
+  const h = useTranslations("Address");
   const locale = useLocale();
 
   return (
@@ -38,9 +39,7 @@ const Contact = () => {
           </a>
           <div className="flex flex-col justify-center items-center">
             <h1 className="font-bold text-2xl mb-1">{t("title1")}</h1>
-            <p className="text-center w-2/3">
-              Lotissement N° : 130/131 EL-KSEUR (W) BEJAIA
-            </p>
+            <p className="text-center w-2/3">{h("address")}</p>
           </div>
         </div>
         {/* Phone section */}
@@ -53,7 +52,9 @@ const Contact = () => {
           </a>
           <div className="flex flex-col justify-center items-center">
             <h1 className="font-bold text-2xl mb-1">{t("title2")}</h1>
-            <p className="text-center">+213 55 66 88 77</p>
+            <p className="text-center" dir="ltr">
+              +213 55 66 88 77
+            </p>
           </div>
         </div>
         {/* Email section */}

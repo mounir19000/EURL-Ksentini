@@ -32,7 +32,7 @@ const LanguageSwitcher = () => {
       <select
         value={selectedLanguage}
         onChange={handleLanguageChange}
-        className={`customSelect md:mt-1 text-center text-xl md:text-lg ${notoColorEmoji.className}`}
+        className={`customSelect md:mt-1 text-center text-lg md:text-lg ${notoColorEmoji.className}`}
       >
         <option value="fr" className={`${notoColorEmoji.className}`}>
           🇫🇷

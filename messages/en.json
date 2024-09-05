@@ -423,9 +423,11 @@
       "description": "Testing & commissioning of the 220 kV NAAMA substation, SONELGAZ GRTE Oran."
     }
   },
-  "NotFound":
-  {
+  "NotFound": {
     "text": "Page Not Found",
     "button": "Go Home"
+  },
+  "Address": {
+    "address": "Lotissement N° : 130/131 EL-KSEUR (W) BEJAIA ALGERIE"
   }
 }

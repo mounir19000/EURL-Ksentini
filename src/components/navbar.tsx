@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { usePathname } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 // component imports
 import MobileNavPart from "./MobileNavPart";
@@ -11,23 +11,34 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const locale = useLocale();
   const t = useTranslations("NavBarAndFooter");
 
   return (
     <div
-      className={`fixed h-ksentini-navbar top-0 left-0 right-0 z-30 bg-white border-b-2 border-gray-400`}
+      className={`absolute md:fixed h-ksentini-navbar top-0 left-0 right-0 z-30 bg-white border-b-2 border-gray-400`}
     >
       <div className={`containers h-ksentini-navbar`}>
         <div className="h-full w-full flex justify-between items-center">
           <div className="flex justify-center items-start ">
             <Link href="/">
-              <Image
-                src="/logo.png"
-                alt="Logo"
-                width={835}
-                height={192}
-                className="responsive-logo"
-              />
+              {locale === "ar" ? (
+                <Image
+                  src="/logoAr.png"
+                  alt="Logo"
+                  width={950}
+                  height={262}
+                  className="responsive-logo"
+                />
+              ) : (
+                <Image
+                  src="/logo.png"
+                  alt="Logo"
+                  width={835}
+                  height={192}
+                  className="responsive-logo"
+                />
+              )}
             </Link>
           </div>
 

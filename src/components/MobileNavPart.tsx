@@ -1,14 +1,26 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Link } from "@/i18n/routing";
 import { usePathname } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 const MobileNavPart = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const locale = useLocale();
   const t = useTranslations("NavBarAndFooter");
+
+  const scrollRef = useRef(null);
+
+  const handleScroll = () => {
+    if (scrollRef.current) {
+      const { scrollTop, scrollHeight, clientHeight } = scrollRef.current;
+      if (scrollTop + clientHeight >= scrollHeight - 200) {
+        setIsOpen(false);
+      }
+    }
+  };
 
   return (
     <>
@@ -22,7 +34,11 @@ const MobileNavPart = () => {
         />
       </button>
       {isOpen && (
-        <div className="fixed inset-0 overflow-scroll z-50">
+        <div
+          className="fixed inset-0 overflow-scroll z-50"
+          ref={scrollRef}
+          onScroll={handleScroll}
+        >
           <div className="h-auto overflow-scroll">
             <div className="containers h-ksentini-navbar bg-white drop-shadow relative flex justify-between items-center">
               <div className="flex justify-center items-start ">
@@ -32,13 +48,23 @@ const MobileNavPart = () => {
                     setIsOpen(false);
                   }}
                 >
-                  <Image
-                    src="/logo.png"
-                    alt="Logo"
-                    width={835}
-                    height={192}
-                    className="responsive-logo"
-                  />
+                  {locale === "ar" ? (
+                    <Image
+                      src="/logoAr.png"
+                      alt="Logo"
+                      width={950}
+                      height={262}
+                      className="responsive-logo"
+                    />
+                  ) : (
+                    <Image
+                      src="/logo.png"
+                      alt="Logo"
+                      width={835}
+                      height={192}
+                      className="responsive-logo"
+                    />
+                  )}
                 </Link>
               </div>
               <button
@@ -139,9 +165,75 @@ const MobileNavPart = () => {
                   {t("contact")}
                 </p>
               </Link>
+
+              <div className="w-full containers flex justify-evenly py-3 sm:py-4">
+                <Link
+                  href={pathname}
+                  locale="ar"
+                  className={`text-center flex items-center justify-center gap-x-2 px-3 py-2 rounded-md ${
+                    locale === "ar"
+                      ? "bg-ksentini-orange text-white"
+                      : "bg-white text-black"
+                  }`}
+                >
+                  <Image
+                    src="/flags/ar.png"
+                    alt=""
+                    height={318}
+                    width={512}
+                    className="h-4 w-auto border-black border-[0.5px] mt-[0.5px]"
+                  />
+                  <p className="font-normal sm:font-medium text-lg sm:text-2xl">
+                    AR
+                  </p>
+                </Link>
+                <Link
+                  href={pathname}
+                  locale="fr"
+                  className={`text-center flex items-center justify-center gap-x-2 px-3 py-2 rounded-md ${
+                    locale === "fr"
+                      ? "bg-ksentini-orange text-white"
+                      : "bg-white text-black"
+                  }`}
+                >
+                  <Image
+                    src="/flags/fr.png"
+                    alt=""
+                    height={183}
+                    width={275}
+                    className="h-4 w-auto border-black border-[0.5px] mt-[0.5px]"
+                  />
+                  <p className="font-normal sm:font-medium text-lg sm:text-2xl">
+                    FR
+                  </p>
+                </Link>
+                <Link
+                  href={pathname}
+                  locale="en"
+                  className={`text-center flex items-center justify-center gap-x-2 px-3 py-2 rounded-md ${
+                    locale === "en"
+                      ? "bg-ksentini-orange text-white"
+                      : "bg-white text-black"
+                  }`}
+                >
+                  <Image
+                    src="/flags/en.png"
+                    alt=""
+                    height={710}
+                    width={1460}
+                    className="h-4 w-auto border-black border-[0.5px] mt-[0.5px]"
+                  />
+                  <p className="font-normal sm:font-medium text-lg sm:text-2xl">
+                    EN
+                  </p>
+                </Link>
+              </div>
             </div>
 
-            <p className="bg-white text-gray-400 drop-shadow border-gray-400 text-center font-semibold sm:font-bold pt-3 sm:pt-6 pb-3">
+            <p
+              dir="ltr"
+              className="bg-white text-gray-400 drop-shadow border-gray-400 text-center font-semibold sm:font-bold pt-3 sm:pt-6 pb-3"
+            >
               © 2024 Eurl Ksentini. All Rights Reserved.
             </p>
           </div>

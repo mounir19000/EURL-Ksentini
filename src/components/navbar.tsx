@@ -45,7 +45,6 @@ const Navbar = () => {
           <div className="h-full flex items-center">
             <div className="block h-full xl:hidden">
               <div className="flex justify-center gap-x-3 items-center h-full">
-                <LanguageSwitcher />
                 <MobileNavPart />
               </div>
             </div>

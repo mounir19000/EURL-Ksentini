@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import OurActivities from "@/components/ourActivities";
 import { useTranslations, useMessages } from "next-intl";
+
+export const metadata: Metadata = {
+  title: "Eurl Ksentini",
+  description:
+    "Explorez les principales activités de EURL Ksentini, comprenant les études d’ingénierie, le montage des postes électriques, l’électrification ferroviaire et plus encore.",
+  keywords:
+    "études d'ingénierie, montage électrique, électrification ferroviaire, postes HTB/HTA/BT, éclairage public, Algérie",
+};
 
 const Activities = () => {
   const t = useTranslations("PagesTitles");

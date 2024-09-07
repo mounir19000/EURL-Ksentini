@@ -1,10 +1,16 @@
 import { useTranslations, useMessages } from "next-intl";
+import type { Metadata } from "next";
 
 // Components Import
 import ReferencesCards from "@/components/referencesCards";
 
-// Data import
-import Data from "@/Json/refrences.json";
+export const metadata: Metadata = {
+  title: "Eurl Ksentini",
+  description:
+    "Découvrez nos réalisations dans le domaine du génie civil, du montage de lignes électriques et de la mise en service d’équipements électriques en Algérie.",
+  keywords:
+    "références, travaux génie civil, montage de lignes, équipements électriques, Algérie",
+};
 
 const References = () => {
   const n = useTranslations("PagesTitles");

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
+import type { Metadata } from "next";
 
 // images
 import Loction from "/public/footerIcons/LocationIcon.png";
@@ -8,6 +9,13 @@ import Mail from "/public/footerIcons/MailIcon.png";
 
 // Component imports
 import ContactForm from "@/components/contactForm";
+
+export const metadata: Metadata = {
+  title: "Eurl Ksentini",
+  description:
+    "Besoin de plus d'informations sur nos services en génie civil et montage électrique ? Contactez EURL Ksentini dès maintenant.",
+  keywords: "contact, informations, génie civil, montage électrique, Algérie",
+};
 
 const Contact = () => {
   const t = useTranslations("Contact");

@@ -232,7 +232,7 @@ const MobileNavPart = () => {
 
             <p
               dir="ltr"
-              className="bg-white text-gray-400 drop-shadow border-gray-400 text-center font-semibold sm:font-bold pt-3 sm:pt-6 pb-3"
+              className="bg-white text-gray-400 drop-shadow border-gray-400 border-b-2 text-center font-semibold sm:font-bold pt-3 sm:pt-6 pb-3"
             >
               © 2024 Eurl Ksentini. All Rights Reserved.
             </p>

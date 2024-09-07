@@ -7,7 +7,7 @@ export default function NotFound() {
   return (
     <html>
       <body>
-        <div className="flex flex-col justify-center items-center h-[100vh]">
+        <div className="containers flex flex-col justify-center items-center h-[100vh]">
           <Image
             src="/logo.png"
             alt="Logo"

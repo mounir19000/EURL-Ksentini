@@ -1,9 +1,18 @@
 // Component imports
 import Gallery from "@/components/gallery";
 import { useTranslations } from "next-intl";
+import type { Metadata } from "next";
 
 // Data imports
 import Data from "@/Json/galleryImages.json";
+
+export const metadata: Metadata = {
+  title: "Eurl Ksentini",
+  description:
+    "Découvrez notre galerie présentant des images de nos projets réalisés, illustrant l'expertise et les réalisations de EURL Ksentini dans le domaine du génie civil, de l'installation électrique et des services de mise en service des postes haute tension et des lignes de transmission.",
+  keywords:
+    "galerie, images, projets, EURL Ksentini, génie civil, installation électrique, mise en service, postes, haute tension, lignes de transmission",
+};
 
 const Galery = () => {
   const t = useTranslations("PagesTitles");

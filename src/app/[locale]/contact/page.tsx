@@ -9,6 +9,7 @@ import Mail from "/public/footerIcons/MailIcon.png";
 
 // Component imports
 import ContactForm from "@/components/contactForm";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Eurl Ksentini",
@@ -39,12 +40,13 @@ const Contact = () => {
       <div className="containers py-14 flex flex-col md:flex-row justify-between w-full gap-3">
         {/* Location section */}
         <div className="flex flex-col justify-start items-center flex-1">
-          <a
-            href=""
+          <Link
+            href="https://maps.app.goo.gl/VHZa5ftbjJmjR9hz8"
+            target="_blank"
             className="bg-orange-400 hover:bg-orange-800 rounded-[50%] p-2 mb-8"
           >
             <Image src={Loction} alt="Location Icon" width={35} height={35} />
-          </a>
+          </Link>
           <div className="flex flex-col justify-center items-center">
             <h1 className="font-bold text-2xl mb-1">{t("title1")}</h1>
             <p className="text-center w-2/3">{h("address")}</p>
@@ -101,7 +103,7 @@ const Contact = () => {
 
           <iframe
             className="flex-1 border-4 border-orange-400 bg-gray-400 w-auto"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d267.95145167154203!2d4.855133851916838!3d36.68796537771731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sdz!4v1725139710872!5m2!1sfr!2sdz"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d343.8834525891811!2d4.857993430947941!3d36.6855095605428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128d3b0043aa552f%3A0xdd702986a32dba1f!2sEURL%20Ksentini!5e0!3m2!1sfr!2sdz!4v1725729981409!5m2!1sfr!2sdz"
             width="600"
             height="600"
             loading="lazy"

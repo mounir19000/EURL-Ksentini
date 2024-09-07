@@ -135,8 +135,15 @@ const Footer = () => {
           </div>
 
           <div className="w-[100%] md:w-[50%] lg:w-[25%] p-1 text-white">
-            <h1 className="font-bold text-xl pb-2 text-black">{t("title3")}</h1>
-            <p className="pl-1">{h("address")}</p>
+            <Link
+              href="https://maps.app.goo.gl/VHZa5ftbjJmjR9hz8"
+              target="_blank"
+            >
+              <h1 className="font-bold text-xl pb-2 text-black">
+                {t("title3")}
+              </h1>
+              <p className="pl-1">{h("address")}</p>
+            </Link>
           </div>
         </div>
       </div>

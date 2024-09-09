@@ -1,24 +1,31 @@
 import React from "react";
-import { Link } from "@/i18n/routing";
-import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 import Image from "next/image";
 
-const Footer = () => {
-  const t = useTranslations("NavBarAndFooter");
-  const h = useTranslations("Address");
-  const locale = useLocale();
+interface FooterProps {
+  locale: string;
+  address: string;
+  title1: string;
+  title2: string;
+  title3: string;
+  activities: string;
+  references: string;
+  gallery: string;
+  contact: string;
+}
 
+const Footer = (props: FooterProps) => {
   return (
     <>
       <div className="bg-ksentini-orange">
         <div className="containers py-10 md:py-16 lg:py-20 flex flex-wrap">
           <div
             className={`w-[100%] pb-3 ${
-              locale === "ar" ? "md:pl-6" : "md:pr-6"
+              props.locale === "ar" ? "md:pl-6" : "md:pr-6"
             } md:pb-0  md:w-[50%] lg:w-[30%] flex items-start lg:items-center justify-center md:justify-start`}
           >
             <div className="flex justify-center items-start">
-              {locale === "ar" ? (
+              {props.locale === "ar" ? (
                 <Image
                   src="/logoAr.png"
                   alt="Logo"
@@ -39,33 +46,37 @@ const Footer = () => {
           </div>
 
           <div className="w-[100%] md:w-[50%] lg:w-[20%] p-1 text-white">
-            <h1 className="font-bold text-xl pb-2 text-black">{t("title1")}</h1>
+            <h1 className="font-bold text-xl pb-2 text-black">
+              {props.title1}
+            </h1>
             <ul className="list-none pl-1">
               <li className="pb-2">
-                <Link href="/activities">
-                  <p>{t("activities")}</p>
+                <Link href={`/${props.locale}/activities`}>
+                  <p>{props.activities}</p>
                 </Link>
               </li>
               <li className="pb-2">
-                <Link href="/references">
-                  <p>{t("references")}</p>
+                <Link href={`/${props.locale}/references`}>
+                  <p>{props.references}</p>
                 </Link>
               </li>
               <li className="pb-2">
-                <Link href="/galerie">
-                  <p>{t("gallery")}</p>
+                <Link href={`/${props.locale}/galerie`}>
+                  <p>{props.gallery}</p>
                 </Link>
               </li>
               <li className="pb-2">
-                <Link href="/contact">
-                  <p>{t("contact")}</p>
+                <Link href={`/${props.locale}/contact`}>
+                  <p>{props.contact}</p>
                 </Link>
               </li>
             </ul>
           </div>
 
           <div className="w-[100%] md:w-[50%] lg:w-[25%] p-1 text-white">
-            <h1 className="font-bold text-xl pb-2 text-black">{t("title2")}</h1>
+            <h1 className="font-bold text-xl pb-2 text-black">
+              {props.title2}
+            </h1>
             <ul className="list-none pl-1">
               <li className="pb-2">
                 <a
@@ -140,9 +151,9 @@ const Footer = () => {
               target="_blank"
             >
               <h1 className="font-bold text-xl pb-2 text-black">
-                {t("title3")}
+                {props.title3}
               </h1>
-              <p className="pl-1">{h("address")}</p>
+              <p className="pl-1">{props.address}</p>
             </Link>
           </div>
         </div>

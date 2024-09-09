@@ -1,18 +1,24 @@
 "use client";
 
 import Image from "next/image";
-import { Link } from "@/i18n/routing";
-import { usePathname } from "@/i18n/routing";
-import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 // component imports
 import MobileNavPart from "./MobileNavPart";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-const Navbar = () => {
-  const pathname = usePathname();
-  const locale = useLocale();
-  const t = useTranslations("NavBarAndFooter");
+interface NavbarProps {
+  locale: string;
+  home: string;
+  activities: string;
+  references: string;
+  gallery: string;
+  contact: string;
+}
+
+const Navbar = (props: NavbarProps) => {
+  const pathname = usePathname(); // Use usePathname instead of useRouter
 
   return (
     <div
@@ -21,8 +27,8 @@ const Navbar = () => {
       <div className={`containers h-ksentini-navbar`}>
         <div className="h-full w-full flex justify-between items-center">
           <div className="flex justify-center items-start ">
-            <Link href="/">
-              {locale === "ar" ? (
+            <Link href={`/${props.locale}`}>
+              {props.locale === "ar" ? (
                 <Image
                   src="/logoAr.png"
                   alt="Logo"
@@ -45,64 +51,71 @@ const Navbar = () => {
           <div className="h-full flex items-center">
             <div className="block h-full xl:hidden">
               <div className="flex justify-center gap-x-3 items-center h-full">
-                <MobileNavPart />
+                <MobileNavPart
+                  locale={props.locale}
+                  home={props.home}
+                  activities={props.activities}
+                  references={props.references}
+                  gallery={props.gallery}
+                  contact={props.contact}
+                />
               </div>
             </div>
             <div className="hidden h-full xl:block">
               <div className="h-full flex flex-row items-center gap-8">
                 <div className="h-full flex flex-row items-center gap-12">
                   <Link
-                    href="/"
+                    href={`/${props.locale}`}
                     className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
-                      pathname === "/"
+                      pathname === `/${props.locale}` || pathname === "/"
                         ? "text-ksentini-orange border-ksentini-orange"
                         : "text-black border-transparent"
                     }`}
                   >
-                    <p>{t("home")}</p>
+                    <p>{props.home}</p>
                   </Link>
                   <Link
-                    href="/activities"
+                    href={`/${props.locale}/activities`}
                     className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
-                      pathname === "/activities"
+                      pathname === `/${props.locale}/activities`
                         ? "border-ksentini-orange text-ksentini-orange"
                         : "text-black border-transparent"
                     }`}
                   >
-                    <p>{t("activities")}</p>
+                    <p>{props.activities}</p>
                   </Link>
                   <Link
-                    href="/references"
+                    href={`/${props.locale}/references`}
                     className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
-                      pathname === "/references"
+                      pathname === `/${props.locale}/references`
                         ? "text-ksentini-orange border-ksentini-orange"
                         : "text-black border-transparent"
                     }`}
                   >
-                    <p>{t("references")}</p>
+                    <p>{props.references}</p>
                   </Link>
                   <Link
-                    href="/galerie"
+                    href={`/${props.locale}/galerie`}
                     className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
-                      pathname === "/galerie"
+                      pathname === `/${props.locale}/galerie`
                         ? "text-ksentini-orange border-ksentini-orange"
                         : "text-black border-transparent"
                     }`}
                   >
-                    <p>{t("gallery")}</p>
+                    <p>{props.gallery}</p>
                   </Link>
                   <Link
-                    href="/contact"
+                    href={`/${props.locale}/contact`}
                     className={`h-full flex items-center font-bold text-lg border-t-4 border-ksentini-orange hover:border-ksentini-orange hover:text-ksentini-orange ${
-                      pathname === "/contact"
+                      pathname === `/${props.locale}/contact`
                         ? "text-ksentini-orange border-ksentini-orange"
                         : "text-black border-transparent"
                     }`}
                   >
-                    <p>{t("contact")}</p>
+                    <p>{props.contact}</p>
                   </Link>
                 </div>
-                <LanguageSwitcher />
+                <LanguageSwitcher locale={props.locale} />
               </div>
             </div>
           </div>

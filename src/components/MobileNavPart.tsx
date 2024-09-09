@@ -1,15 +1,25 @@
 "use client";
 import Image from "next/image";
 import { useState, useRef } from "react";
-import { Link } from "@/i18n/routing";
-import { usePathname } from "@/i18n/routing";
-import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
-const MobileNavPart = () => {
+interface MobileNavPartProps {
+  locale: string;
+  home: string;
+  activities: string;
+  references: string;
+  gallery: string;
+  contact: string;
+}
+
+const MobileNavPart = (props: MobileNavPartProps) => {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
-  const locale = useLocale();
-  const t = useTranslations("NavBarAndFooter");
+
+  const pathname = usePathname(); // Use usePathname instead of useRouter
+  const currentLocale = pathname?.split("/")[1]; // Get the current locale (first part of path)
+  const restOfPath = pathname?.replace(`/${currentLocale}`, ""); // Remove current locale
 
   const scrollRef = useRef(null);
 
@@ -43,12 +53,12 @@ const MobileNavPart = () => {
             <div className="containers h-ksentini-navbar bg-white drop-shadow relative flex justify-between items-center">
               <div className="flex justify-center items-start ">
                 <Link
-                  href="/"
+                  href={`/` + props.locale}
                   onClick={() => {
                     setIsOpen(false);
                   }}
                 >
-                  {locale === "ar" ? (
+                  {props.locale === "ar" ? (
                     <Image
                       src="/logoAr.png"
                       alt="Logo"
@@ -83,7 +93,7 @@ const MobileNavPart = () => {
 
             <div className="bg-white flex flex-col items-center justify-center">
               <Link
-                href="/"
+                href={`/` + props.locale}
                 onClick={() => {
                   setIsOpen(false);
                 }}
@@ -91,31 +101,16 @@ const MobileNavPart = () => {
               >
                 <p
                   className={`font-normal sm:font-medium text-lg sm:text-2xl py-4 sm:py-8 ${
-                    pathname === "/" ? "text-ksentini-orange" : "text-black"
-                  }`}
-                >
-                  {t("home")}
-                </p>
-              </Link>
-              <Link
-                href="/activities"
-                onClick={() => {
-                  setIsOpen(false);
-                }}
-                className="w-full text-center"
-              >
-                <p
-                  className={`font-normal sm:font-medium text-lg sm:text-2xl py-4 sm:py-8 ${
-                    pathname === "/activities"
+                    pathname === `/` + props.locale || pathname === `/`
                       ? "text-ksentini-orange"
                       : "text-black"
                   }`}
                 >
-                  {t("activities")}
+                  {props.home}
                 </p>
               </Link>
               <Link
-                href="/references"
+                href={`/` + props.locale + `/activities`}
                 onClick={() => {
                   setIsOpen(false);
                 }}
@@ -123,16 +118,16 @@ const MobileNavPart = () => {
               >
                 <p
                   className={`font-normal sm:font-medium text-lg sm:text-2xl py-4 sm:py-8 ${
-                    pathname === "/references"
+                    pathname === `/` + props.locale + `/activities`
                       ? "text-ksentini-orange"
                       : "text-black"
                   }`}
                 >
-                  {t("references")}
+                  {props.activities}
                 </p>
               </Link>
               <Link
-                href="/galerie"
+                href={`/` + props.locale + `/references`}
                 onClick={() => {
                   setIsOpen(false);
                 }}
@@ -140,16 +135,16 @@ const MobileNavPart = () => {
               >
                 <p
                   className={`font-normal sm:font-medium text-lg sm:text-2xl py-4 sm:py-8 ${
-                    pathname === "/galerie"
+                    pathname === `/` + props.locale + `/references`
                       ? "text-ksentini-orange"
                       : "text-black"
                   }`}
                 >
-                  {t("gallery")}
+                  {props.references}
                 </p>
               </Link>
               <Link
-                href="/contact"
+                href={`/` + props.locale + `/galerie`}
                 onClick={() => {
                   setIsOpen(false);
                 }}
@@ -157,21 +152,37 @@ const MobileNavPart = () => {
               >
                 <p
                   className={`font-normal sm:font-medium text-lg sm:text-2xl py-4 sm:py-8 ${
-                    pathname === "/contact"
+                    pathname === `/` + props.locale + `/galerie`
                       ? "text-ksentini-orange"
                       : "text-black"
                   }`}
                 >
-                  {t("contact")}
+                  {props.gallery}
+                </p>
+              </Link>
+              <Link
+                href={`/` + props.locale + `/contact`}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+                className="w-full text-center"
+              >
+                <p
+                  className={`font-normal sm:font-medium text-lg sm:text-2xl py-4 sm:py-8 ${
+                    pathname === `/` + props.locale + `/contact`
+                      ? "text-ksentini-orange"
+                      : "text-black"
+                  }`}
+                >
+                  {props.contact}
                 </p>
               </Link>
 
               <div className="w-full containers flex justify-evenly py-3 sm:py-4">
                 <Link
-                  href={pathname}
-                  locale="ar"
+                  href={`/ar${restOfPath}`}
                   className={`text-center flex items-center justify-center gap-x-2 px-3 py-2 rounded-md ${
-                    locale === "ar"
+                    props.locale === "ar"
                       ? "bg-ksentini-orange text-white"
                       : "bg-white text-black"
                   }`}
@@ -188,10 +199,9 @@ const MobileNavPart = () => {
                   </p>
                 </Link>
                 <Link
-                  href={pathname}
-                  locale="fr"
+                  href={`/fr${restOfPath}`}
                   className={`text-center flex items-center justify-center gap-x-2 px-3 py-2 rounded-md ${
-                    locale === "fr"
+                    props.locale === "fr"
                       ? "bg-ksentini-orange text-white"
                       : "bg-white text-black"
                   }`}
@@ -208,10 +218,9 @@ const MobileNavPart = () => {
                   </p>
                 </Link>
                 <Link
-                  href={pathname}
-                  locale="en"
+                  href={`/en${restOfPath}`}
                   className={`text-center flex items-center justify-center gap-x-2 px-3 py-2 rounded-md ${
-                    locale === "en"
+                    props.locale === "en"
                       ? "bg-ksentini-orange text-white"
                       : "bg-white text-black"
                   }`}

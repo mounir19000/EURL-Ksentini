@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { useLocale } from "next-intl";
 
 interface ContactProps {
   title: string;
@@ -10,6 +9,7 @@ interface ContactProps {
   placeholder4: string;
   button: string;
   button2: string;
+  locale: string;
 }
 
 const ContactForm = (props: ContactProps) => {
@@ -60,8 +60,6 @@ const ContactForm = (props: ContactProps) => {
     }
   };
 
-  const locale = useLocale();
-
   return (
     <>
       {/* Form section */}
@@ -84,7 +82,7 @@ const ContactForm = (props: ContactProps) => {
           type="tel"
           placeholder={props.placeholder2}
           className={` ${
-            locale === "ar" ? "text-right" : ""
+            props.locale === "ar" ? "text-right" : ""
           } border border-gray-300 rounded-md px-4 py-3 mb-4 w-full`}
           required
           value={phone}

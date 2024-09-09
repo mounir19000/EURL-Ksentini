@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
-import "../globals.css";
 
 // Components import
 import Navbar from "@/components/navbar";
@@ -78,27 +75,38 @@ export const metadata: Metadata = {
   },
 };
 
+import data from "@/Json/en.json";
+
 export default async function LocaleLayout({
   children,
-  params: { locale },
 }: {
   children: React.ReactNode;
-  params: { locale: string };
 }) {
-  // Providing all messages to the client
-  // side is the easiest way to get started
-  const messages = await getMessages();
-
   return (
-    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
+    <html lang="en" dir="ltr">
       <body>
-        <NextIntlClientProvider messages={messages}>
-          <div className="min-h-[100vh]">
-            <Navbar />
-            {children}
-            <Footer />
-          </div>
-        </NextIntlClientProvider>
+        <div className="min-h-[100vh]">
+          <Navbar
+            locale={"en"}
+            home={data["NavBarAndFooter"].home}
+            activities={data["NavBarAndFooter"].activities}
+            references={data["NavBarAndFooter"].references}
+            gallery={data["NavBarAndFooter"].gallery}
+            contact={data["NavBarAndFooter"].contact}
+          />
+          {children}
+          <Footer
+            locale={"en"}
+            address={data["Address"].address}
+            title1={data["NavBarAndFooter"].title1}
+            title2={data["NavBarAndFooter"].title2}
+            title3={data["NavBarAndFooter"].title3}
+            activities={data["NavBarAndFooter"].activities}
+            references={data["NavBarAndFooter"].references}
+            gallery={data["NavBarAndFooter"].gallery}
+            contact={data["NavBarAndFooter"].contact}
+          />
+        </div>
       </body>
     </html>
   );

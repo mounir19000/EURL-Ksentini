@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { useLocale } from "next-intl";
 
 interface Project {
   img: string;
@@ -16,19 +15,19 @@ interface Project {
 interface ReferencesCardsProps {
   projects: Project[];
   button: string;
+  locale: string;
 }
 
 const ReferencesCards: React.FC<ReferencesCardsProps> = ({
   projects,
   button,
+  locale,
 }) => {
   const [visibleCount, setVisibleCount] = useState(6); // Initial number of visible projects
 
   const loadMore = () => {
     setVisibleCount(visibleCount + 4); // Increase the number of visible projects
   };
-
-  const locale = useLocale();
 
   return (
     <div>

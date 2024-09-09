@@ -1,5 +1,4 @@
-import { useTranslations, useMessages } from "next-intl";
-import { Link } from "@/i18n/routing";
+import Link from "next/link";
 import OurActivities from "@/components/ourActivities";
 import HomePageSlider from "@/components/homePageSlider";
 
@@ -82,20 +81,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
-  const t = useTranslations("Home");
-  const h = useTranslations("Activities1");
-  const m = useTranslations("Activities2");
-  const messages = useMessages();
+import data from "@/Json/fr.json";
+const locale = "fr";
 
-  const activities1 = Object.keys(messages.Activities1).map((key) => ({
-    title: h(`${key}.title`),
-    bg: h(`${key}.bg`),
+export default function Home() {
+  const activities1 = data["Activities1"].map((key) => ({
+    title: key.title,
+    bg: key.bg,
   }));
 
-  const activities2 = Object.keys(messages.Activities2).map((key) => ({
-    text: m(`${key}.text`),
-    icon: m(`${key}.icon`),
+  const activities2 = data["Activities2"].map((key) => ({
+    text: key.text,
+    icon: key.icon,
   }));
 
   return (
@@ -109,25 +106,30 @@ export default function Home() {
           </div>
           <div className="md:w-[50%] bg-white px-7 py-10 mt-12 mb-16 rounded-xl flex flex-col items-center justify-center">
             <h1 className="text-start font-bold text-4xl mb-3 w-full">
-              <span className="text-ksentini-orange">{t("title1Part1")}</span>
-              <span className="text-ksentini-red">{t("title1Part2")}</span>
+              <span className="text-ksentini-orange">
+                {data["Home"].title1Part1}
+              </span>
+              <span className="text-ksentini-red">
+                {data["Home"].title1Part2}
+              </span>
             </h1>
             <p className="text-start w-full mb-1">
-              <strong>EURL KSENTINI</strong> {t("text")}
+              <strong>EURL KSENTINI</strong>
+              {data["Home"].text}
             </p>
             <ul className="text-start list-disc w-full pl-8 mb-6">
-              <li>{t("li1")}</li>
-              <li>{t("li2")}</li>
-              <li>{t("li3")}</li>
-              <li>{t("li4")}</li>
+              <li>{data["Home"].li1}</li>
+              <li>{data["Home"].li2}</li>
+              <li>{data["Home"].li3}</li>
+              <li>{data["Home"].li4}</li>
             </ul>
 
             <div className="w-full flex justify-end">
               <Link
-                href={"/contact"}
+                href={`/${locale}/contact`}
                 className="bg-ksentini-orange hover:bg-ksentini-red px-6 py-3 rounded text-white font-bold"
               >
-                {t("button")}
+                {data["Home"].button}
               </Link>
             </div>
           </div>
@@ -136,7 +138,7 @@ export default function Home() {
 
       <div className="flex flex-col justify-center items-center py-14 sm:py-24">
         <h1 className="w-full text-center font-bold text-3xl md:text-5xl pb-12 sm:pb-16">
-          {t("title2")}
+          {data["Home"].title2}
         </h1>
         <OurActivities activities={activities2} />
       </div>

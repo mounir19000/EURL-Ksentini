@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
-import { redirect } from "next/navigation";
-import "./globals.css";
+import { Inter } from "next/font/google";
+
+// Components import
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   icons: [
@@ -43,15 +48,6 @@ export const metadata: Metadata = {
     "EURL Ksentini est une entreprise spécialisée dans le génie civil des postes électriques, le montage et l'installation des lignes électriques, ainsi que le commissioning et la mise en service des équipements électriques en Algérie.",
   keywords:
     "Génie civil, postes électriques, montage, lignes électriques, commissioning, mise en service, EURL Ksentini, Algérie",
-  metadataBase: new URL("https://eurl-ksentini.netlify.app"),
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-US": "/en",
-      "fr-FR": "/fr",
-      "ar-AR": "/ar",
-    },
-  },
   openGraph: {
     type: "website",
     locale: "fr_FR",
@@ -61,8 +57,8 @@ export const metadata: Metadata = {
       {
         url: "/OpenGraph.png",
         secureUrl: "/OpenGraph.png",
-        width: 1200,
-        height: 630,
+        width: 600,
+        height: 200,
         alt: "Eurl Ksentini",
       },
     ],
@@ -79,14 +75,39 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+import data from "@/Json/ar.json";
+
+export default async function LocaleLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html>
-      <body>{children}</body>
+    <html lang="ar" dir="rtl">
+      <body>
+        <div className="min-h-[100vh]">
+          <Navbar
+            locale={"ar"}
+            home={data["NavBarAndFooter"].home}
+            activities={data["NavBarAndFooter"].activities}
+            references={data["NavBarAndFooter"].references}
+            gallery={data["NavBarAndFooter"].gallery}
+            contact={data["NavBarAndFooter"].contact}
+          />
+          {children}
+          <Footer
+            locale={"ar"}
+            address={data["Address"].address}
+            title1={data["NavBarAndFooter"].title1}
+            title2={data["NavBarAndFooter"].title2}
+            title3={data["NavBarAndFooter"].title3}
+            activities={data["NavBarAndFooter"].activities}
+            references={data["NavBarAndFooter"].references}
+            gallery={data["NavBarAndFooter"].gallery}
+            contact={data["NavBarAndFooter"].contact}
+          />
+        </div>
+      </body>
     </html>
   );
 }

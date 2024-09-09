@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useTranslations, useLocale } from "next-intl";
 import type { Metadata } from "next";
 
 // images
@@ -18,11 +17,10 @@ export const metadata: Metadata = {
   keywords: "contact, informations, génie civil, montage électrique, Algérie",
 };
 
-const Contact = () => {
-  const t = useTranslations("Contact");
-  const h = useTranslations("Address");
-  const locale = useLocale();
+import data from "@/Json/ar.json";
+const locale = "ar";
 
+const Contact = () => {
   return (
     <div className="w-full bg-slate-200">
       {/* First part of the contact page */}
@@ -30,7 +28,7 @@ const Contact = () => {
         <div className="h-full containers">
           <div className="h-full flex items-center justify-center">
             <h1 className="font-extrabold text-3xl md:text-5xl text-white bg-gray-600 bg-opacity-50 p-6 w-auto  md:max-w-[50vw]">
-              {t("contact")}
+              {data["Contact"].contact}
             </h1>
           </div>
         </div>
@@ -48,8 +46,10 @@ const Contact = () => {
             <Image src={Loction} alt="Location Icon" width={35} height={35} />
           </Link>
           <div className="flex flex-col justify-center items-center">
-            <h1 className="font-bold text-2xl mb-1">{t("title1")}</h1>
-            <p className="text-center w-2/3">{h("address")}</p>
+            <h1 className="font-bold text-2xl mb-1">
+              {data["Contact"].title1}
+            </h1>
+            <p className="text-center w-2/3">{data["Address"].address}</p>
           </div>
         </div>
         {/* Phone section */}
@@ -61,7 +61,9 @@ const Contact = () => {
             <Image src={Phone} alt="Phone Icon" width={35} height={35} />
           </a>
           <div className="flex flex-col justify-center items-center">
-            <h1 className="font-bold text-2xl mb-1">{t("title2")}</h1>
+            <h1 className="font-bold text-2xl mb-1">
+              {data["Contact"].title2}
+            </h1>
             <p className="text-center" dir="ltr">
               +213 55 66 88 77
             </p>
@@ -76,28 +78,27 @@ const Contact = () => {
             <Image src={Mail} alt="Mail Icon" width={35} height={35} />
           </a>
           <div className="flex flex-col justify-center items-center">
-            <h1 className="font-bold text-2xl mb-1">{t("title3")}</h1>
+            <h1 className="font-bold text-2xl mb-1">
+              {data["Contact"].title3}
+            </h1>
             <p className="text-center">blabla@gmail.com</p>
           </div>
         </div>
       </div>
 
       {/* Third part of the contact page */}
-      <div
-        className={` ${
-          locale === "ar" ? "contactCustomBgAr" : "contactCustomBg"
-        }  py-14 `}
-      >
+      <div className={`contactCustomBgAr py-14 `}>
         <div className="containers flex flex-col md:flex-row justify-between gap-10">
           <div className="flex-1">
             <ContactForm
-              title={t("title4")}
-              placeholder1={t("placeholder1")}
-              placeholder2={t("placeholder2")}
-              placeholder3={t("placeholder3")}
-              placeholder4={t("placeholder4")}
-              button={t("button")}
-              button2={t("button2")}
+              title={data["Contact"].title4}
+              placeholder1={data["Contact"].placeholder1}
+              placeholder2={data["Contact"].placeholder2}
+              placeholder3={data["Contact"].placeholder3}
+              placeholder4={data["Contact"].placeholder4}
+              button={data["Contact"].button}
+              button2={data["Contact"].button2}
+              locale={locale}
             />
           </div>
 

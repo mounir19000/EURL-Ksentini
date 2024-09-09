@@ -12,7 +12,7 @@ export default function NotFound() {
     // Set a timeout to redirect after 3 seconds
     const timeoutId = setTimeout(() => {
       router.push("/fr"); // Redirect to the desired page
-    }, 3000); // 3000 milliseconds = 3 seconds
+    }, 5000);
 
     // Clean up timeout if the component is unmounted before the timeout completes
     return () => clearTimeout(timeoutId);
@@ -33,7 +33,7 @@ export default function NotFound() {
             Page Not Found
           </p>
           <p className="text-black text-2xl text-center font-bold mb-7">
-            We will redirect you to a safe place in 3 seconds, or you can click
+            We will redirect you to a safe place in 5 seconds, or you can click
           </p>
           <Link
             href="/fr"

@@ -9,10 +9,11 @@ import data from "@/Json/ar.json";
 export const metadata: Metadata = {
   title: "Eurl Ksentini",
   description:
-    "Découvrez notre galerie présentant des images de nos projets réalisés, illustrant l'expertise et les réalisations de EURL Ksentini dans le domaine du génie civil, de l'installation électrique et des services de mise en service des postes haute tension et des lignes de transmission.",
+    "اكتشفوا معرضنا الذي يعرض صورًا لمشاريعنا المنجزة، ويبرز خبرة وإنجازات EURL Ksentini في مجال الهندسة المدنية، التركيب الكهربائي، وخدمات التشغيل لمحطات الضغط العالي وخطوط النقل.",
   keywords:
-    "galerie, images, projets, EURL Ksentini, génie civil, installation électrique, mise en service, postes, haute tension, lignes de transmission",
+    "معرض، صور، مشاريع، EURL Ksentini، الهندسة المدنية، التركيب الكهربائي، التشغيل، محطات، الضغط العالي، خطوط النقل",
 };
+
 
 const Galery = () => {
   return (

@@ -4,9 +4,9 @@ import OurActivities from "@/components/ourActivities";
 export const metadata: Metadata = {
   title: "Eurl Ksentini",
   description:
-    "Explorez les principales activités de EURL Ksentini, comprenant les études d’ingénierie, le montage des postes électriques, l’électrification ferroviaire et plus encore.",
+    "استكشف الأنشطة الرئيسية لشركة EURL Ksentini، بما في ذلك الدراسات الهندسية، تركيب محطات الكهرباء، الكهربة للسكك الحديدية، وأكثر من ذلك.",
   keywords:
-    "études d'ingénierie, montage électrique, électrification ferroviaire, postes HTB/HTA/BT, éclairage public, Algérie",
+    "الدراسات الهندسية، تركيب الكهرباء، الكهربة للسكك الحديدية، محطات الضغط العالي/الضغط المتوسط/الضغط المنخفض، الإضاءة العامة، الجزائر",
 };
 
 import data from "@/Json/ar.json";

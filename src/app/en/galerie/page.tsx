@@ -9,10 +9,11 @@ import data from "@/Json/en.json";
 export const metadata: Metadata = {
   title: "Eurl Ksentini",
   description:
-    "Découvrez notre galerie présentant des images de nos projets réalisés, illustrant l'expertise et les réalisations de EURL Ksentini dans le domaine du génie civil, de l'installation électrique et des services de mise en service des postes haute tension et des lignes de transmission.",
+    "Explore our gallery showcasing images of our completed projects, highlighting the expertise and accomplishments of EURL Ksentini in the fields of civil engineering, electrical installation, and commissioning services for high-voltage substations and transmission lines.",
   keywords:
-    "galerie, images, projets, EURL Ksentini, génie civil, installation électrique, mise en service, postes, haute tension, lignes de transmission",
+    "gallery, images, projects, EURL Ksentini, civil engineering, electrical installation, commissioning, substations, high voltage, transmission lines",
 };
+
 
 const Galery = () => {
   return (

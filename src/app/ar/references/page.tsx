@@ -6,10 +6,11 @@ import ReferencesCards from "@/components/referencesCards";
 export const metadata: Metadata = {
   title: "Eurl Ksentini",
   description:
-    "Découvrez nos réalisations dans le domaine du génie civil, du montage de lignes électriques et de la mise en service d’équipements électriques en Algérie.",
+    "اكتشفوا إنجازاتنا في مجال الهندسة المدنية، تركيب خطوط الكهرباء، وتشغيل المعدات الكهربائية في الجزائر.",
   keywords:
-    "références, travaux génie civil, montage de lignes, équipements électriques, Algérie",
+    "مراجع، أعمال الهندسة المدنية، تركيب الخطوط، المعدات الكهربائية، الجزائر",
 };
+
 
 import data from "@/Json/ar.json";
 

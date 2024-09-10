@@ -13,9 +13,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Eurl Ksentini",
   description:
-    "Besoin de plus d'informations sur nos services en génie civil et montage électrique ? Contactez EURL Ksentini dès maintenant.",
-  keywords: "contact, informations, génie civil, montage électrique, Algérie",
+    "Need more information about our civil engineering and electrical installation services? Contact EURL Ksentini today.",
+  keywords: "contact, information, civil engineering, electrical installation, Algeria",
 };
+
 
 import data from "@/Json/en.json";
 const locale = "en";

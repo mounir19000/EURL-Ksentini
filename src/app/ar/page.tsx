@@ -42,9 +42,9 @@ export const metadata: Metadata = {
   ],
   title: "Eurl Ksentini",
   description:
-    "EURL Ksentini est une entreprise spécialisée dans le génie civil des postes électriques, le montage et l'installation des lignes électriques, ainsi que le commissioning et la mise en service des équipements électriques en Algérie.",
+    "شركة EURL Ksentini متخصصة في الهندسة المدنية لمحطات الكهرباء، تركيب وتثبيت خطوط الكهرباء، وكذلك تكليف وتشغيل المعدات الكهربائية في الجزائر.",
   keywords:
-    "Génie civil, postes électriques, montage, lignes électriques, commissioning, mise en service, EURL Ksentini, Algérie",
+    "الهندسة المدنية، محطات الكهرباء، التركيب، خطوط الكهرباء، التكليف، التشغيل، EURL Ksentini، الجزائر",
   metadataBase: new URL("https://eurl-ksentini.netlify.app"),
   alternates: {
     canonical: "/",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Eurl Ksentini",
     description:
-      "EURL Ksentini est une entreprise spécialisée dans le génie civil des postes électriques, le montage et l'installation des lignes électriques, ainsi que le commissioning et la mise en service des équipements électriques en Algérie.",
+      "شركة EURL Ksentini متخصصة في الهندسة المدنية لمحطات الكهرباء، تركيب وتثبيت خطوط الكهرباء، وكذلك تكليف وتشغيل المعدات الكهربائية في الجزائر.",
     images: {
       url: "/OpenGraph.png",
       alt: "Eurl Ksentini",

@@ -32,8 +32,8 @@ const Navbar = (props: NavbarProps) => {
                 <Image
                   src="/logoAr.png"
                   alt="Logo"
-                  width={950}
-                  height={262}
+                  width={835}
+                  height={192}
                   className="responsive-logo"
                 />
               ) : (

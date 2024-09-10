@@ -25,10 +25,10 @@
     "title1Part1": "Who ",
     "title1Part2": "We Are",
     "text": " is a sole proprietorship limited liability company. It primarily operates in the energy sector, particularly in the following areas:",
-    "li1": "Civil Engineering of HTB/HTA/BT electrical substations.",
-    "li2": "Assembly and Installation of HTB/HTA/BT overhead and underground electrical lines.",
-    "li3": "Assembly and Installation of HTB/HTA/BT electrical substations.",
-    "li4": "Commissioning tests and Start-up of HTB/HTA/BT electrical substations.",
+    "li1": "Civil Engineering of HV/MV/LV electrical substations.",
+    "li2": "Assembly and Installation of HV/MV/LV overhead and underground electrical lines.",
+    "li3": "Assembly and Installation of HV/MV/LV electrical substations.",
+    "li4": "Commissioning tests and Start-up of HV/MV/LV electrical substations.",
     "button": "Learn More",
     "title2": "Our Main Activities"
   },
@@ -42,7 +42,7 @@
       "icon": "/activitiesIcons/2.png"
     },
     {
-      "text": "Realization of HTB/HTA/BT Overhead and Underground Lines",
+      "text": "Realization of HV/MV/LV Overhead and Underground Lines",
       "icon": "/activitiesIcons/3.png"
     },
     {
@@ -50,7 +50,7 @@
       "icon": "/activitiesIcons/4.png"
     },
     {
-      "text": "Assembly and Installation of HTB/HTA/BT Electrical Substations",
+      "text": "Assembly and Installation of HV/MV/LV Electrical Substations",
       "icon": "/activitiesIcons/5.png"
     },
     {

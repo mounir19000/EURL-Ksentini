@@ -29,8 +29,8 @@ const Footer = (props: FooterProps) => {
                 <Image
                   src="/logoAr.png"
                   alt="Logo"
-                  width={950}
-                  height={262}
+                  width={835}
+                  height={192}
                   style={{ height: "auto", width: "full" }}
                 />
               ) : (

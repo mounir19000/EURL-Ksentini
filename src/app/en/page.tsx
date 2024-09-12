@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     "EURL Ksentini is a company specializing in civil engineering for electrical substations, the assembly and installation of power lines, as well as commissioning and startup of electrical equipment in Algeria.",
   keywords:
     "Civil engineering, electrical substations, assembly, power lines, commissioning, startup, EURL Ksentini, Algeria",
-  metadataBase: new URL("https://eurl-ksentini.netlify.app"),
+  metadataBase: new URL("https://eurl-ksentini.com"),
   alternates: {
     canonical: "/",
     languages: {
@@ -56,8 +56,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "fr_FR",
-    url: "https://eurl-ksentini.netlify.app/",
+    locale: "en_EN",
+    url: "https://eurl-ksentini.com/en",
     siteName: "EURL Ksentini",
     images: [
       {

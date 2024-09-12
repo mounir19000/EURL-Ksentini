@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     "شركة EURL Ksentini متخصصة في الهندسة المدنية لمحطات الكهرباء، تركيب وتثبيت خطوط الكهرباء، وكذلك تكليف وتشغيل المعدات الكهربائية في الجزائر.",
   keywords:
     "الهندسة المدنية، محطات الكهرباء، التركيب، خطوط الكهرباء، التكليف، التشغيل، EURL Ksentini، الجزائر",
-  metadataBase: new URL("https://eurl-ksentini.netlify.app"),
+  metadataBase: new URL("https://eurl-ksentini.com"),
   alternates: {
     canonical: "/",
     languages: {
@@ -56,8 +56,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "fr_FR",
-    url: "https://eurl-ksentini.netlify.app/",
+    locale: "ar_AR",
+    url: "https://eurl-ksentini.com/ar",
     siteName: "EURL Ksentini",
     images: [
       {

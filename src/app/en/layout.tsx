@@ -50,8 +50,8 @@ export const metadata: Metadata = {
     "Civil engineering, electrical substations, assembly, power lines, commissioning, startup, EURL Ksentini, Algeria",
   openGraph: {
     type: "website",
-    locale: "fr_FR",
-    url: "https://eurl-ksentini.netlify.app/",
+    locale: "en_EN",
+    url: "https://eurl-ksentini.com/en",
     siteName: "EURL Ksentini",
     images: [
       {
@@ -74,7 +74,6 @@ export const metadata: Metadata = {
     },
   },
 };
-
 
 import data from "@/Json/en.json";
 

@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://eurl-ksentini.netlify.app/",
+    url: "https://eurl-ksentini.com/fr",
     siteName: "EURL Ksentini",
     images: [
       {

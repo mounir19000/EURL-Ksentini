@@ -1,22 +1,4 @@
 {
-    "activities": [
-      {
-        "title": "Génie civil des postes électriques",
-        "bg": "/homePageSlider/1.JPG"
-      },
-      {
-        "title": "Montage et Installation des lignes électriques",
-        "bg": "/homePageSlider/2.JPG"
-      },
-      {
-        "title": "Montage et Installation des postes électriques",
-        "bg": "/homePageSlider/3.JPG"
-      },
-      {
-        "title": "Commissioning et Mise en service des postes électriques",
-        "bg": "/homePageSlider/4.JPG"
-      }
-    ],
     "logos": [
       {
         "img": "/homePageLogosSlider/1.png",

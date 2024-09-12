@@ -109,7 +109,7 @@ export default function Home() {
       />
       <HomePageSlider activities={activities1} />
 
-      <div className="bg-[url('/homepageSlider/1.jpg')] bg-cover bg-center">
+      <div className="bg-[url('/homePageSlider/1.webp')] bg-cover bg-center">
         <div className="containers py-14 flex flex-col md:flex-row items-center justify-center w-full h-full">
           <div className="md:w-[50%] flex-1">
             <div></div>

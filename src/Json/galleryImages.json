@@ -2,12 +2,6 @@
   "galleryID": "gallery1",
   "images": [
     {
-      "largeURL": "/galleryImages/1.jpg",
-      "thumbnailURL": "/galleryImages/1_thumbnail.jpg",
-      "width": 738,
-      "height": 1601
-    },
-    {
       "largeURL": "/galleryImages/2.jpg",
       "thumbnailURL": "/galleryImages/2_thumbnail.jpg",
       "width": 900,
@@ -314,18 +308,6 @@
       "height": 1000
     },
     {
-      "largeURL": "/galleryImages/56.jpeg",
-      "thumbnailURL": "/galleryImages/56_thumbnail.jpeg",
-      "width": 2560,
-      "height": 1536
-    },
-    {
-      "largeURL": "/galleryImages/57.jpeg",
-      "thumbnailURL": "/galleryImages/57_thumbnail.jpeg",
-      "width": 2560,
-      "height": 1536
-    },
-    {
       "largeURL": "/galleryImages/58.jpeg",
       "thumbnailURL": "/galleryImages/58_thumbnail.jpeg",
       "width": 2560,
@@ -338,26 +320,8 @@
       "height": 1280
     },
     {
-      "largeURL": "/galleryImages/60.jpg",
-      "thumbnailURL": "/galleryImages/60_thumbnail.jpg",
-      "width": 960,
-      "height": 1280
-    },
-    {
       "largeURL": "/galleryImages/61.jpg",
       "thumbnailURL": "/galleryImages/61_thumbnail.jpg",
-      "width": 960,
-      "height": 1280
-    },
-    {
-      "largeURL": "/galleryImages/62.jpg",
-      "thumbnailURL": "/galleryImages/62_thumbnail.jpg",
-      "width": 960,
-      "height": 1280
-    },
-    {
-      "largeURL": "/galleryImages/63.jpg",
-      "thumbnailURL": "/galleryImages/63_thumbnail.jpg",
       "width": 960,
       "height": 1280
     },

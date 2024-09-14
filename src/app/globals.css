@@ -125,12 +125,44 @@ h1 , h2 , h3 , h4 , h5 , h6 , p {
   gap: 8px; /* Spacing between dots */
 }
 
+.loaderContainerSmall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px; /* Spacing between dots */
+}
+
 .dot {
   width: 20px; /* Size of each dot */
   height: 20px; /* Size of each dot */
   background-color: #E06C01; /* Color of the dots */
   border-radius: 50%;
   animation: bounce 1.2s infinite ease-in-out;
+}
+
+.dotSmall {
+  margin-top: 10px;
+  width: 10px; /* Size of each dot */
+  height: 10px; /* Size of each dot */
+  background-color: white; /* Color of the dots */
+  border-radius: 50%;
+  animation: bounce 1.2s infinite ease-in-out;
+}
+
+.dotSmall:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dotSmall:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dotSmall:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.dotSmall:nth-child(4) {
+  animation-delay: 0.6s;
 }
 
 .dot:nth-child(1) {

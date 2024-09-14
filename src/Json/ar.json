@@ -98,7 +98,9 @@
     "contact": "اتصل بنا",
     "title1": "روابط سريعة",
     "title2": "الاتصال",
-    "title3": "العنوان"
+    "title3": "العنوان",
+    "title4": "مواقع التواصل الاجتماعي",
+    "LinkedIn": "لينكدإن"
   },
 
   "references1": [
@@ -110,24 +112,6 @@
       "client": "سونلغاز - مسير شبكة نقل الكهرباء - الجزائر",
       "date": "2011",
       "description": "الهندسة المدنية لخط 220 كيلو فولت أربعا/الي 2، خط 60 كيلو فولت أربعا/روب وألي/مفتاح"
-    },
-    {
-      "img": "/Logos/SARL_SOUMMAM.png",
-      "alt": "SARL SOUMMAM",
-      "width": 755,
-      "height": 424,
-      "client": "سارل الصومام",
-      "date": "2011",
-      "description": "أعمال الهندسة المدنية لخطوط محطة سيدي علي بوسيدي 400 كيلو فولت"
-    },
-    {
-      "img": "/Logos/SARL_SOUMMAM.png",
-      "alt": "SARL SOUMMAM",
-      "width": 755,
-      "height": 424,
-      "client": "سارل الصومام",
-      "date": "2011",
-      "description": "أعمال الهندسة المدنية لثلاث خطوط 220 كيلو فولت في محطة سيدي علي بوسيدي 400 كيلو فولت"
     },
     {
       "img": "/Logos/GRTE_ALGER.png",
@@ -150,8 +134,8 @@
     {
       "img": "/Logos/ENERGO_INVEST.png",
       "alt": "ENERGO-INVEST",
-      "width": 1001,
-      "height": 265,
+      "width": 600,
+      "height": 600,
       "client": "اينيرقو انفاست",
       "date": "2009",
       "description": "أعمال الهندسة المدنية على خط 400 كيلو فولت حجرت النوس - العفرون"
@@ -159,8 +143,8 @@
     {
       "img": "/Logos/ENERGO_INVEST.png",
       "alt": "ENERGO-INVEST",
-      "width": 1001,
-      "height": 265,
+      "width": 600,
+      "height": 600,
       "client": "اينيرقو انفاست",
       "date": "2009",
       "description": "أعمال الهندسة المدنية وتركيب خط 220 كيلو فولت محطة غزوات - محطة تحلية المياه سوق علطاطا"
@@ -224,8 +208,8 @@
     {
       "img": "/Logos/ENERGO_INVEST.png",
       "alt": "ENERGO-INVEST",
-      "width": 1001,
-      "height": 265,
+      "width": 600,
+      "height": 600,
       "client": "اينيرقو انفاست",
       "date": "2011",
       "description": "خط 400 كيلو فولت حجرت النوس - العفرون 1"
@@ -233,8 +217,8 @@
     {
       "img": "/Logos/ENERGO_INVEST.png",
       "alt": "ENERGO-INVEST",
-      "width": 1001,
-      "height": 265,
+      "width": 600,
+      "height": 600,
       "client": "اينيرقو انفاست",
       "date": "2011",
       "description": "خط 60 كيلو فولت وادي عطمان - وادي سيغين"
@@ -242,8 +226,8 @@
     {
       "img": "/Logos/ENERGO_INVEST.png",
       "alt": "ENERGO-INVEST",
-      "width": 1001,
-      "height": 265,
+      "width": 600,
+      "height": 600,
       "client": "اينيرقو انفاست",
       "date": "2011",
       "description": "خط 60 كيلو فولت: عين سمارة - قسنطينة"
@@ -267,24 +251,6 @@
       "client": "سونلغاز-غيليزان-الجزائر",
       "date": "2020",
       "description": "تزويد معدات كهربائية وأنظمة الحماية والتحكم؛ التفكيك والتركيب والكابلات والاختبارات ووضع الخدمة لجميع المعدات المقدمة"
-    },
-    {
-      "img": "/Logos/EURL_KHOUTIR_NACER_ELECTRICITE.png",
-      "alt": "EURL KHOUTIR NACER",
-      "width": 360,
-      "height": 360,
-      "client": "شركة خوثير ناصر للكهرباء",
-      "date": "2019",
-      "description": "تركيب البوابات والدعامات المعدنية المجلفنة لتوسعة المحول الثالث 60/30 ك.ف في محطة خميس"
-    },
-    {
-      "img": "/Logos/EURL_KHOUTIR_NACER_ELECTRICITE.png",
-      "alt": "EURL KHOUTIR NACER",
-      "width": 360,
-      "height": 360,
-      "client": "شركة خوثير ناصر للكهرباء",
-      "date": "2019",
-      "description": "تركيب البوابات والدعامات المعدنية المجلفنة لتوسعة المحول الثالث 60/30 ك.ف في محطة مفتاح"
     },
     {
       "img": "/Logos/GRTE_ALGER.png",

@@ -101,6 +101,9 @@ export default async function LocaleLayout({
             title1={data["NavBarAndFooter"].title1}
             title2={data["NavBarAndFooter"].title2}
             title3={data["NavBarAndFooter"].title3}
+            title4={data["NavBarAndFooter"].title4}
+            linkedIn={data["NavBarAndFooter"].LinkedIn}
+            home={data["NavBarAndFooter"].home}
             activities={data["NavBarAndFooter"].activities}
             references={data["NavBarAndFooter"].references}
             gallery={data["NavBarAndFooter"].gallery}

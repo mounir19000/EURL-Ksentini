@@ -34,6 +34,7 @@ const ReferencesCards: React.FC<ReferencesCardsProps> = ({
       <div className="containers grid grid-cols-1 gap-6 py-6 md:grid-cols-2">
         {projects
           .slice(0, visibleCount)
+          .sort((a, b) => Number(b.date) - Number(a.date)) // Sort by date in descending order (newest first)
           .map((project: Project, index: number) => (
             <div
               key={index}
@@ -45,7 +46,7 @@ const ReferencesCards: React.FC<ReferencesCardsProps> = ({
                   alt={project.alt}
                   width={project.width}
                   height={project.height}
-                  style={{ height: "auto", width: "auto" }}
+                  style={{ height: "auto", width: "auto", maxHeight: "90px" }}
                 />
               </div>
               <div

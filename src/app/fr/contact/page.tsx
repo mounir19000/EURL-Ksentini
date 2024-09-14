@@ -37,11 +37,11 @@ const Contact = () => {
       {/* Second part of the contact page */}
       <div className="containers py-14 flex flex-col md:flex-row justify-between w-full gap-3">
         {/* Location section */}
-        <div className="flex flex-col justify-start items-center flex-1">
+        <div className="flex flex-col justify-start items-center flex-1 mb-4 md:mb-0">
           <Link
             href="https://maps.app.goo.gl/VHZa5ftbjJmjR9hz8"
             target="_blank"
-            className="bg-orange-400 hover:bg-orange-800 rounded-[50%] p-2 mb-8"
+            className="bg-orange-400 hover:bg-orange-800 rounded-[50%] p-2 mb-3 md:mb-4"
           >
             <Image src={Loction} alt="Location Icon" width={35} height={35} />
           </Link>
@@ -49,14 +49,21 @@ const Contact = () => {
             <h1 className="font-bold text-2xl mb-1">
               {data["Contact"].title1}
             </h1>
-            <p className="text-center w-2/3">{data["Address"].address}</p>
+            <a
+              href="https://maps.app.goo.gl/VHZa5ftbjJmjR9hz8"
+              className="flex justify-center"
+            >
+              <p className="text-center md:text-base w-2/3">
+                {data["Address"].address}
+              </p>
+            </a>
           </div>
         </div>
         {/* Phone section */}
-        <div className="flex flex-col justify-start items-center flex-1">
+        <div className="flex flex-col justify-start items-center flex-1 mb-4 md:mb-0">
           <a
             href=""
-            className="bg-orange-400 hover:bg-orange-800 rounded-[50%] p-2 mb-8"
+            className="bg-orange-400 hover:bg-orange-800 rounded-[50%] p-2 mb-3 md:mb-4"
           >
             <Image src={Phone} alt="Phone Icon" width={35} height={35} />
           </a>
@@ -64,16 +71,28 @@ const Contact = () => {
             <h1 className="font-bold text-2xl mb-1">
               {data["Contact"].title2}
             </h1>
-            <p className="text-center" dir="ltr">
-              +213 55 66 88 77
-            </p>
+            <a href="tel:+21334133172">
+              <p className="text-center md:text-base" dir="ltr">
+                +213 34 13 31 72
+              </p>
+            </a>
+            <a href="tel:+213557203073">
+              <p className="text-center md:text-base" dir="ltr">
+                +213 5 57 20 30 73
+              </p>
+            </a>
+            <a href="tel:+213560201750">
+              <p className="text-center md:text-base" dir="ltr">
+                +213 5 60 20 17 50
+              </p>
+            </a>
           </div>
         </div>
         {/* Email section */}
-        <div className="flex flex-col justify-start items-center flex-1">
+        <div className="flex flex-col justify-start items-center flex-1 mb-4 md:mb-0">
           <a
             href=""
-            className="bg-orange-400 hover:bg-orange-800 rounded-[50%] p-2 mb-8"
+            className="bg-orange-400 hover:bg-orange-800 rounded-[50%] p-2 mb-3 md:mb-4"
           >
             <Image src={Mail} alt="Mail Icon" width={35} height={35} />
           </a>
@@ -81,7 +100,22 @@ const Contact = () => {
             <h1 className="font-bold text-2xl mb-1">
               {data["Contact"].title3}
             </h1>
-            <p className="text-center">blabla@gmail.com</p>
+            <a
+              href="mailto:contact@eurl-ksentini.com"
+              className="flex justify-center"
+            >
+              <p className="text-center md:text-base">
+                contact@eurl-ksentini.com
+              </p>
+            </a>
+            <a
+              href="mailto:eurlksentini2018@gmail.com"
+              className="flex justify-center"
+            >
+              <p className="text-center md:text-base">
+                eurlksentini2018@gmail.com
+              </p>
+            </a>
           </div>
         </div>
       </div>

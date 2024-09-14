@@ -1,5 +1,7 @@
 "use client";
 import { useState } from "react";
+import Loader from "@/components/loaderSmall";
+import emailjs from "@emailjs/browser";
 
 interface ContactProps {
   title: string;
@@ -18,46 +20,41 @@ const ContactForm = (props: ContactProps) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isSent, setIsSent] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
   const sendMessage = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // Prevent the default form submission
+    setIsSending(true);
 
-    // Save the form data in a JSON object
-    const formData = JSON.stringify({
-      name: name.toString(),
-      phone: phone.toString(),
-      mail: email.toString(),
-      message: message.toString(),
-    });
+    const templateParams = {
+      name,
+      phone,
+      mail: email,
+      message,
+    };
 
-    try {
-      // Dynamically import Axios only when needed
-      const axios = await import("axios");
-
-      const response = await axios.default.post(
-        "https://eol3ha9egi44c6b.m.pipedream.net", // Your API endpoint
-        formData,
-        {
-          headers: {
-            "Content-Type": "application/json", // Default to JSON
-          },
+    emailjs
+      .send("service_xq5rcjn", "template_tkpnmfk", templateParams, {
+        publicKey: "ijsqzAvFSaLr5K0FH",
+      })
+      .then(
+        (response) => {
+          setIsSent(true);
+          setIsSending(false);
+          setTimeout(() => {
+            setIsSent(false); // Set the isSent state to false after 3 seconds
+            const form = event.target as HTMLFormElement;
+            form.reset(); // Reset the form
+            setName(""); // Reset the name state
+            setPhone(""); // Reset the phone state
+            setEmail(""); // Reset the email state
+            setMessage(""); // Reset the message state
+          }, 3000);
+        },
+        (err) => {
+          console.log("FAILED...", err);
         }
       );
-      console.log(response.data);
-      setIsSent(true); // Set the isSent state to true after successful submission
-
-      setTimeout(() => {
-        setIsSent(false); // Set the isSent state to false after 3 seconds
-        const form = event.target as HTMLFormElement;
-        form.reset(); // Reset the form
-        setName(""); // Reset the name state
-        setPhone(""); // Reset the phone state
-        setEmail(""); // Reset the email state
-        setMessage(""); // Reset the message state
-      }, 3000);
-    } catch (error) {
-      console.error(error);
-    }
   };
 
   return (
@@ -73,7 +70,7 @@ const ContactForm = (props: ContactProps) => {
         <input
           type="text"
           placeholder={props.placeholder1}
-          className="border border-gray-300 rounded-md px-4 py-3 mb-4 w-full"
+          className="border border-gray-300 drop-shadow-md md:drop-shadow-none rounded-md px-4 py-3 mb-4 w-full"
           required
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -83,7 +80,7 @@ const ContactForm = (props: ContactProps) => {
           placeholder={props.placeholder2}
           className={` ${
             props.locale === "ar" ? "text-right" : ""
-          } border border-gray-300 rounded-md px-4 py-3 mb-4 w-full`}
+          } border border-gray-300 drop-shadow-md md:drop-shadow-none rounded-md px-4 py-3 mb-4 w-full`}
           required
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
@@ -91,14 +88,14 @@ const ContactForm = (props: ContactProps) => {
         <input
           type="email"
           placeholder={props.placeholder3}
-          className="border border-gray-300 rounded-md px-4 py-3 mb-4 w-full"
+          className="border border-gray-300 drop-shadow-md md:drop-shadow-none rounded-md px-4 py-3 mb-4 w-full"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <textarea
           placeholder={props.placeholder4}
-          className="border border-gray-300 rounded-md px-4 py-3 mb-4 w-full"
+          className="border border-gray-300 drop-shadow-md md:drop-shadow-none rounded-md px-4 py-3 mb-4 w-full"
           required
           value={message}
           onChange={(e) => setMessage(e.target.value)}
@@ -106,9 +103,9 @@ const ContactForm = (props: ContactProps) => {
         {!isSent && (
           <button
             type="submit"
-            className="border border-gray-300 drop-shadow-sm bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 px-4 rounded-md w-full"
+            className="border border-gray-300 drop-shadow-sm bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 px-4 rounded-md w-full min-h-12 flex justify-center items-center"
           >
-            {props.button}
+            {isSending ? <Loader /> : props.button}
           </button>
         )}
         {isSent && (

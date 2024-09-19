@@ -81,13 +81,13 @@ const HomePageSlider: React.FC<HomePageSliderProps> = ({ activities }) => {
         >
           {slides["logos"].map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="flex justify-center items-center h-auto">
+              <div className="flex justify-center items-center h-[120px]">
                 <Image
                   src={slide.img}
                   alt={slide.alt}
                   width={slide.width}
                   height={slide.height}
-                  style={{ height: "120px", width: "auto" }}
+                  style={{ height: "auto", width: "auto", maxHeight: "120px" }}
                 />
               </div>
             </SwiperSlide>

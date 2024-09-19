@@ -119,7 +119,7 @@
       "height": 84,
       "client": "GRTE ALGER",
       "date": "2019",
-      "description": "Travaux GC et Montage équipements, Ligne 60 KV ARBAA-ALGER EST-MEFTAH/CM KHEMIS EL KHECHNA"
+      "description": "Travaux de génie civil et Montage équipements, Ligne 60 KV ARBAA-ALGER EST-MEFTAH/CM KHEMIS EL KHECHNA"
     },
     {
       "img": "/Logos/GRTE_ALGER.png",
@@ -128,7 +128,7 @@
       "height": 84,
       "client": "GRTE SETIF",
       "date": "2018",
-      "description": "Travaux de GC et de montage de la ligne 60 KV El-Eulma Chelghoum"
+      "description": "Travaux de génie civil et de montage de la ligne 60 KV El-Eulma Chelghoum"
     },
     {
       "img": "/Logos/ENERGO_INVEST.png",
@@ -146,10 +146,28 @@
       "height": 600,
       "client": "ENERGO-INVEST",
       "date": "2009",
-      "description": "Travaux de GC et de Montage de la Ligne 220 KV Poste Ghazouet – Station de dessalement Souk Atlata"
+      "description": "Travaux de génie civil et de Montage de la Ligne 220 KV Poste Ghazouet – Station de dessalement Souk Atlata"
     }
   ],
   "references2": [
+    {
+      "img": "/Logos/GCB.png",
+      "alt": "GCB",
+      "width": 300,
+      "height": 300,
+      "client": "GCB",
+      "date": "2022",
+      "description": "Réalisation d'un déplacement d'une ligne électrique aérienne HT 60 kV (Étude et réalisation) - Haoud El Hamra - Hassi Messaoud."
+    },
+    {
+      "img": "/Logos/SONELGAZ.png",
+      "alt": "KDL Sonelgaz",
+      "width": 852,
+      "height": 1200,
+      "client": "KDL Sonelgaz",
+      "date": "2019",
+      "description": "Études d'exécution, travaux de génie civil, montage, déroulage, essais et mise en service de la ligne 60 kV - Ain Temouchent"
+    },
     {
       "img": "/Logos/KAHRAKIB.png",
       "alt": "KAHRAKIB",

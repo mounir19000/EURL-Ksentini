@@ -51,6 +51,7 @@ const Contact = () => {
             </h1>
             <a
               href="https://maps.app.goo.gl/VHZa5ftbjJmjR9hz8"
+              target="_blank"
               className="flex justify-center"
             >
               <p className="text-center md:text-base w-2/3">
@@ -62,7 +63,8 @@ const Contact = () => {
         {/* Phone section */}
         <div className="flex flex-col justify-start items-center flex-1 mb-4 md:mb-0">
           <a
-            href=""
+            href="tel:+21334133172"
+            target="_blank"
             className="bg-orange-400 hover:bg-orange-800 rounded-[50%] p-2 mb-3 md:mb-4"
           >
             <Image src={Phone} alt="Phone Icon" width={35} height={35} />
@@ -71,17 +73,17 @@ const Contact = () => {
             <h1 className="font-bold text-2xl mb-1">
               {data["Contact"].title2}
             </h1>
-            <a href="tel:+21334133172">
+            <a href="tel:+21334133172" target="_blank">
               <p className="text-center md:text-base" dir="ltr">
                 +213 34 13 31 72
               </p>
             </a>
-            <a href="tel:+213557203073">
+            <a href="tel:+213557203073" target="_blank">
               <p className="text-center md:text-base" dir="ltr">
                 +213 5 57 20 30 73
               </p>
             </a>
-            <a href="tel:+213560201750">
+            <a href="tel:+213560201750" target="_blank">
               <p className="text-center md:text-base" dir="ltr">
                 +213 5 60 20 17 50
               </p>
@@ -91,7 +93,8 @@ const Contact = () => {
         {/* Email section */}
         <div className="flex flex-col justify-start items-center flex-1 mb-4 md:mb-0">
           <a
-            href=""
+            href="mailto:contact@eurl-ksentini.com"
+            target="_blank"
             className="bg-orange-400 hover:bg-orange-800 rounded-[50%] p-2 mb-3 md:mb-4"
           >
             <Image src={Mail} alt="Mail Icon" width={35} height={35} />
@@ -102,6 +105,7 @@ const Contact = () => {
             </h1>
             <a
               href="mailto:contact@eurl-ksentini.com"
+              target="_blank"
               className="flex justify-center"
             >
               <p className="text-center md:text-base">
@@ -110,6 +114,7 @@ const Contact = () => {
             </a>
             <a
               href="mailto:eurlksentini2018@gmail.com"
+              target="_blank"
               className="flex justify-center"
             >
               <p className="text-center md:text-base">

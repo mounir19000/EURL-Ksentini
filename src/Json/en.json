@@ -152,6 +152,24 @@
   ],
   "references2": [
     {
+      "img": "/Logos/GCB.png",
+      "alt": "GCB",
+      "width": 300,
+      "height": 300,
+      "client": "GCB",
+      "date": "2022",
+      "description": "Realization of the relocation of a 60 kV high-voltage overhead power line (Study and implementation) - Haoud El Hamra - Hassi Messaoud."
+    },
+    {
+      "img": "/Logos/SONELGAZ.png",
+      "alt": "KDL Sonelgaz",
+      "width": 852,
+      "height": 1200,
+      "client": "KDL Sonelgaz",
+      "date": "2019",
+      "description": "Execution studies, civil engineering works, installation, wiring, testing, and commissioning of the 60Kv line - Ain Timouchent"
+    },
+    {
       "img": "/Logos/KAHRAKIB.png",
       "alt": "KAHRAKIB",
       "width": 112,

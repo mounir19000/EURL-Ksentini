@@ -52,28 +52,28 @@ const Footer = (props: FooterProps) => {
             <h1 className="font-bold text-xl pb-2 text-black">
               {props.title1}
             </h1>
-            <ul className="list-none pl-1 w-auto">
-              <li className="pb-2 flex">
+            <ul className="list-none pl-1 w-auto columns-2  md:columns-1">
+              <li className="pb-2 flex w-fit">
                 <Link href={`/${props.locale}/`}>
                   <p>{props.home}</p>
                 </Link>
               </li>
-              <li className="pb-2 flex">
+              <li className="pb-2 flex w-fit">
                 <Link href={`/${props.locale}/activities`}>
                   <p>{props.activities}</p>
                 </Link>
               </li>
-              <li className="pb-2 flex">
+              <li className="pb-2 flex w-fit">
                 <Link href={`/${props.locale}/references`}>
                   <p>{props.references}</p>
                 </Link>
               </li>
-              <li className="pb-2 flex">
+              <li className="pb-2 flex w-fit">
                 <Link href={`/${props.locale}/galerie`}>
                   <p>{props.gallery}</p>
                 </Link>
               </li>
-              <li className="pb-2 flex">
+              <li className="pb-2 flex w-fit">
                 <Link href={`/${props.locale}/contact`}>
                   <p>{props.contact}</p>
                 </Link>
@@ -183,7 +183,15 @@ const Footer = (props: FooterProps) => {
                 href="https://www.linkedin.com/company/eurl-ksentini"
                 target="_blank"
               >
-                <p className="pl-1">
+                <p className="pl-1 flex flex-nowrap gap-2 justify-start items-center">
+                  <span>
+                    <Image
+                      src="/footerIcons/linkedin.png"
+                      alt="Phone Icon"
+                      width={18}
+                      height={18}
+                    />
+                  </span>
                   {props.linkedIn} :{" "}
                   <span className="underline">EURL Ksentini</span>
                 </p>

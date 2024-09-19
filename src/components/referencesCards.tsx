@@ -26,7 +26,7 @@ const ReferencesCards: React.FC<ReferencesCardsProps> = ({
   const [visibleCount, setVisibleCount] = useState(6); // Initial number of visible projects
 
   const loadMore = () => {
-    setVisibleCount(visibleCount + 4); // Increase the number of visible projects
+    setVisibleCount(visibleCount + 6); // Increase the number of visible projects
   };
 
   return (
